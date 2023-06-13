@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <RecipeDef>
+    <defName>MakeVCeramic</defName>
+    <label>Sinter Ceramic</label>
+    <description>Refine wearable dirt to it's more useful form.</description>
+    <jobString>Sintering like a boss.</jobString>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1800</workAmount>
+   <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+			<li>
+				<filter>
+          <thingDefs>
+            <li>WearableDirt</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+			</li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+		<li>WearableDirt</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <VCeramic>10</VCeramic>
+    </products>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>CeramicsSG</researchPrerequisite>
+  </RecipeDef>
+
+</Defs>

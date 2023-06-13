@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef Abstract="True" Name="LionFactionBase">
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+  <FactionDef Parent="LionFactionBase">
+    <defName>LionPlayerColony</defName>
+    <label>Raorian Empire</label>
+    <description>Your own society.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Lion</basicMemberKind>
+    <pawnsPlural>lions</pawnsPlural>
+    <settlementNameMaker>NamerFactionLionBase</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerFactionLionBase</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionLion</factionNameMaker>
+    <techLevel>Ultra</techLevel>
+    <backstoryCategories>
+			<li>LionBackstory</li>
+  	</backstoryCategories>
+    <homeIconPath>World/LionBaseIcon</homeIconPath>
+    <expandingIconTexture>World/LionBaseIcon</expandingIconTexture>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>LionHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+
+  </FactionDef>
+
+
+</Defs>

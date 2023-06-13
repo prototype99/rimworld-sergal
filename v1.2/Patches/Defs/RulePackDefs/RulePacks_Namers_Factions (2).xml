@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+	    <xpath>*[self::Defs]</xpath>
+	    <value>
+  <RulePackDef>
+    <defName>NamerFactionGnollBase</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[gnoll_brotherhood_first][gnoll_brotherhood_second][gnoll_brotherhood_third]</li>
+        <li>r_name->North [gnoll_brotherhood_first][gnoll_brotherhood_second][gnoll_brotherhood_third]</li>
+        <li>r_name->South [gnoll_brotherhood_first][gnoll_brotherhood_second][gnoll_brotherhood_third]</li>
+        <li>r_name->[gnoll_brotherhood_first][gnoll_brotherhood_second][gnoll_brotherhood_third][gnoll_brotherhood_second]</li>
+        <li>r_name->East [gnoll_brotherhood_first][gnoll_brotherhood_second][gnoll_brotherhood_third]</li>
+        <li>r_name->West [gnoll_brotherhood_first][gnoll_brotherhood_second][gnoll_brotherhood_third][gnoll_brotherhood_second][gnoll_brotherhood_third]</li>
+	  </rulesStrings>
+      <rulesFiles>
+        <li>gnoll_brotherhood_first->Gnoll_Words/GnollFirstNamePart</li>
+		<li>gnoll_brotherhood_second->Gnoll_Words/GnollSecondNamePart</li>
+		<li>gnoll_brotherhood_third->Gnoll_Words/GnollThirdNamePart</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+   </value>
+	</Operation>
+		<Operation Class="PatchOperationAdd">
+	    <xpath>*[self::Defs]</xpath>
+	    <value>
+  <RulePackDef>
+    <defName>NamerFactionGnoll</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The [gnoll_brotherhood_first] People of [gnoll_brotherhood_first][gnoll_brotherhood_third]</li>
+        <li>r_name->Black [gnoll_brotherhood_first][gnoll_brotherhood_second] Clan</li>
+        <li>r_name->The Pact of [gnoll_brotherhood_first]-[gnoll_brotherhood_first]</li>
+        <li>r_name->The [gnoll_brotherhood_first] Clan</li>
+		<li>r_name->The [gnoll_brotherhood_first] Band of [gnoll_brotherhood_first][gnoll_brotherhood_second]</li>
+		<li>r_name->The [gnoll_brotherhood_first] Encampment</li>
+		<li>r_name->The [gnoll_brotherhood_first] Enclave</li>
+        <li>r_name->The [gnoll_brotherhood_first][gnoll_brotherhood_second][gnoll_brotherhood_third] Amalgamation of [gnoll_brotherhood_second][gnoll_brotherhood_third]</li>
+	  </rulesStrings>
+      <rulesFiles>
+        <li>gnoll_brotherhood_first->Gnoll_Words/GnollFirstNamePart</li>
+		<li>gnoll_brotherhood_second->Gnoll_Words/GnollSecondNamePart</li>
+		<li>gnoll_brotherhood_third->Gnoll_Words/GnollThirdNamePart</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+   </value>
+	</Operation>
+		<Operation Class="PatchOperationAdd">
+	    <xpath>*[self::Defs]</xpath>
+	    <value>
+  <RulePackDef>
+    <defName>NamerFactionStripedGnollBase</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[gnoll_brotherhood_first][gnoll_brotherhood_second][gnoll_brotherhood_third]</li>
+        <li>r_name->North [gnoll_brotherhood_first][gnoll_brotherhood_second][gnoll_brotherhood_third]</li>
+        <li>r_name->South [gnoll_brotherhood_first][gnoll_brotherhood_second][gnoll_brotherhood_third]</li>
+        <li>r_name->[gnoll_brotherhood_first][gnoll_brotherhood_second][gnoll_brotherhood_third][gnoll_brotherhood_second]</li>
+        <li>r_name->East [gnoll_brotherhood_first][gnoll_brotherhood_second][gnoll_brotherhood_third]</li>
+        <li>r_name->West [gnoll_brotherhood_first][gnoll_brotherhood_second][gnoll_brotherhood_third][gnoll_brotherhood_second][gnoll_brotherhood_third]</li>
+	  </rulesStrings>
+      <rulesFiles>
+        <li>gnoll_brotherhood_first->StripedGnoll_Words/StripedGnollFirstNamePart</li>
+		<li>gnoll_brotherhood_second->StripedGnoll_Words/StripedGnollSecondNamePart</li>
+		<li>gnoll_brotherhood_third->StripedGnoll_Words/StripedGnollThirdNamePart</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+   </value>
+	</Operation>
+		<Operation Class="PatchOperationAdd">
+	    <xpath>*[self::Defs]</xpath>
+	    <value>
+  <RulePackDef>
+    <defName>NamerFactionStripedGnoll</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The [gnoll_brotherhood_first] People of [gnoll_brotherhood_first][gnoll_brotherhood_third]</li>
+        <li>r_name->Black [gnoll_brotherhood_first][gnoll_brotherhood_second] Clan</li>
+        <li>r_name->The Pact of [gnoll_brotherhood_first]-[gnoll_brotherhood_first]</li>
+        <li>r_name->The [gnoll_brotherhood_first] Clan</li>
+		<li>r_name->The [gnoll_brotherhood_first] Band of [gnoll_brotherhood_first][gnoll_brotherhood_second]</li>
+		<li>r_name->The [gnoll_brotherhood_first] Encampment</li>
+		<li>r_name->The [gnoll_brotherhood_first] Enclave</li>
+        <li>r_name->The [gnoll_brotherhood_first][gnoll_brotherhood_second][gnoll_brotherhood_third] Amalgamation of [gnoll_brotherhood_second][gnoll_brotherhood_third]</li>
+	  </rulesStrings>
+      <rulesFiles>
+        <li>gnoll_brotherhood_first->StripedGnoll_Words/StripedGnollFirstNamePart</li>
+		<li>gnoll_brotherhood_second->StripedGnoll_Words/StripedGnollSecondNamePart</li>
+		<li>gnoll_brotherhood_third->StripedGnoll_Words/StripedGnollThirdNamePart</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+   </value>
+	</Operation>
+</Patch>

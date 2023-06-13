@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="DrugPillBase">
+    <defName>ChungusDrug</defName>
+    <label>Chungus</label>
+    <description>This is a drug that induces severe swelling of all muscles, thus creating an excess of meat. Unfortunately, it is quite painful for the subject and makes it very, very hard for them to move. Put them out of their misery rather quickly... or wait until they are fully grown for maximum meat harvest. WARNING: This drug is not intended for humanlike use, and is a permanent condition.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/ChungusDrug</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>420</MarketValue>
+      <WorkToMake>1200</WorkToMake>
+      <Mass>0.01</Mass>
+    </statBases>
+    <recipeMaker>
+        <researchPrerequisite>ChungusProduction</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+        <Chemfuel>16</Chemfuel>
+        <Neutroamine>4</Neutroamine>
+        <Steel>1</Steel>
+        <GodsBlood>1</GodsBlood>
+    </costList>
+    <techLevel>Ultra</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>ChungusDrugHigh</hediffDef>
+          <severity>0</severity>
+          <doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>ChungusDrug</chemical>
+        <addictiveness>0</addictiveness>
+        <needLevelOffset>0</needLevelOffset>
+        <listOrder>1010</listOrder>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>ChungusDrugHigh</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Chungal Infection</label>
+    <defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+    <description>EVERYTHING IS SO SENSITIVE AND PAINFUL! GENTLE BREEZES ARE LIKE KNIFE RAIN! KILL ME!!</description>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>true</isBad>
+		<comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.35</severityPerDay>
+            </li>
+		</comps>
+    <stages>
+          <li>
+        <minSeverity>0</minSeverity>
+        <label>smallmeat</label>
+        <statOffsets>
+          <MeatAmount>150</MeatAmount>
+        </statOffsets>
+                <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1.0</setMax>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.75</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.95</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.30</offset>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>-0.15</offset>
+          </li>
+           <li>
+            <capacity>Metabolism</capacity>
+            <offset>0.90</offset>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Binging_Food</mentalState>
+            <mtbDays>0.3</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+      <li>
+        <minSeverity>0.50</minSeverity>
+        <label>largemeat</label>
+        <statOffsets>
+          <MeatAmount>150</MeatAmount>
+        </statOffsets>
+                <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1.0</setMax>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.75</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.95</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.30</offset>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>-0.15</offset>
+          </li>
+           <li>
+            <capacity>Metabolism</capacity>
+            <offset>0.90</offset>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Binging_Food</mentalState>
+            <mtbDays>0.3</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+      <li>
+      <minSeverity>0.80</minSeverity>
+        <statOffsets>
+          <MeatAmount>300</MeatAmount>
+        </statOffsets>
+        <label>full chungus</label>
+        <painOffset>0.4</painOffset>
+        <lifeThreatening>false</lifeThreatening>
+        <deathMtbDays>99</deathMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1.0</setMax>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.75</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.95</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.30</offset>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>-0.15</offset>
+          </li>
+           <li>
+            <capacity>Metabolism</capacity>
+            <offset>0.90</offset>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Binging_Food</mentalState>
+            <mtbDays>0.3</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+  
+    <ThoughtDef>
+    <defName>ChungusDrugHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>ChungusDrugHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>meaty</label>
+        <description>Put me out of my misery!!</description>
+        <baseMoodEffect>-120</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- ChungusDrug addiction -->
+
+  <ChemicalDef>
+    <defName>ChungusDrug</defName>
+    <label>Chungus</label>
+    <addictionHediff>ChungusDrugAddiction</addictionHediff>
+    <canBinge>false</canBinge>
+    <onGeneratedAddictedEvents>
+      <li>
+        <hediff>Cirrhosis</hediff>
+        <chance>0.95</chance>
+        <partsToAffect>
+          <li>Brain</li>
+        </partsToAffect>
+      </li>
+    </onGeneratedAddictedEvents>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_ChungusDrug</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>Chungus</label>
+    <description>This person's body is all kinds of messed up. It looks like Mr Universe was held in Chernobyl.</description>
+    <listPriority>45</listPriority>
+    <fallPerDay>0</fallPerDay>
+  </NeedDef>
+  
+  <HediffDef ParentName="AddictionBase">
+    <defName>ChungusDrugAddiction</defName>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <label>Chungus</label>
+    <causesNeed>Chemical_ChungusDrug</causesNeed>
+    <description>The chungal infection is complete. The meat has grown as much as it can.</description>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+
+    </stages>
+  </HediffDef>
+  
+</Defs>

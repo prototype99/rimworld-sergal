@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef>
+		<defName>LionEmpire</defName>
+		<label>Raorian Empire</label>
+    <description>Lion rumble in frightened jungle. This is a faction of Lions. Don't piss them off - they fight hard.</description>
+    <pawnsPlural>lions</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<settlementGenerationWeight>1</settlementGenerationWeight>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>King</leaderTitle>
+    <startingGoodwill>
+      <min>-10</min>
+      <max>40</max>
+    </startingGoodwill>
+	<factionNameMaker>NamerFactionLion</factionNameMaker>
+	<settlementNameMaker>NamerFactionLionBase</settlementNameMaker>
+	<techLevel>Spacer</techLevel>
+  <backstoryCategories>
+			<li>LionBackstory</li>
+  	</backstoryCategories>
+			<hairTags>
+			<li>LionHair</li>
+			</hairTags>
+    <naturalColonyGoodwill>
+      <min>-60</min>
+      <max>60</max>
+    </naturalColonyGoodwill>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+   <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>55</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <LionColonist>50</LionColonist>
+          <LionSecurityGuard>90</LionSecurityGuard>
+          <LionPackLeader>250</LionPackLeader>
+          <LionRecruit>100</LionRecruit>
+          <LionHunter>130</LionHunter>
+          <LionCommando>130</LionCommando>
+          <LionCommandoElite>170</LionCommandoElite>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <LionColonist>50</LionColonist>
+          <LionSecurityGuard>90</LionSecurityGuard>
+          <LionPackLeader>250</LionPackLeader>
+		  <LionRecruit>100</LionRecruit>
+          <LionHunter>130</LionHunter>
+        </options>
+    </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <LionTrader>1</LionTrader>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
+        </carriers>
+        <guards>
+          <LionSecurityGuard>90</LionSecurityGuard>
+          <LionRecruit>100</LionRecruit>
+          <LionHunter>130</LionHunter>
+          <LionCommando>130</LionCommando>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <LionColonist>50</LionColonist>
+          <LionSecurityGuard>90</LionSecurityGuard>
+          <LionPackLeader>250</LionPackLeader>
+          <LionRecruit>100</LionRecruit>
+          <LionHunter>130</LionHunter>
+          <LionCommando>130</LionCommando>
+          <LionCommandoElite>170</LionCommandoElite>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/LionBaseIcon</settlementTexturePath>
+	<factionIconPath>World/LionBaseIcon</factionIconPath>
+  </FactionDef>
+
+</Defs>

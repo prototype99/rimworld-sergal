@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef>
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(70,     30)</li>
+        <li>(200,   240)</li>
+        <li>(2000,  100)</li>
+        <li>(4000,  1600)</li>
+        <li>(8000, 2000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+		<defName>LionEmpire</defName>
+		<label>Raorian Empire</label>
+    <description>Lion rumble in frightened jungle. This is a faction of Lions. Don't piss them off - they fight hard.</description>
+    <pawnsPlural>lions</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<settlementGenerationWeight>1</settlementGenerationWeight>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>King</leaderTitle>
+	<factionNameMaker>NamerFactionLion</factionNameMaker>
+	<settlementNameMaker>NamerFactionLionBase</settlementNameMaker>
+	<techLevel>Spacer</techLevel>
+	<allowedCultures><li>Raorian</li></allowedCultures>
+    <!--
+      Maybe memes
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+      Required memes
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+    -->
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+    </disallowedMemes>
+    <disallowedPrecepts>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Prohibited</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Horrible</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Free</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_UsuallyWomans</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_UsuallyMans</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_NonMeat_Disapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_NonMeat_Horrible</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_NonMeat_Abhorrent</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Abhorrent</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Horrible</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_Mandatory</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Execution_Required</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Disapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Preferred</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredStrong</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredRavenous</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Apostasy_Abhorrent</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Apostasy_Horrible</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Apostasy_Disapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">OrganUse_Acceptable</li>
+    </disallowedPrecepts>
+  <backstoryCategories>
+			<li>LionBackstory</li>
+  	</backstoryCategories>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+   <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>55</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <LionColonist>50</LionColonist>
+          <LionSecurityGuard>90</LionSecurityGuard>
+          <LionPackLeader>250</LionPackLeader>
+          <LionRecruit>100</LionRecruit>
+          <LionHunter>130</LionHunter>
+          <LionCommando>130</LionCommando>
+          <LionCommandoElite>170</LionCommandoElite>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <LionColonist>50</LionColonist>
+          <LionSecurityGuard>90</LionSecurityGuard>
+          <LionPackLeader>250</LionPackLeader>
+		  <LionRecruit>100</LionRecruit>
+          <LionHunter>130</LionHunter>
+        </options>
+    </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <LionTrader>1</LionTrader>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
+        </carriers>
+        <guards>
+          <LionSecurityGuard>90</LionSecurityGuard>
+          <LionRecruit>100</LionRecruit>
+          <LionHunter>130</LionHunter>
+          <LionCommando>130</LionCommando>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <LionColonist>50</LionColonist>
+          <LionSecurityGuard>90</LionSecurityGuard>
+          <LionPackLeader>250</LionPackLeader>
+          <LionRecruit>100</LionRecruit>
+          <LionHunter>130</LionHunter>
+          <LionCommando>130</LionCommando>
+          <LionCommandoElite>170</LionCommandoElite>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/LionBaseIcon</settlementTexturePath>
+	<factionIconPath>World/LionBaseIcon</factionIconPath>
+	<maxConfigurableAtWorldCreation>3</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>30</configurationListOrderPriority>
+  </FactionDef>
+
+</Defs>

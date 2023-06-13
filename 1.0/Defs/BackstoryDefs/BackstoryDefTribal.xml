@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.BackstoryDef>
+    <defName>FrogBasicTribe</defName>
+    <title>Tribesman</title>
+	<titleShort>Tribesman</titleShort>
+    <baseDescription>In [PAWN_possessive] village born and raised, a small little tribe's where [PAWN_nameDef] spent most of [PAWN_possessive] days. [PAWN_pronoun] was a perfectly average tribal type person.</baseDescription>
+    <slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>FrogBasicTribe</defName>
+    <title>Tribesman</title>
+	<titleShort>Tribesman</titleShort>
+    <baseDescription>In [PAWN_possessive] village born and raised, a small little tribe's where [PAWN_nameDef] spent most of [PAWN_possessive] days. [PAWN_pronoun] was a perfectly average tribal type person.</baseDescription>
+    <slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>FrogJerkTribal</defName>
+    <title>Northern Frog</title>
+	<titleShort>Northener</titleShort>
+    <baseDescription>[PAWN_nameDef] was born to riches and acts like a total butthole. [PAWN_pronoun] was able to rise above his rougher cohorts. [PAWN_pronoun] became renown across the lands as "a total douche".</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<maleCommonality>10</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+        <li>Social</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+
+<AlienRace.BackstoryDef>
+    <defName>FrogTribalHunter</defName>
+    <title>Tribal Hunter</title>
+	<titleShort>Hunter</titleShort>
+    <baseDescription>[PAWN_nameDef] was a devastating little murder machine as a child, having figured out early on the secret to ranged attacks.</baseDescription>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>7</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>FrogTribalHunterAdult</defName>
+    <title>Chief Hunter</title>
+	<titleShort>Headhunter</titleShort>
+    <baseDescription>Having a keen eye for ranged attacks and a quick fist to back it all up, [PAWN_nameDef] was virtually destined to become the chief hunter.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>7</amount>
+      </li>
+	        <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>FrogTribalEngineer</defName>
+    <title>Tent Pitcher</title>
+	<titleShort>Builder</titleShort>
+    <baseDescription>As a talent, [PAWN_nameDef] can pitch a tent faster than any other in [PAWN_possessive] tribe. Most people stand in awe and say "wow, I've never seen a tent get pitched so quickly."</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>8</amount>
+      </li>
+	        <li>
+        <defName>Crafting</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>FrogTribalArtist</defName>
+    <title>Art Fairy</title>
+	<titleShort>Artiste</titleShort>
+    <baseDescription>[PAWN_nameDef]'s tribe had a strange way of referring to artistic people as "fairies" before the mythology around fairies was a thing.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Artistic</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>FrogTamer</defName>
+    <title>Animal Tamer</title>
+    <titleShort>Tamer</titleShort>
+    <baseDescription>[PAWN_nameDef] spoke only to animals as a child, and showed talent for whispering animals bordering on idiot savant levels.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+      <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+          <li>
+        <defName>Animals</defName>
+        <amount>12</amount>
+      </li>
+    </skillGains> 
+	<workDisables>
+      <li>Social</li>
+	  <li>Caring</li>
+	</workDisables>
+    </AlienRace.BackstoryDef>
+
+	    <AlienRace.BackstoryDef>
+    <defName>FrogTribalChild</defName>
+    <title>Young One</title>
+    <titleShort>Young'n</titleShort>
+    <baseDescription>[PAWN_nameDef] is a youngling.</baseDescription>
+    <slot>Childhood</slot>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+      <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+        <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+	   <workDisables>
+        <li>Caring</li>
+	   </workDisables>
+    </AlienRace.BackstoryDef>
+
+
+    <AlienRace.BackstoryDef>
+    <defName>FrogTribalKid</defName>
+    <title>Frog Tribal Kid</title>
+    <titleShort>Tribekid</titleShort>
+    <baseDescription>[PAWN_nameDef] was born in a small tribe. [PAWN_pronoun] had to learn to carry [PAWN_possessive] weight and keep the tribe running from an early age.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>80</maleCommonality>
+	<femaleCommonality>80</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>FrogBigTribalKid</defName>
+    <title>Good Pup</title>
+    <titleShort>Pupsen</titleShort>
+    <baseDescription>[PAWN_nameDef] was born in a big tribe. [PAWN_pronoun] learned some advanced combat techniques and general survival information, courtesy of a more successful tribe.</baseDescription>
+		<maleCommonality>90</maleCommonality>
+	<femaleCommonality>90</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+
+      <li>
+        <defName>Plants</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+      <AlienRace.BackstoryDef>
+
+    <defName>FrogTribalDigKid</defName>
+    <title>Dirt Child</title>
+    <titleShort>Filth</titleShort>
+    <baseDescription>[PAWN_nameDef] was always playing in the sandbox, or building in the mud, or otherwise finding excuses to make holes in the ground.</baseDescription>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Mining</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+
+  <!-- ====== Adult Stories - not porn ====== -->
+
+
+
+    <AlienRace.BackstoryDef>
+    <defName>FrogToymaker</defName>
+    <title>Stick Maker</title>
+    <titleShort>Sticklord</titleShort>
+    <baseDescription>[PAWN_nameDef] was always good at making pointy sticks that were good for piercing people.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+      <AlienRace.BackstoryDef>
+    <defName>FrogSexSlave</defName>
+    <title>Sex Slave</title>
+    <titleShort>Concubine</titleShort>
+    <baseDescription>[PAWN_nameDef] was captured by slavers and sold into sexual slavery. [PAWN_pronoun] was forced to do all sorts of lewd acts for [PAWN_possessive] 'owner', but grew accustomed to the otherwise lavish environment, and spoiled as far as labor is concerned.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>30</maleCommonality>
+	<femaleCommonality>10</femaleCommonality>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>Hauling</li>
+	 <li>Cleaning</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+	   <li>
+        <defName>Cooking</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+      <AlienRace.BackstoryDef>
+    <defName>FrogTribeMiner</defName>
+    <title>Frog Tribe Miner</title>
+    <titleShort>Miner</titleShort>
+    <baseDescription>[PAWN_nameDef] learned how to swing pointy metal things at rocks in order to get more rocks that create more pointy metal things.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>30</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+
+    <defName>FrogShaman</defName>
+    <title>Frog Shaman</title>
+    <titleShort>Shaman</titleShort>
+    <baseDescription>[PAWN_nameDef] is a bit of a strange thing, constantly jibbering about some great power in the sky that is angry at us. Somehow channels that into [PAWN_possessive] medical work though, so they keep [PAWN_pronoun] around.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>FrogTribalHunterBS</defName>
+    <title>Regular Hunter</title>
+    <titleShort>Regunter</titleShort>
+    <baseDescription>[PAWN_nameDef] is an average hunter. Sometimes called to put down manhunters, or guide rich dentists on Safari, [PAWN_possessive] skills as a tracker are only matched by [PAWN_possessive] skill at handling.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>25</maleCommonality>
+	<femaleCommonality>25</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Shooting</defName>
+        <amount>12</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+
+  <AlienRace.BackstoryDef>
+    <defName>FrogTribalBreeder</defName>
+    <title>Nivren breeder</title>
+    <titleShort>Breedlord</titleShort>
+    <baseDescription>[PAWN_nameDef] has spent many years breeding Vilous wildlife, which requires somewhat special handling due to their rapid reproductive rate. This experience has given [PAWN_pronoun] a great deal of insight into certain animal behaviours.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>FrogOddJobTribe</defName>
+    <title>Tribal Handyman</title>
+    <titleShort>Handyman</titleShort>
+    <baseDescription>[PAWN_nameDef] is a basic handyman. Or woman. Whatever.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>FrogTribalChef</defName>
+    <title>Tribal Meat Burner</title>
+    <titleShort>Meat Searist</titleShort>
+    <baseDescription>[PAWN_nameDef] is a tribal cooking wizard. [PAWN_pronoun] performs the ham dance and the tribe eats well for the harvest.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	 <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FrogTribeLead</defName>
+    <title>Frog Chieftan</title>
+    <titleShort>Boss</titleShort>
+    <baseDescription>[PAWN_nameDef] bears the title of leadership among [PAWN_possessive] community. </baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>5</maleCommonality>
+	<femaleCommonality>5</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>8</amount>
+      </li>
+	  <li>
+        <defName>Intellectual</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	 <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>PrivateTribalFrog</defName>
+    <title>Tribal Soldier</title>
+    <titleShort>Warrior</titleShort>
+    <baseDescription>[PAWN_nameDef] is a rank-and-file soldier for the tribe.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>12</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>TribalKnightFrog</defName>
+    <title>Army Knight</title>
+    <titleShort>Knight</titleShort>
+    <baseDescription>[PAWN_nameDef] is an officer for the tribe's army. [PAWN_pronoun] is responsible for the warriors under [PAWN_possessive] command, and takes that duty seriously.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>12</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>FrogTribalTraderAdult</defName>
+    <title>Tribal Trader</title>
+    <titleShort>Trader</titleShort>
+    <baseDescription>[PAWN_nameDef] was a free-trader, roving the Hamal Cluster and its neighbor's space searching for deals and opportunities for profit. Until now, [PAWN_pronoun] was flying a ship, making deals with colonies like these... I wonder what happened?</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+			<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+      <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+          <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>10</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    </AlienRace.BackstoryDef>
+
+	  <AlienRace.BackstoryDef>
+    <defName>FrogTribalManhunter</defName>
+    <title>People Collector</title>
+    <titleShort>Collector</titleShort>
+    <baseDescription>[PAWN_nameDef] is something of a bounty hunter, often called "unga bungas" in the tribe. Historians claim that this moniker comes from the act of collecting persons under the "I Arrest Your Bitch Ass" act. History aside, [PAWN_nameDef] is not to be taken lightly... or at all.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>18</maleCommonality>
+	<femaleCommonality>18</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+
+  	  <AlienRace.BackstoryDef>
+    <defName>FrogTribalTerminator</defName>
+    <title>Tribal Assassin</title>
+    <titleShort>Assassin</titleShort>
+    <baseDescription>[PAWN_nameDef] is fairly lethal.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>10</maleCommonality>
+	<femaleCommonality>10</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>16</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>13</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-4</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+      <AlienRace.BackstoryDef>
+    <defName>FrogBarbarian</defName>
+    <title>Frog Barbarian</title>
+    <titleShort>Barbarian</titleShort>
+    <baseDescription>[PAWN_nameDef] was captured after a battle on a medieval world, and forced to train as a pit-fighter. After crushing [PAWN_possessive] enemies, seeing them driven before [PAWN_pronoun], and hearing the lamentation of their women, [PAWN_pronoun] was released from captivity. [PAWN_pronoun] now seems to be seeking 'Daijin Kuremkul' or something?</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>15</maleCommonality>
+	<femaleCommonality>6</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>12</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FrogTribalKynen</defName>
+    <title>Witch Doctor</title>
+    <titleShort>Medigod</titleShort>
+    <baseDescription>[PAWN_nameDef] was born of a terrible background but managed to defeat the odds and become a renowned witch doctor who has in particular made excellent progress in the field of lobotomies</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>0</maleCommonality>
+	<femaleCommonality>1</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+	  <li>
+        <defName>Intellectual</defName>
+        <amount>8</amount>
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>12</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>FrogTribalAufen</defName>
+    <title>Frog Tribal Guy</title>
+    <titleShort>Dancer</titleShort>
+    <baseDescription>[PAWN_nameDef] likes doing some things I guess.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>1</maleCommonality>
+	<femaleCommonality>1</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>12</amount>
+      </li>
+	  <li>
+        <defName>Construction</defName>
+        <amount>6</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+
+    <AlienRace.BackstoryDef>
+    <defName>FrogTribalSlaveLord</defName>
+    <title>Frog Slaver</title>
+    <titleShort>Slaver</titleShort>
+    <baseDescription>[PAWN_nameDef] built a slave empire with brains, and more than a fair share of ruthlessness. [PAWN_pronoun] made a fortune, which attracted the attention of [PAWN_possessive] rivals, the dreaded Panstrumants Corporation. They struck [PAWN_possessive] base of operation with mercenary raids and terrorist attacks. Now [PAWN_pronoun] is out for revenge...</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>FrogTribalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+</Defs>

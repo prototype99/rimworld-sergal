@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+	<BodyPartDef>
+   	 <defName>LionTail</defName>
+   	 <label>lion tail</label>
+   	 <hitPoints>35</hitPoints>
+   	 <frostbiteVulnerability>4</frostbiteVulnerability>
+   	 <spawnThingOnRemoved>LionTail</spawnThingOnRemoved>
+   	 <skinCovered>true</skinCovered>
+         <beautyRelated>true</beautyRelated>
+	</BodyPartDef>
+
+	<BodyPartDef>
+   	 <defName>LionHead</defName>
+   	 <label>lion head</label>
+   	 <hitPoints>75</hitPoints>
+   	 <frostbiteVulnerability>4</frostbiteVulnerability>
+   	 <skinCovered>true</skinCovered>
+         <beautyRelated>true</beautyRelated>
+	</BodyPartDef>
+
+</Defs>

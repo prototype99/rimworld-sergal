@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Injuries -->
+
+  <!--HediffDef Name="InjuryBase" Abstract="True">
+    <hediffClass>Hediff_Injury</hediffClass>
+    <tendable>true</tendable>
+    <displayWound>true</displayWound>
+    <labelNounPretty>{0} in the {1}</labelNounPretty>
+  </HediffDef-->
+
+	<!-- ASMD -->
+	
+	  <!-- Base: Bionic body part (spacer tech) -->
+
+  <ThingDef Name="GnollstromBodyPartBionicBase" ParentName="BodyPartBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+	  <li>GnollstromPartsBionic</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(189,169,218)</color>
+    </graphicData>
+    <tradeTags>
+      <li>Bionic</li>
+    </tradeTags>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <statBases>
+      <WorkToMake>36000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>GnollstromBionics</researchPrerequisite>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- Bionic eye -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>GnollstromBionicEyeTargeter</defName>
+    <label>sharpshooter eye</label>
+    <labelNoun>a Gnollstrom sharpshooter eye</labelNoun>
+    <description>An installed sharpshooter eye.</description>
+    <descriptionHyperlinks><ThingDef>GnollstromBionicEyeTargeterThingDef</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>GnollstromBionicEyeTargeterThingDef</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+      <li>
+        <statOffsets>
+          <ShootingAccuracyPawn>20</ShootingAccuracyPawn>
+        </statOffsets>
+      </li>
+    </stages>
+    <eyeGraphicSouth>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Gnollstrom/Wounds/GnollBioniceye_south</texPath>
+    </eyeGraphicSouth>
+    <eyeGraphicEast>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Gnollstrom/Wounds/GnollBioniceye_east</texPath>
+    </eyeGraphicEast>
+    <eyeGraphicScale>0.2</eyeGraphicScale>
+  </HediffDef>
+
+  <!--ThingDef ParentName="GnollstromBodyPartBionicBase">
+    <defName>GnollstromBionicEyeTargeter</defName>
+    <label>Gnollstrom sharpshooter eye</label>
+    <description>An advanced artificial eye. Made without regard for copyright or original ownership, this Gnollstrom branded bionic modification is a bionic eye with handcrafted upgrades that are designed to improve the user's ability to shoot accurately.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicEye</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+	  <BionicEye>1</BionicEye>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>0.3</Mass>
+    </statBases>
+  </ThingDef-->
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallGnollstromSharpshooterEye</defName>
+    <label>install sharpshooter eye</label>
+    <description>Install a Gnollstrom sharpshooter eye.</description>
+    <descriptionHyperlinks>
+      <ThingDef>GnollstromBionicEyeTargeterThingDef</ThingDef>
+      <HediffDef>GnollstromBionicEyeTargeter</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Hacking bionic eye.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GnollstromBionicEyeTargeterThingDef</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GnollstromBionicEyeTargeterThingDef</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>GnollstromBionicEyeTargeter</addsHediff>
+  </RecipeDef>
+	
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>PridePistolShot</defName>
+    <label>hot liquid</label>
+    <description>Hot liquid</description>
+    <labelNoun>third degree burn</labelNoun>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>superglued</labelTendedWell>
+        <labelTendedWellInner>hopes and dreams</labelTendedWellInner>
+        <labelSolidTendedWell>thoughts and prayers</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.15</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>third degree burn wound</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0325</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00125</averagePainPerSeverityPermanent>
+      <bleedRate>0.01</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>melted off</destroyedLabel>
+      <destroyedOutLabel>melted out</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+    
+    
+  <HediffDef ParentName="InjuryBase">
+    <defName>GaussShot</defName>
+    <label>Electromagnetic Slug</label>
+    <description>Electromagnetic Slug</description>
+    <labelNoun>high velocity electric puncture</labelNoun>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>superglued</labelTendedWell>
+        <labelTendedWellInner>hopes and dreams</labelTendedWellInner>
+        <labelSolidTendedWell>thoughts and prayers</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.25</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>high velocity puncture wound</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0125</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0.02</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>blasted off</destroyedLabel>
+      <destroyedOutLabel>blasted out</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+  
+</Defs>

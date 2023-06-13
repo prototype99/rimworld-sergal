@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<AlienRace.AlienBackstoryDef>
+    <defName>SergalJack</defName>
+    <title>Musical Monk</title>
+	<titleShort>Monk</titleShort>
+    <baseDesc>[PAWN_nameDef] is a reformed asshole. [PAWN_pronoun] went on a holy pilgrimage to become more like the Hero of Hamal. </baseDesc>
+    <slot>Childhood</slot>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <key>Artistic</key>
+        <value>7</value>
+      </li>
+	  <li>
+        <key>Social</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>SergalGen1A</defName>
+    <title>Gardener</title>
+	<titleShort>Gardenkeeper</titleShort>
+    <baseDesc>[PAWN_nameDef] opened a landscaping business, rising to fame after winning a contract with the local ALIENRACE government to redesign the landscape of several public facilities and then charge people money to walk through said landscapes. [PAWN_nameDef]'s library courtyard and parks were left spotless because [PAWN_nameDef] kept the crap out of that garden.
+    </baseDesc>
+    <slot>Adulthood</slot>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <key>Construction</key>
+        <value>2</value>
+      </li>
+	    <li>
+        <key>Plants</key>
+        <value>8</value>
+      </li>
+    </skillGains>
+      <forcedTraitsChance>
+        <li>
+            <defName>Greedy</defName>
+            <chance>100</chance>
+        </li>
+      </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>SergalGen2C</defName>
+    <title>Know-It-All kid</title>
+	<titleShort>Nerd</titleShort>
+    <baseDesc>[PAWN_nameDef] loved inventions and machines, ever-curious about how things work. [PAWN_pronoun] developed an incredible skill for maintaining and repairing all sorts of things.</baseDesc>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>6</value>
+      </li>
+	        <li>
+        <key>Crafting</key>
+        <value>5</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>SergalGen2A</defName>
+    <title>Master inventor</title>
+	<titleShort>Inventor</titleShort>
+    <baseDesc>[PAWN_nameDef] turned [PAWN_possessive] talents with machines into a few successful patents, freeing time to invent, create, and learn. [PAWN_pronoun] even went on to study under Kynen the Small.
+    </baseDesc>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>8</value>
+      </li>
+	   <li>
+        <key>Crafting</key>
+        <value>6</value>
+      </li>
+	  	   <li>
+        <key>Medicine</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+</Defs>

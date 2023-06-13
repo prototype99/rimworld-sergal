@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ResearchProjectDef>
+		<defName>CeramicsSG</defName>
+		<label>Ceramic Sintering</label>
+		<description>Unlock the true potential of dirt, through sintering. Big words make it sound fancy. Beginning with an S makes it sound Sergally.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>Sergal_ResearchTab</tab>
+		<researchViewX>2.5</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+    
+    <ResearchProjectDef>
+		<defName>ChungusProduction</defName>
+		<label>Chungus Production</label>
+		<description>Allows crafting of chungus, an additive typically given to animals to increase the amount of meat they provide.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>PsychiteRefining</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>Sergal_ResearchTab</tab>
+		<researchViewX>1.7</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef>
+		<defName>PrideStuff</defName>
+		<label>Raorian Smithing</label>
+		<description>Unlock the world of Raorian technologies, including guns and power armours. Complex but powerful.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Fabrication</li>
+            <li>PoweredArmor</li>
+            <li>ChargedShot</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>Sergal_ResearchTab</tab>
+		<researchViewX>3.5</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+    
+</Defs>

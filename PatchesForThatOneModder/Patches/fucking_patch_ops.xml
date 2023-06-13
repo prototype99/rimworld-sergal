@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Orassans -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimJobWorld</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>*[self::Defs]</xpath>
+					<value>
+						<ThingDef ParentName="rjw_BodyPartNaturalBaseGenFemale">
+                            <defName>SergalTongueVadgeThing</defName>
+                            <label>sergal vagina</label>
+                            <description>A vagina with an extended, prehensile clitoral hood. It licks back.</description>
+                            <statBases>
+                                <MarketValue>250</MarketValue>
+                                <Mass>0.10</Mass>
+                            </statBases>
+                        </ThingDef>
+					</value>
+				</li>
+                <li Class="PatchOperationAdd">
+                    <xpath>*[self::Defs]</xpath>
+                    <value>
+                        <rjw.HediffDef_PartBase ParentName="NaturalPrivatePartVagina">
+                            <defName>SergalTongueVadgeHediff</defName>
+                            <label>sergal vagina</label>
+                            <labelNoun>a vagina with a tongue</labelNoun>
+                            <description>A vagina with an extended prehensile clitoral hood; basically a tongue. This vagina licks back.</description>
+                            <descriptionHyperlinks><ThingDef>SergalTongueVadgeThing</ThingDef></descriptionHyperlinks>
+                            <spawnThingOnRemoved>SergalTongueVadgeThing</spawnThingOnRemoved>
+                            <modExtensions>
+                                <li Class="rjw.PartProps">
+                                    <props>
+                                        <li>Internal</li>
+                                    </props>
+                                </li>
+                            </modExtensions>
+                        </rjw.HediffDef_PartBase>
+                    </value>
+                </li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

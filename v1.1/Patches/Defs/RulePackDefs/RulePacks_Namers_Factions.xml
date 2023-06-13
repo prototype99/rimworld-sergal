@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+	    <xpath>*[self::Defs]</xpath>
+	    <value>
+  <RulePackDef>
+    <defName>NamerFactionSergalBase</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[sergal_empire_first][sergal_empire_second][sergal_empire_third]</li>
+        <li>r_name->North [sergal_empire_first][sergal_empire_second][sergal_empire_third]</li>
+        <li>r_name->South [sergal_empire_first][sergal_empire_second][sergal_empire_third]</li>
+        <li>r_name->[sergal_empire_first][sergal_empire_second][sergal_empire_third][sergal_empire_second]</li>
+        <li>r_name->East [sergal_empire_first][sergal_empire_second][sergal_empire_third]</li>
+        <li>r_name->West [sergal_empire_first][sergal_empire_second][sergal_empire_third][sergal_empire_second][sergal_empire_third]</li>
+	  </rulesStrings>
+      <rulesFiles>
+        <li>sergal_empire_first->Sergal_Words/SergalFirstNamePart</li>
+		<li>sergal_empire_second->Sergal_Words/SergalSecondNamePart</li>
+		<li>sergal_empire_third->Sergal_Words/SergalThirdNamePart</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+   </value>
+	</Operation>
+		<Operation Class="PatchOperationAdd">
+	    <xpath>*[self::Defs]</xpath>
+	    <value>
+  <RulePackDef>
+    <defName>NamerFactionSergal</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The [sergal_empire_first] People of [sergal_empire_first][sergal_empire_third]</li>
+        <li>r_name->Black [sergal_empire_first][sergal_empire_second] League</li>
+        <li>r_name->The Right Honorable [sergal_empire_first] Coalition</li>
+        <li>r_name->The Kingdom of [sergal_empire_first]-[sergal_empire_first]</li>
+        <li>r_name->The [sergal_empire_first] Dynasty</li>
+		<li>r_name->The [sergal_empire_first] Folks of [sergal_empire_first][sergal_empire_second]</li>
+		<li>r_name->The [sergal_empire_first] Hegemony</li>
+		<li>r_name->The [sergal_empire_first] Empire</li>
+        <li>r_name->The [sergal_empire_first][sergal_empire_second][sergal_empire_third] City State of [sergal_empire_second][sergal_empire_third]</li>
+	  </rulesStrings>
+      <rulesFiles>
+        <li>sergal_empire_first->Sergal_Words/SergalFirstNamePart</li>
+		<li>sergal_empire_second->Sergal_Words/SergalSecondNamePart</li>
+		<li>sergal_empire_third->Sergal_Words/SergalThirdNamePart</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+   </value>
+	</Operation>
+</Patch>

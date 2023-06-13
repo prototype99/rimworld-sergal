@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef Abstract="True" Name="GnollFactionBase">
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+  <FactionDef Parent="GnollFactionBase">
+    <defName>GnollPlayerColony</defName>
+    <label>Gnoll Enclave</label>
+    <description>Your own community.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Gnoll</basicMemberKind>
+    <pawnsPlural>gnolls</pawnsPlural>
+    <settlementNameMaker>NamerFactionGnollBase</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerFactionGnollBase</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionGnoll</factionNameMaker>
+    <techLevel>Ultra</techLevel>
+    <backstoryCategories>
+			<li>GnollBackstory</li>
+  	</backstoryCategories>
+    <homeIconPath>World/GnollBaseIcon</homeIconPath>
+    <expandingIconTexture>World/GnollBaseIcon</expandingIconTexture>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>GnollHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+
+  </FactionDef>
+  
+    <FactionDef Parent="GnollFactionBase">
+    <defName>GnollPlayerColonyTribal</defName>
+    <label>Gnoll Enclave Tribal-like</label>
+    <description>Gnoll semi-tribal start.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Gnoll</basicMemberKind>
+    <pawnsPlural>gnolls</pawnsPlural>
+    <settlementNameMaker>NamerFactionGnollBase</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerFactionGnollBase</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionGnoll</factionNameMaker>
+    <techLevel>Neolithic</techLevel>
+    <backstoryCategories>
+			<li>GnollTribalBackstory</li>
+  	</backstoryCategories>
+    <homeIconPath>World/GnollBaseIcon</homeIconPath>
+    <expandingIconTexture>World/GnollBaseIcon</expandingIconTexture>
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>GnollHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <colorSpectrum>
+      <li>(0, 0.437, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+
+</Defs>

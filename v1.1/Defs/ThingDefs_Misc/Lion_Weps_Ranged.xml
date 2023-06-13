@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Base Defs -->
+
+	<ThingDef Abstract="True" Name="BaseLionWeapon">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>true</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<equipmentType>Primary</equipmentType>
+		<useHitPoints>true</useHitPoints>
+		<pathCost>10</pathCost>
+		<selectable>true</selectable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Beauty>-6</Beauty>
+			<SellPriceFactor>0.20</SellPriceFactor>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef Name="BaseLionGun" Abstract="True" ParentName="BaseLionWeapon">
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+			<li>WeaponsRanged</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+  
+	<ThingDef Name="BaseLionMakeableGun" ParentName="BaseLionGun" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+			</recipeMaker>
+	</ThingDef>
+	
+	<!-- Gauss Rifle -->
+
+	<ThingDef ParentName="BaseLionMakeableGun">
+		<defName>LionWep_Gauss</defName>
+		<label>Pride Gauss Rifle</label>
+		<description>Highly experimental way of delivering nigh any type of metallic slug at insane velocities. Much pride was taken in the development of this, and many more prides were taken in the testing of this.</description>
+		<graphicData>
+			<texPath>Things/Guns/lionrifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_ChargeLance</soundInteract>
+		<recipeMaker>
+            <researchPrerequisite>PrideStuff</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>60</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>72000</WorkToMake>
+			<Mass>8.5</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.97</AccuracyLong>
+			<RangedWeapon_Cooldown>3.4</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Gauss</defaultProjectile>
+				<warmupTime>1.8</warmupTime>
+				<range>42</range>
+				<soundCast>LionGauss</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+    </tools>
+	</ThingDef>
+	
+    <ThingDef ParentName="BaseLionMakeableGun">
+		<defName>LionWep_Chaingauss</defName>
+		<label>Pride Machinegun</label>
+		<description>A burst-fire of deadly, high impact gauss fire rounds. It follows the law of Vladof - shoot more bullets.</description>
+		<graphicData>
+			<texPath>Things/Guns/lionchaingauss</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_ChargeLance</soundInteract>
+		<recipeMaker>
+            <researchPrerequisite>PrideStuff</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>120</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>82000</WorkToMake>
+			<Mass>9.5</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.37</AccuracyLong>
+			<RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Small_Gauss</defaultProjectile>
+				<warmupTime>1.8</warmupTime>
+                <burstShotCount>5</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<range>20</range>
+				<soundCast>LionGauss</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+    </tools>
+	</ThingDef>
+    
+    <ThingDef ParentName="BaseLionMakeableGun">
+		<defName>LionWep_HandyGun</defName>
+		<label>Pride Pistol</label>
+		<description>A little pistol that fires some kind of intensely burning liquid.</description>
+		<graphicData>
+			<texPath>Things/Guns/lionpistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_ChargeLance</soundInteract>
+		<recipeMaker>
+            <researchPrerequisite>PrideStuff</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>11</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>80</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>32000</WorkToMake>
+			<Mass>4.5</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.67</AccuracyLong>
+			<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Lion_Wet_Bullet</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>20</range>
+				<soundCast>LionPistol</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+    </tools>
+	</ThingDef>
+    
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Gauss</defName>
+		<label>Gauss Round</label>
+		<graphicData>
+			<texPath>Things/Projectile/gaussbullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>GaussShock</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<stoppingPower>1.7</stoppingPower>
+			<speed>190</speed>
+		</projectile>
+	</ThingDef>
+    
+	  <ThingDef ParentName="BaseBullet">
+    <defName>Lion_Wet_Bullet</defName>
+    <label>prothene acid</label>
+    <graphicData>
+      <texPath>Things/Projectile/wet_bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+		<projectile>
+			<damageDef>WetRound</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>1.1</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Small_Gauss</defName>
+		<label>Gauss Round</label>
+		<graphicData>
+			<texPath>Things/Projectile/beam</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>GaussShock</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>1.7</stoppingPower>
+			<speed>130</speed>
+		</projectile>
+	</ThingDef>
+    
+</Defs>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+
+
+   <ThingDef ParentName="BodyPartNaturalBase">
+      <defName>SergTail</defName>
+      <label>sergal tail</label>
+      <description>A sergal tail.</description>
+      <statBases>
+         <MarketValue>200</MarketValue>
+         <Mass>1</Mass>
+      </statBases>
+      
+   </ThingDef> 
+      <ThingDef ParentName="BodyPartNaturalBase">
+      <defName>GnollTail</defName>
+      <label>gnoll tail</label>
+      <description>A gnoll tail.</description>
+      <statBases>
+         <MarketValue>200</MarketValue>
+         <Mass>1</Mass>
+      </statBases>
+      
+   </ThingDef> 
+      <ThingDef ParentName="BodyPartNaturalBase">
+      <defName>LionTail</defName>
+      <label>lion tail</label>
+      <description>A lion tail.</description>
+      <statBases>
+         <MarketValue>200</MarketValue>
+         <Mass>1</Mass>
+      </statBases>
+   </ThingDef>
+  
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>SergalTailBionic</defName>
+    <label>bionic sergal tail</label>
+    <description>A sophisticated prehensile tail replacement. It's like having another hand!</description>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>LionTailBionic</defName>
+    <label>bionic lion tail</label>
+    <description>A sophisticated prehensile tail replacement. It's like having another hand!</description>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>GnollTailBionic</defName>
+    <label>bionic gnoll tail</label>
+    <description>A sophisticated prehensile tail replacement. It's like having another hand!</description>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+    <ThingDef ParentName="GnollstromBodyPartBionicBase">
+    <defName>GnollstromBionicEyeTargeterThingDef</defName>
+    <label>gnollstrom sharpshooter eye</label>
+    <description>A hacky bionic eye that improves shooting accuracy.</description>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+	  <BionicEye>1</BionicEye>
+    </costList>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+</Defs>

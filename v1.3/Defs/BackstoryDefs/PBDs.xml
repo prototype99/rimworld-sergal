@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.PawnBioDef>
+    <defName>SGLF_Jack</defName>
+    <childhoodDef>SergalJackAufenhandKid</childhoodDef> 
+    <adulthoodDef>SergalJackAufenhandAdult</adulthoodDef>
+    <gender>Male</gender>
+    <name>
+      <first>Jack</first>
+      <last>Aufenhand</last>
+      <nick>Jack</nick>
+    </name>
+    <validRaces>
+      <li>Alien_Sergal</li>
+    </validRaces>
+    <factionLeader>true</factionLeader>
+</AlienRace.PawnBioDef>
+
+<AlienRace.PawnBioDef>
+    <defName>SGLF_Kynen</defName>
+    <childhoodDef>SergalCSKid</childhoodDef> 
+    <adulthoodDef>SergalSaganAdult</adulthoodDef>
+    <gender>Male</gender>
+    <name>
+      <first>Kynen</first>
+      <last>Creeg</last>
+      <nick>Kynen</nick>
+    </name>
+    <validRaces>
+      <li>Alien_Sergal</li>
+    </validRaces>
+    <factionLeader>false</factionLeader>
+</AlienRace.PawnBioDef>
+
+<AlienRace.PawnBioDef>
+    <defName>SGLF_Ripley</defName>
+    <childhoodDef>SergalRipKid</childhoodDef> 
+    <adulthoodDef>SergalRipAdult</adulthoodDef>
+    <gender>Male</gender>
+    <name>
+      <first>Ripley</first>
+      <last>Pants</last>
+      <nick>Rip</nick>
+    </name>
+    <validRaces>
+      <li>Alien_Sergal</li>
+    </validRaces>
+    <factionLeader>false</factionLeader>
+</AlienRace.PawnBioDef>
+
+<AlienRace.PawnBioDef>
+    <defName>SGLF_Rassn</defName>
+    <childhoodDef>SergalJackBKid</childhoodDef> 
+    <adulthoodDef>SergalJackBAdt</adulthoodDef>
+    <gender>Male</gender>
+    <name>
+      <first>Rassn</first>
+      <last>Creeg</last>
+      <nick>Rassn</nick>
+    </name>
+    <validRaces>
+      <li>Alien_Sergal</li>
+    </validRaces>
+    <factionLeader>true</factionLeader>
+</AlienRace.PawnBioDef>
+
+
+<AlienRace.PawnBioDef>
+    <defName>SGLF_Morgan</defName>
+    <childhoodDef>SergalBarkKid</childhoodDef> 
+    <adulthoodDef>SergalBarkAdt</adulthoodDef>
+    <gender>Male</gender>
+    <name>
+      <first>Morgan</first>
+      <last>Aufenhand</last>
+      <nick>Morgan</nick>
+    </name>
+    <validRaces>
+      <li>Alien_Sergal</li>
+    </validRaces>
+    <factionLeader>true</factionLeader>
+</AlienRace.PawnBioDef>
+
+<AlienRace.PawnBioDef>
+    <defName>Lion_Hero</defName>
+    <childhoodDef>LionSlaveCub2</childhoodDef> 
+    <adulthoodDef>LionHero</adulthoodDef>
+    <gender>Male</gender>
+    <name>
+      <first>Leo</first>
+      <last>Pride</last>
+      <nick>Leo</nick>
+    </name>
+    <validRaces>
+      <li>Alien_Lion</li>
+    </validRaces>
+    <factionLeader>true</factionLeader>
+</AlienRace.PawnBioDef>
+
+<AlienRace.PawnBioDef>
+    <defName>Lion_Hero_Woman</defName>
+    <childhoodDef>LionSlaveCub2</childhoodDef> 
+    <adulthoodDef>LionHero</adulthoodDef>
+    <gender>Female</gender>
+    <name>
+      <first>Lana</first>
+      <last>Pride</last>
+      <nick>Lana</nick>
+    </name>
+    <validRaces>
+      <li>Alien_Lion</li>
+    </validRaces>
+    <factionLeader>true</factionLeader>
+</AlienRace.PawnBioDef>
+
+</Defs>

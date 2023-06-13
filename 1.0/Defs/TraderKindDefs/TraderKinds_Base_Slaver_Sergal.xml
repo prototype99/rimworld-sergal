@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>Base_Sergal_SlaveTrader</defName>
+	<label>Sergal slave trader</label>
+    <stockGenerators>
+		<li Class="StockGenerator_Slaves">
+        <respectPopulationIntent>false</respectPopulationIntent>
+        <countRange>
+          <min>1</min>
+          <max>8</max>
+        </countRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+</Defs>

@@ -1,0 +1,3 @@
+D:\Shifty_Steam\steamapps\common\RimWorld\Mods\SergalRace\Assemblies\AufenCode.dll
+D:\Shifty_Steam\steamapps\common\RimWorld\Mods\SergalRace\Source\AufenCode\obj\Debug\AufenCode.csprojResolveAssemblyReference.cache
+D:\Shifty_Steam\steamapps\common\RimWorld\Mods\SergalRace\Source\AufenCode\obj\Debug\AufenCode.dll

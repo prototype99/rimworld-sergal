@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+	    <xpath>*[self::Defs]</xpath>
+	    <value>
+  <RulePackDef>
+    <defName>NamerFactionLionBase</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[lion_empire_first][lion_empire_second][lion_empire_third]</li>
+        <li>r_name->North [lion_empire_first][lion_empire_second][lion_empire_third]</li>
+        <li>r_name->South [lion_empire_first][lion_empire_second][lion_empire_third]</li>
+        <li>r_name->[lion_empire_first][lion_empire_second][lion_empire_third] [lion_empire_fourth]</li>
+        <li>r_name->East [lion_empire_first][lion_empire_second][lion_empire_third]</li>
+        <li>r_name->West [lion_empire_first][lion_empire_second][lion_empire_third]</li>
+	  </rulesStrings>
+      <rulesFiles>
+        <li>lion_empire_first->Lion_Words/LionFirstNamePart</li>
+		<li>lion_empire_second->Lion_Words/LionSecondNamePart</li>
+		<li>lion_empire_third->Lion_Words/LionThirdNamePart</li>
+		<li>lion_empire_fourth->Lion_Words/LionFourthNamePart</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+   </value>
+	</Operation>
+		<Operation Class="PatchOperationAdd">
+	    <xpath>*[self::Defs]</xpath>
+	    <value>
+  <RulePackDef>
+    <defName>NamerFactionLion</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The [lion_empire_first] People of [lion_empire_first][lion_empire_second][lion_empire_third]</li>
+        <li>r_name->Black [lion_empire_first][lion_empire_second][lion_empire_third] League</li>
+        <li>r_name->The [lion_empire_first][lion_empire_second][lion_empire_third] Coalition</li>
+        <li>r_name->The Kingdom of [lion_empire_first][lion_empire_second][lion_empire_third]</li>
+        <li>r_name->The [lion_empire_first][lion_empire_second][lion_empire_third] Dynasty</li>
+		<li>r_name->The [lion_empire_first][lion_empire_second] Folks of [lion_empire_first][lion_empire_second][lion_empire_third]</li>
+		<li>r_name->The [lion_empire_first][lion_empire_second][lion_empire_third] Hegemony</li>
+		<li>r_name->The [lion_empire_first][lion_empire_second][lion_empire_third] Empire</li>
+        <li>r_name->The [lion_empire_first][lion_empire_second][lion_empire_third] City State of [lion_empire_first][lion_empire_second][lion_empire_third]</li>
+	  </rulesStrings>
+      <rulesFiles>
+        <li>lion_empire_first->Lion_Words/LionFirstNamePart</li>
+		<li>lion_empire_second->Lion_Words/LionSecondNamePart</li>
+		<li>lion_empire_third->Lion_Words/LionThirdNamePart</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+   </value>
+	</Operation>
+</Patch>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+	    <xpath>*[self::Defs]</xpath>
+	    <value>
+  <RulePackDef>
+    <defName>NamerFactionFrogBase</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[frog_brotherhood_first][frog_brotherhood_second][frog_brotherhood_third]</li>
+        <li>r_name->North [frog_brotherhood_first][frog_brotherhood_second][frog_brotherhood_third]</li>
+        <li>r_name->South [frog_brotherhood_first][frog_brotherhood_second][frog_brotherhood_third]</li>
+        <li>r_name->[frog_brotherhood_first][frog_brotherhood_second][frog_brotherhood_third][frog_brotherhood_second]</li>
+        <li>r_name->East [frog_brotherhood_first][frog_brotherhood_second][frog_brotherhood_third]</li>
+        <li>r_name->West [frog_brotherhood_first][frog_brotherhood_second][frog_brotherhood_third][frog_brotherhood_second][frog_brotherhood_third]</li>
+	  </rulesStrings>
+      <rulesFiles>
+        <li>frog_brotherhood_first->Frog_Words/FrogFirstNamePart</li>
+		<li>frog_brotherhood_second->Frog_Words/FrogSecondNamePart</li>
+		<li>frog_brotherhood_third->Frog_Words/FrogThirdNamePart</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+   </value>
+	</Operation>
+		<Operation Class="PatchOperationAdd">
+	    <xpath>*[self::Defs]</xpath>
+	    <value>
+  <RulePackDef>
+    <defName>NamerFactionFrog</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The [frog_brotherhood_first] People of [frog_brotherhood_first][frog_brotherhood_third]</li>
+        <li>r_name->Black [frog_brotherhood_first][frog_brotherhood_second] Clan</li>
+        <li>r_name->The Pact of [frog_brotherhood_first]-[frog_brotherhood_first]</li>
+        <li>r_name->The [frog_brotherhood_first] Clan</li>
+		<li>r_name->The [frog_brotherhood_first] Band of [frog_brotherhood_first][frog_brotherhood_second]</li>
+		<li>r_name->The [frog_brotherhood_first] Encampment</li>
+		<li>r_name->The [frog_brotherhood_first] Enclave</li>
+        <li>r_name->The [frog_brotherhood_first][frog_brotherhood_second][frog_brotherhood_third] Amalgamation of [frog_brotherhood_second][frog_brotherhood_third]</li>
+	  </rulesStrings>
+      <rulesFiles>
+        <li>frog_brotherhood_first->Frog_Words/FrogFirstNamePart</li>
+		<li>frog_brotherhood_second->Frog_Words/FrogSecondNamePart</li>
+		<li>frog_brotherhood_third->Frog_Words/FrogThirdNamePart</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+   </value>
+	</Operation>
+</Patch>

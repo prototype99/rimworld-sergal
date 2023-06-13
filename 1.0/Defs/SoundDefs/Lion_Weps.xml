@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<SoundDef>
+		<defName>LionGauss</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>		
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Guns/LionGauss</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>50.58823</min>
+					<max>50.58823</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.6152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+  </SoundDef>
+	
+	
+</Defs>

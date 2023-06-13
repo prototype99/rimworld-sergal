@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================ Gnoll Base ========================== -->
+
+  <PawnKindDef Name="GnollBase" Abstract="True">
+    <defaultFactionType>GnollBrotherhood</defaultFactionType>
+    <race>Alien_SGnoll</race>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>5~23</initialResistanceRange>
+	<backstoryCategories>
+			<li>GnollBackstory</li>
+  	</backstoryCategories>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelTags>
+    <li>Neolithic</li>
+    </apparelTags>
+	 <weaponTags>
+	  <li>Neolithic</li>
+	  <li>GnollWep</li>
+	  <li>GnollMelee</li>
+    </weaponTags>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>780~1350</apparelMoney>
+    <weaponMoney>100~1000</weaponMoney>
+  </PawnKindDef>
+  
+  <!-- ============================ Gnoll Civilian Base ========================== -->
+
+  <PawnKindDef Name="GnollCivBase" ParentName="GnollBase" Abstract="True">
+    <combatPower>25</combatPower>
+	<race>Alien_SGnoll</race>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>780~1350</apparelMoney>
+    <weaponMoney>500~2500</weaponMoney>
+    <weaponTags>
+      <li>Neolithic</li>
+      <li>NonNeolithicOnlyMelee</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>300</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.51</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.75</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>25~35</countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>100~200</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Gnoll Civilians ========================== -->
+  
+  <PawnKindDef ParentName="GnollCivBase">
+    <defName>GnollScavenger</defName>
+    <label>Gnoll Scavenger</label>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="GnollCivBase">
+    <defName>GnollPackLeader</defName>
+    <label>Gnoll Keeper</label>
+    <labelPlural>Gnoll Keepers</labelPlural>
+    <factionLeader>true</factionLeader>
+	<minGenerationAge>19</minGenerationAge>
+	<maxGenerationAge>55</maxGenerationAge>
+    <gearHealthRange>1~1.8</gearHealthRange>
+    <apparelMoney>2802~3502</apparelMoney>
+    <weaponMoney>1002~3000</weaponMoney>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="GnollCivBase">
+    <defName>GnollTrader</defName>
+    <label>Gnoll Trader</label>
+    <trader>true</trader>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="GnollCivBase">
+    <defName>GnollSlave</defName>
+    <label>Gnoll Slave</label>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="GnollCivBase">
+    <defName>GnollRefugee</defName>
+    <label>Gnoll Refugee</label>
+  </PawnKindDef>
+
+  
+  <!-- ============================ Gnoll Security ========================== -->
+  
+  <PawnKindDef ParentName="GnollCivBase">
+    <defName>GnollSentinel</defName>
+    <label>Gnoll Sentinel</label>
+    <combatPower>50</combatPower>
+    <maxGenerationAge>100</maxGenerationAge>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>780~1350</apparelMoney>
+    <weaponMoney>100~1000</weaponMoney>
+    <techHediffsMoney>200~500</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.20</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>30</min>
+        <max>100</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+ 
+  <!-- ============================ Gnoll Military Base ========================== -->
+  
+  <PawnKindDef Name="GnollMilBase" ParentName="GnollBase" Abstract="True">
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <isFighter>true</isFighter>
+	<race>Alien_SGnoll</race>
+    <invNutrition>2.55</invNutrition>
+    <itemQuality>Normal</itemQuality>
+	<minGenerationAge>19</minGenerationAge>
+    <maxGenerationAge>46</maxGenerationAge>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>780~1350</apparelMoney>
+    <weaponMoney>100~2000</weaponMoney>
+    <techHediffsMoney>200~500</techHediffsMoney>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Gnoll Military ========================== -->
+  
+  <PawnKindDef ParentName="GnollMilBase">
+    <defName>GnollRecruit</defName>
+    <label>Gnoll Recruit</label>
+    <combatPower>70</combatPower>
+  </PawnKindDef>
+
+  
+  <PawnKindDef ParentName="GnollMilBase">
+    <defName>GnollHunter</defName>
+    <label>Gnoll Hunter</label>
+    <combatPower>90</combatPower>
+    <minGenerationAge>19</minGenerationAge>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>780~1350</apparelMoney>
+    <weaponMoney>100~1000</weaponMoney>
+    <techHediffsMoney>200~2500</techHediffsMoney>
+    <weaponTags>
+      <li>Ultratech</li>
+      <li>RangedHeavy</li>
+    </weaponTags>
+    <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.73</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>50~70</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1~2</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="GnollMilBase">
+    <defName>GnollOrganGuard</defName>
+    <label>Gnoll Organ Guard</label>
+    <combatPower>90</combatPower>
+    <minGenerationAge>19</minGenerationAge>
+    <gearHealthRange>1.5~1.8</gearHealthRange>
+    <apparelMoney>7800~13500</apparelMoney>
+    <weaponMoney>1000~10000</weaponMoney>
+    <techHediffsMoney>2500~22500</techHediffsMoney>
+    <weaponTags>
+      <li>Ultratech</li>
+      <li>RangedHeavy</li>
+    </weaponTags>
+    <combatEnhancingDrugsCount>1~9</combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.73</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>50~70</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1~2</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="GnollMilBase">
+    <defName>GnollTracker</defName>
+    <label>Gnoll Tracker</label>
+    <combatPower>135</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>780~1350</apparelMoney>
+    <weaponMoney>100~1000</weaponMoney>
+    <techHediffsMoney>200~2500</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.38</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>10~100</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1~2</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  
+  <PawnKindDef ParentName="GnollMilBase">
+     <defName>GnollRanger</defName>
+    <label>Gnoll Ranger</label>
+    <combatPower>220</combatPower>
+    <minGenerationAge>26</minGenerationAge>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>780~1350</apparelMoney>
+    <weaponMoney>100~1000</weaponMoney>
+    <techHediffsMoney>200~5200</techHediffsMoney>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.80</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>12~54</countRange>
+        </li>
+        <li> 
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1~2</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+
+</Defs>

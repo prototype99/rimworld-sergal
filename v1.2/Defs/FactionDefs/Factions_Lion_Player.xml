@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef Abstract="True" Name="LionFactionBase">
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+  <FactionDef Parent="LionFactionBase">
+    <defName>LionPlayerColony</defName>
+    <label>Lion Pride</label>
+    <description>Your own society.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Lion</basicMemberKind>
+    <pawnsPlural>lions</pawnsPlural>
+    <settlementNameMaker>NamerFactionLionBase</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerFactionLionBase</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionLion</factionNameMaker>
+    <techLevel>Ultra</techLevel>
+    <backstoryCategories>
+			<li>LionBackstory</li>
+  	</backstoryCategories>
+        <backstoryFilters>
+      <li>
+        <categories>
+          <li>ImperialCommon</li>
+        </categories>
+		<commonality>0.01</commonality>
+		</li>
+		<li>
+        <categories>
+          <li>LionBackstory</li>
+        </categories>
+        <commonality>0.14</commonality>
+      </li>
+	  <li>
+        <categories>
+          <li>SergalBackstory</li>
+        </categories>
+		<commonality>0.01</commonality>
+      </li>
+	  <li>
+        <categories>
+          <li>GnollBackstory</li>
+        </categories>
+		<commonality>0.01</commonality>
+      </li>
+    </backstoryFilters>
+    <settlementTexturePath>World/LionBaseIcon</settlementTexturePath>
+    <factionIconPath>World/LionBaseIcon</factionIconPath>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>LionHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+
+  </FactionDef>
+
+
+</Defs>

@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RulePackDef>
+    <defName>NamerPersonFrogMale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[FrogMfirst] [Froglast]</li>
+        <li>name->[badassx] [FrogMfirst]</li>
+        <li>name->[FrogMfirst] '[badassx]' [Froglast]</li>
+        <li>name->[badassx] '[nick]' [Froglast]</li>
+        <li>name->[FrogMfirst] '[nick]' [Froglast]</li>
+        <li>name->[FrogMfirst] [badassx]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>FrogMfirst</keyword>
+          <path>Frog_Names/FrogM</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Froglast</keyword>
+          <path>Frog_Names/Froglast</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>badassx</keyword>
+          <path>Frog_Names/Concepts_Frog</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>nick</keyword>
+          <path>Frog_Names/Nicks</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerPersonFrogFemale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[FrogFfirst] [Froglast]</li>
+        <li>name->[badassx] [FrogFfirst]</li>
+        <li>name->[FrogFfirst] '[badassx]' [Froglast]</li>
+        <li>name->[FrogFfirst] '[nick]' [Froglast]</li>
+        <li>name->[FrogFfirst] [badassx]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>FrogFfirst</keyword>
+          <path>Frog_Names/FrogF</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Froglast</keyword>
+          <path>Frog_Names/Froglast</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>badassx</keyword>
+          <path>Frog_Names/Concepts_Frog</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>nick</keyword>
+          <path>Frog_Names/Nicks</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+	</RulePackDef>
+
+<RulePackDef>
+    <defName>NamerPersonGnollMale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[GnollMfirst] [Gnolllast]</li>
+        <li>name->[badassx] [GnollMfirst]</li>
+        <li>name->[GnollMfirst] '[badassx]' [Gnolllast]</li>
+        <li>name->[badassx] '[nick]' [Gnolllast]</li>
+        <li>name->[GnollMfirst] '[nick]' [Gnolllast]</li>
+        <li>name->[GnollMfirst] [badassx]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>GnollMfirst</keyword>
+          <path>Gnoll_Names/GnollM</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Gnolllast</keyword>
+          <path>Gnoll_Names/Gnolllast</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>badassx</keyword>
+          <path>Gnoll_Names/Concepts_Gnoll</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>nick</keyword>
+          <path>Gnoll_Names/Nicks</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerPersonGnollFemale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[GnollFfirst] [Gnolllast]</li>
+        <li>name->[badassx] [GnollFfirst]</li>
+        <li>name->[GnollFfirst] '[badassx]' [Gnolllast]</li>
+        <li>name->[GnollFfirst] '[nick]' [Gnolllast]</li>
+        <li>name->[GnollFfirst] [badassx]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>GnollFfirst</keyword>
+          <path>Gnoll_Names/GnollF</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Gnolllast</keyword>
+          <path>Gnoll_Names/Gnolllast</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>badassx</keyword>
+          <path>Gnoll_Names/Concepts_Gnoll</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>nick</keyword>
+          <path>Gnoll_Names/Nicks</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+	</RulePackDef>
+	<RulePackDef>
+    <defName>NamerPersonStripedGnollMale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[StripedGnollMfirst] [StripedGnolllast]</li>
+        <li>name->[badassx] [StripedGnollMfirst]</li>
+        <li>name->[StripedGnollMfirst] '[badassx]' [StripedGnolllast]</li>
+        <li>name->[badassx] '[nick]' [StripedGnolllast]</li>
+        <li>name->[StripedGnollMfirst] '[nick]' [StripedGnolllast]</li>
+        <li>name->[StripedGnollMfirst] [badassx]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>StripedGnollMfirst</keyword>
+          <path>StripedGnoll_Names/StripedGnollM</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>StripedGnolllast</keyword>
+          <path>StripedGnoll_Names/StripedGnolllast</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>badassx</keyword>
+          <path>StripedGnoll_Names/Concepts_StripedGnoll</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>nick</keyword>
+          <path>StripedGnoll_Names/Nicks</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerPersonStripedGnollFemale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[StripedGnollFfirst] [StripedGnolllast]</li>
+        <li>name->[badassx] [StripedGnollFfirst]</li>
+        <li>name->[StripedGnollFfirst] '[badassx]' [StripedGnolllast]</li>
+        <li>name->[StripedGnollFfirst] '[nick]' [StripedGnolllast]</li>
+        <li>name->[StripedGnollFfirst] [badassx]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>StripedGnollFfirst</keyword>
+          <path>StripedGnoll_Names/StripedGnollF</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>StripedGnolllast</keyword>
+          <path>StripedGnoll_Names/StripedGnolllast</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>badassx</keyword>
+          <path>StripedGnoll_Names/Concepts_StripedGnoll</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>nick</keyword>
+          <path>StripedGnoll_Names/Nicks</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  
+<RulePackDef>
+    <defName>NamerPersonSergalMale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[SergalMfirst] [Sergallast]</li>
+        <li>name->[badassx] [SergalMfirst]</li>
+        <li>name->[SergalMfirst] '[badassx]' [Sergallast]</li>
+        <li>name->[badassx] '[nick]' [Sergallast]</li>
+        <li>name->[SergalMfirst] '[nick]' [Sergallast]</li>
+        <li>name->[SergalMfirst] [badassx]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>SergalMfirst</keyword>
+          <path>Sergal_Names/SergalM</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Sergallast</keyword>
+          <path>Sergal_Names/Sergallast</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>badassx</keyword>
+          <path>Sergal_Names/Concepts_Sergal</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>nick</keyword>
+          <path>Sergal_Names/Nicks</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerPersonSergalFemale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[SergalFfirst] [Sergallast]</li>
+        <li>name->[badassx] [SergalFfirst]</li>
+        <li>name->[SergalFfirst] '[badassx]' [Sergallast]</li>
+        <li>name->[SergalFfirst] '[nick]' [Sergallast]</li>
+        <li>name->[SergalFfirst] [badassx]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>SergalFfirst</keyword>
+          <path>Sergal_Names/SergalF</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Sergallast</keyword>
+          <path>Sergal_Names/Sergallast</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>badassx</keyword>
+          <path>Sergal_Names/Concepts_Sergal</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>nick</keyword>
+          <path>Sergal_Names/Nicks</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerPersonLionMale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[LionMfirst] [Lionlast]</li>
+        <li>name->[LionTitlesM] [LionMlast]</li>
+        <li>name->[badassx] '[nick]' [Lionlast]</li>
+        <li>name->[LionMfirst] '[nick]' [Lionlast]</li>
+        <li>name->[LionMfirst] [LionTitlesM]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>LionMfirst</keyword>
+          <path>Lion_Names/LionM</path>
+        </li>
+		<li Class="Rule_File">
+          <keyword>LionTitlesM</keyword>
+          <path>Lion_Names/LionTitlesM</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Lionlast</keyword>
+          <path>Lion_Names/Lionlast</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>badassx</keyword>
+          <path>Lion_Names/Concepts_Lion</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>nick</keyword>
+          <path>Lion_Names/Nicks</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerPersonLionFemale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[LionFfirst] [Lionlast]</li>
+        <li>name->[LionTitlesF] [LionFlast]</li>
+        <li>name->[badassx] '[nick]' [Lionlast]</li>
+        <li>name->[LionFfirst] '[nick]' [Lionlast]</li>
+        <li>name->[LionFfirst] [LionTitlesF]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>LionFfirst</keyword>
+          <path>Lion_Names/LionF</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Lionlast</keyword>
+          <path>Lion_Names/Lionlast</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>badassx</keyword>
+          <path>Lion_Names/Concepts_Lion</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>nick</keyword>
+          <path>Lion_Names/Nicks</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

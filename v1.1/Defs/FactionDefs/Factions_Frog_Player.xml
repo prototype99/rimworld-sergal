@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef Abstract="True" Name="FrogFactionBase">
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+  <FactionDef Parent="FrogFactionBase">
+    <defName>FrogPlayerColony</defName>
+    <label>Frog Enclave</label>
+    <description>Your own community.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Frog</basicMemberKind>
+    <pawnsPlural>frogs</pawnsPlural>
+    <settlementNameMaker>NamerFactionFrogBase</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerFactionFrogBase</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionFrog</factionNameMaker>
+    <techLevel>Ultra</techLevel>
+    <backstoryCategories>
+        <li>FrogBackstory</li>
+  	</backstoryCategories>
+    <settlementTexturePath>World/FrogBaseIcon</settlementTexturePath>
+    <factionIconPath>World/FrogBaseIcon</factionIconPath>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>FrogHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+
+  </FactionDef>
+  
+    <FactionDef Parent="FrogFactionBase">
+    <defName>FrogPlayerColonyTribal</defName>
+    <label>Frog Enclave Tribal-like</label>
+    <description>Frog semi-tribal start.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Frog</basicMemberKind>
+    <pawnsPlural>frogs</pawnsPlural>
+    <settlementNameMaker>NamerFactionFrogBase</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerFactionFrogBase</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionFrog</factionNameMaker>
+    <techLevel>Neolithic</techLevel>
+    <backstoryCategories>
+			<li>FrogTribalBackstory</li>
+  	</backstoryCategories>
+    <settlementTexturePath>World/FrogBaseIcon</settlementTexturePath>
+    <factionIconPath>World/FrogBaseIcon</factionIconPath>
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>FrogHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <colorSpectrum>
+      <li>(0, 0.437, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+
+</Defs>

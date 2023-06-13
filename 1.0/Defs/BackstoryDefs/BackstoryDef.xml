@@ -1,0 +1,2773 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<AlienRace.BackstoryDef>
+    <defName>FrogMan</defName>
+    <title>Frogglet</title>
+	<titleShort>Normie</titleShort>
+    <baseDescription>[PAWN_nameDef] was born and raised in some random planet in more peaceful regions. [PAWN_pronoun] was a perfectly average junkie.</baseDescription>
+    <slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+      <li>FrogBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>12</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>FrogSoldier</defName>
+    <title>Frog Combatant</title>
+	<titleShort>Soldier</titleShort>
+    <baseDescription>[PAWN_nameDef] was a soldier that protected a frog encampment. [PAWN_pronoun] was a decent shot but sucked at CQC.</baseDescription>
+    <slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+      <li>FrogBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+      <defName>Crafting</defName>
+      <amount>4</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>FrogDoctor</defName>
+    <title>Frog Pharmacist</title>
+	<titleShort>Doctor</titleShort>
+    <baseDescription>[PAWN_nameDef] used the power of chemicals to heal [PAWN_possessive] fellow frogs.</baseDescription>
+    <slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+      <li>FrogBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>FrogTester</defName>
+    <title>Frog Tester</title>
+	<titleShort>Burnout</titleShort>
+    <baseDescription>[PAWN_nameDef] is one of the brave few who have tested the various substances of [PAWN_possessive] little group.</baseDescription>
+    <slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>40</maleCommonality>
+	<femaleCommonality>40</femaleCommonality>
+    <spawnCategories>
+      <li>FrogBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>FrogWhiz</defName>
+    <title>Frog Whizkid</title>
+	<titleShort>Whizkid</titleShort>
+    <baseDescription>[PAWN_nameDef] is a clever little toad who knows how to think good n stuff. Comes off as a bit of an asshole though, for real.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>40</maleCommonality>
+	<femaleCommonality>40</femaleCommonality>
+    <spawnCategories>
+      <li>FrogBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-3</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>FrogAsshole</defName>
+    <title>Frog Asshole</title>
+	<titleShort>Asshole</titleShort>
+    <baseDescription>[PAWN_nameDef] is a little bastard who gets kicks out of harshing people's buzzes. Had to avoid a lot of retliation.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>40</maleCommonality>
+	<femaleCommonality>40</femaleCommonality>
+    <spawnCategories>
+      <li>FrogBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-3</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>SergalVilous</defName>
+    <title>Vilous Citizen</title>
+	<titleShort>Citizen</titleShort>
+    <baseDescription>[PAWN_nameDef] was born and raised on Vilous in the more peaceful regions. [PAWN_pronoun] was a perfectly average citizen.</baseDescription>
+    <slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollNobleish</defName>
+    <title>Noblepup</title>
+	<titleShort>Noblepup</titleShort>
+    <baseDescription>[PAWN_nameDef] was born to higher rank parents. [PAWN_pronoun] grew up to fall in line with this, mimicking [PAWN_possessive] parents actions, all while dealing with harassment from the other pups.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<maleCommonality>10</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+    <spawnCategories>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+    <skillGains>
+		<li>
+			<defName>Construction</defName>
+			<amount>-2</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>4</amount>
+		</li>
+		<li>
+			<defName>Social</defName>
+			<amount>4</amount>
+		</li>
+    </skillGains>
+    <workDisables>
+		<li>Caring</li>
+		<li>ManualDumb</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollTribalHunter</defName>
+    <title>Pack Hunter Aid</title>
+	<titleShort>Hunterpup</titleShort>
+    <baseDescription>[PAWN_nameDef] loved the thrill of the hunt as a pup, having figured out early on the secret to ranged attacks.</baseDescription>
+    <slot>Childhood</slot>
+	<spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+		<li>
+			<defName>Shooting</defName>
+			<amount>3</amount>
+			</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>2</amount>
+		</li>
+	</skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollTamer</defName>
+    <title>Animal Talker</title>
+    <titleShort>Tamerpup</titleShort>
+    <baseDescription>[PAWN_nameDef] learned very early on that most animals respond better than anyone. Which is why [PAWN_nameDef] didn't speak to anyone.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+	<spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+    <skillGains>
+		<li>
+			<defName>Animals</defName>
+			<amount>7</amount>
+		</li>
+    </skillGains> 
+	<workDisables>
+		<li>Social</li>
+	</workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollTribalChild</defName>
+    <title>Vocal Pup</title>
+    <titleShort>Vocalpup</titleShort>
+    <baseDescription>[PAWN_nameDef] was always loud, and loved the sound of their own voice.</baseDescription>
+    <slot>Childhood</slot>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+	<spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+    <skillGains>
+		<li>
+			<defName>Social</defName>
+			<amount>4</amount>
+		</li>
+    </skillGains>
+	<workDisables>
+		<li>Intellectual</li>
+	</workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollTribalPup</defName>
+    <title>Gnoll Tribal Pup</title>
+    <titleShort>Tribepup</titleShort>
+    <baseDescription>[PAWN_nameDef] was born to a small tribe. [PAWN_pronoun] had to learn to carry [PAWN_possessive] weight and help keep the tribe running from an early age.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<maleCommonality>80</maleCommonality>
+	<femaleCommonality>80</femaleCommonality>
+    <skillGains>
+		<li>
+			<defName>Animals</defName>
+			<amount>2</amount>
+		</li>
+		<li>
+			<defName>Construction</defName>
+			<amount>3</amount>
+		</li>
+		<li>
+			<defName>Plants</defName>
+			<amount>2</amount>
+		</li>
+	</skillGains>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollBigTribalPup</defName>
+    <title>Gnoll Tribal Pup</title>
+    <titleShort>Big Tribepup</titleShort>
+    <baseDescription>[PAWN_nameDef] was born to a big tribe. [PAWN_pronoun] learned some advanced combat techniques and even some medical due to the vast numbers in the colony.</baseDescription>
+	<maleCommonality>90</maleCommonality>
+	<femaleCommonality>90</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+		<li>
+			<defName>Medicine</defName>
+			<amount>3</amount>
+		</li>
+		<li>
+			<defName>Shooting</defName>
+			<amount>3</amount>
+		</li>
+		<li>
+			<defName>Plants</defName>
+			<amount>4</amount>
+		</li>
+    </skillGains>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+	<defName>GnollTribalDigPup</defName>
+    <title>Diggergnoll</title>
+    <titleShort>Filth</titleShort>
+    <baseDescription>[PAWN_nameDef] was always digging; whether tunneling or just escaping fenced-in areas.</baseDescription>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+	<slot>Childhood</slot>
+    <skillGains>
+		<li>
+			<defName>Plants</defName>
+			<amount>1</amount>
+		</li>
+		<li>
+			<defName>Mining</defName>
+			<amount>5</amount>
+		</li>
+    </skillGains>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollStalkerPup</defName>
+    <title>Stalker Pup</title>
+	<titleShort>Stalkerpup</titleShort>
+    <baseDescription>[PAWN_nameDef] was trained in the art of stalking situational prey at an early age.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+    <skillGains>
+		<li>
+			<defName>Social</defName>
+			<amount>2</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>4</amount>
+		</li>
+		<li>
+			<defName>Shooting</defName>
+			<amount>4</amount>
+		</li>
+		<li>
+			<defName>Intellectual</defName>
+			<amount>2</amount>
+		</li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollAggressivePup</defName>
+    <title>Pit Pup</title>
+	<titleShort>Pittster</titleShort>
+    <baseDescription>[PAWN_nameDef] grew faster than the others, and used [PAWN_possessive] weight to throw around. [PAWN_pronoun] was often found stuck in fights that [PAWN_possessive] started, for little to no reason.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+    <skillGains>
+	  <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Intellectual</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+        <li>Social</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollDeconstructor</defName>
+    <title>Tinkerpup</title>
+	<titleShort>Tinkerer</titleShort>
+    <baseDescription>[PAWN_nameDef] loved tearing things apart and putting them back together. [PAWN_pronoun] was even able to repair them without missing parts.</baseDescription>
+    <slot>Childhood</slot>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+		<li>
+			<defName>Intellectual</defName>
+			<amount>4</amount>
+		</li>
+		<li>
+			<defName>Crafting</defName>
+			<amount>5</amount>
+		</li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollWondererPup</defName>
+    <title>Thinkerpup</title>
+	  <titleShort>Thinkerer</titleShort>
+    <baseDescription>[PAWN_nameDef] was quite often lost in thought, and had no problems sharing these thoughts with others. [PAWN_pronoun] had to constantly struggle though, explaining these ideas to peers.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+    <skillGains>
+		<li>
+			<defName>Melee</defName>
+			<amount>2</amount>
+		</li>
+		<li>
+			<defName>Social</defName>
+			<amount>3</amount>
+		</li>
+		<li>
+			<defName>Intellectual</defName>
+			<amount>4</amount>
+		</li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollLanguagePup</defName>
+    <title>Listener Pup</title>
+	<titleShort>Listenerer</titleShort>
+    <baseDescription>[PAWN_nameDef] was gifted with more keen hearing than most, along with deft hands. [PAWN_pronoun] was able to use these skills to help chronicle and keep track of quite a bit, except defending [PAWN_possessive]self.</baseDescription>
+    <slot>Childhood</slot>
+    <spawnCategories>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+		<li>
+			<defName>Intellectual</defName>
+			<amount>6</amount>
+		</li>
+		<li>
+			<defName>Crafting</defName>
+			<amount>4</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>-2</amount>
+		</li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollExperimentMind</defName>
+    <title>Modified Pup</title>
+    <titleShort>Mindpup</titleShort>
+    <baseDescription>[PAWN_nameDef] was taken during a raid from a more advanced colony and forced to undergo many, many experiments; nearly all being behavioural studies and cerebral modifications. All generally horrible stuff.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+    <skillGains>
+		<li>
+			<defName>Social</defName>
+			<amount>5</amount>
+		</li>
+		<li>
+			<defName>Construction</defName>
+			<amount>-4</amount>
+		</li>
+		<li>
+			<defName>Intellectual</defName>
+			<amount>4</amount>
+		</li>
+    </skillGains>
+  <forcedTraits>
+    <li>
+      <defName>Kind</defName>
+    </li>
+    <li>
+      <defName>TooSmart</defName>
+    </li>
+  </forcedTraits>
+    <workDisables>
+      <li>ManualDumb</li>
+      <li>Violent</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollExperimentBattle</defName>
+    <title>Modified Pup</title>
+    <titleShort>Battlepup</titleShort>
+    <baseDescription>[PAWN_nameDef] was taken during a raid from a more advanced colony and forced to undergo many, many experiments; nearly all being understanding their violent tendencies and muscular modifications. All generally horrible stuff.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+    <skillGains>
+		<li>
+			<defName>Melee</defName>
+			<amount>5</amount>
+		</li>
+		<li>
+			<defName>Social</defName>
+			<amount>-4</amount>
+		</li>
+		<li>
+			<defName>Shooting</defName>
+			<amount>4</amount>
+		</li>
+    </skillGains>
+	<forcedTraits>
+		<li>
+			<defName>Bloodlust</defName>
+		</li>
+	</forcedTraits>
+    <workDisables>
+      <li>Caring</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollExperimentGarden</defName>
+    <title>Modified Pup</title>
+    <titleShort>Gardenpup</titleShort>
+    <baseDescription>[PAWN_nameDef] was taken during a raid from a more advanced colony and forced to undergo many, many experiments; nearly all of them pertaining to their claws, how the respond to being kept outside, and general uncleanliness. All generally horrible stuff.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+    <skillGains>
+		<li>
+			<defName>Plants</defName>
+			<amount>6</amount>
+		</li>
+		<li>
+			<defName>Shooting</defName>
+			<amount>-4</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>4</amount>
+		</li>
+    </skillGains>
+	<forcedTraits>
+		<li>
+			<defName>QuickSleeper</defName>
+		</li>
+	</forcedTraits>
+    <workDisables>
+      <li>Cleaning</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollExperimentDrool</defName>
+    <title>Modified Pup</title>
+    <titleShort>Droolpup</titleShort>
+    <baseDescription>[PAWN_nameDef] was taken during a raid from a more advanced colony and forced to undergo many, many experiments; Only so often can a brain respond to probes before it gives in entirely.. </baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+    <skillGains>
+		<li>
+			<defName>Melee</defName>
+			<amount>4</amount>
+		</li>
+		<li>
+			<defName>Social</defName>
+			<amount>-8</amount>
+		</li>
+		<li>
+			<defName>Intellectual</defName>
+			<amount>-6</amount>
+		</li>
+    </skillGains>
+	<forcedTraits>
+		<li>
+			<defName>Neurotic</defName>
+			<degree>2</degree>
+            <chance>30</chance>
+		</li>
+	</forcedTraits>
+    <workDisables>
+      <li>Cleaning</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>LionSlaveCub</defName>
+    <title>Lion Slavecub</title>
+    <titleShort>Slavecub</titleShort>
+    <baseDescription>[PAWN_nameDef] was taken from their home as a young cub by slavers. [PAWN_pronoun] was sold to a band of pirates to work on their ships in return for room and board, learning a few tricks of the trade along the way. </baseDescription>
+    <slot>Childhood</slot>
+    <spawnCategories>
+        <li>LionBackstory</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>20</maleCommonality>
+    <femaleCommonality>20</femaleCommonality>
+    <skillGains>
+        <li>
+            <defName>Shooting</defName>
+            <amount>2</amount>
+        </li>
+        <li>
+            <defName>Melee</defName>
+            <amount>3</amount>
+        </li>
+        <li>
+            <defName>Cooking</defName>
+            <amount>2</amount>
+        </li>
+        <li>
+            <defName>Construction</defName>
+            <amount>3</amount>
+        </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>LionMedicalCub</defName>
+    <title>Lion Medical Assistant</title>
+    <titleShort>Medical Assistant</titleShort>
+    <baseDescription>[PAWN_nameDef] was the child of a doctor, and helped their parents with basic procedures and growing herbs to heal wounds. [PAWN_pronoun] picked up some knowledge that would surely help them later in life, in case no doctor was available. </baseDescription>
+    <slot>Childhood</slot>
+    <spawnCategories>
+        <li>LionBackstory</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>20</maleCommonality>
+    <femaleCommonality>20</femaleCommonality>
+    <skillGains>
+        <li>
+            <defName>Plants</defName>
+            <amount>3</amount>
+        </li>
+        <li>
+            <defName>Medicine</defName>
+            <amount>4</amount>
+        </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>LionViolentCub</defName>
+    <title>Bully Cub</title>
+    <titleShort>Bully</titleShort>
+    <baseDescription>[PAWN_nameDef] cared only about one thing: the hunt. [PAWN_pronoun] was a terror to [PAWN_possessive] fellow students. </baseDescription>
+    <slot>Childhood</slot>
+    <spawnCategories>
+        <li>LionBackstory</li>
+    </spawnCategories>    
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>20</maleCommonality>
+    <femaleCommonality>20</femaleCommonality>
+    <skillGains>
+        <li>
+            <defName>Melee</defName>
+            <amount>4</amount>
+        </li>
+        <li>
+            <defName>Shooting</defName>
+            <amount>4</amount>
+        </li>
+        <li>
+            <defName>Social</defName>
+            <amount>-4</amount>
+        </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>LionAverageCub</defName>
+    <title>Lion Cub</title>
+    <titleShort>Cub</titleShort>
+    <baseDescription>[PAWN_nameDef] was a perfectly ordinary child. Some would say that this is the perfect existence. </baseDescription>
+    <slot>Childhood</slot>
+    <spawnCategories>
+        <li>LionBackstory</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>20</maleCommonality>
+    <femaleCommonality>20</femaleCommonality>
+    <skillGains>
+        <li>
+            <defName>Plants</defName>
+            <amount>2</amount>
+        </li>
+        <li>
+            <defName>Medicine</defName>
+            <amount>2</amount>
+        </li>
+        <li>
+            <defName>Construction</defName>
+            <amount>2</amount>
+        </li>
+		
+        <li>
+            <defName>Cooking</defName>
+            <amount>2</amount>
+        </li>
+		
+        <li>
+            <defName>Social</defName>
+            <amount>2</amount>
+        </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+  
+  
+	<!-- ====== Adult Stories - not porn OR IS IT ====== -->
+
+<AlienRace.BackstoryDef>
+    <defName>GnollTribalHunterAdult</defName>
+    <title>Dedicated Hunter</title>
+	<titleShort>Deadhunter</titleShort>
+    <baseDescription>Having a keen eye for ranged attacks and a quick fist to back it all up, [PAWN_nameDef] was virtually destined to become one of the main hunters.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+		<li>
+			<defName>Shooting</defName>
+			<amount>5</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>3</amount>
+		</li>
+		<li>
+			<defName>Social</defName>
+			<amount>3</amount>
+		</li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+  
+<AlienRace.BackstoryDef>
+    <defName>GnollTribalEngineer</defName>
+    <title>General Builder</title>
+	<titleShort>Builder</titleShort>
+    <baseDescription>As a talent, [PAWN_nameDef] was able to build some decent structures, surpassing any laziness.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+		<li>
+			<defName>Construction</defName>
+			<amount>3</amount>
+		</li>
+		<li>
+			<defName>Crafting</defName>
+			<amount>3</amount>
+		</li>
+    </skillGains>
+</AlienRace.BackstoryDef>  
+  
+<AlienRace.BackstoryDef>
+    <defName>GnollTribalArtist</defName>
+    <title>Artisterist</title>
+	<titleShort>Artister</titleShort>
+    <baseDescription>[PAWN_nameDef]'s tribe had a strange way of making things look nice for a change. A useless skill, but [PAWN_nameDef] kept at it.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+		<li>
+			<defName>Artistic</defName>
+			<amount>5</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>-2</amount>
+		</li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+  
+<AlienRace.BackstoryDef>
+    <defName>GnollBasicTribe</defName>
+    <title>Tribesman</title>
+	<titleShort>Tribesman</titleShort>
+    <baseDescription>In [PAWN_possessive] village born and raised, a small little tribe's where [PAWN_nameDef] spent most of [PAWN_possessive] days. [PAWN_pronoun] was a perfectly average tribal type person.</baseDescription>
+    <slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+    <skillGains>
+		<li>
+			<defName>Social</defName>
+			<amount>1</amount>
+		</li>
+		<li>
+			<defName>Shooting</defName>
+			<amount>2</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>5</amount>
+		</li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollWeaponist</defName>
+    <title>Warbrand</title>
+    <titleShort>Weaponizer</titleShort>
+    <baseDescription>[PAWN_nameDef] was always good at turning near anything into a weapon against living things that made noise out of their mouth hole.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+	<slot>Adulthood</slot>
+    <skillGains>
+		<li>
+			<defName>Shooting</defName>
+			<amount>-3</amount>
+		</li>
+		<li>
+			<defName>Crafting</defName>
+			<amount>8</amount>
+		</li>
+    </skillGains>
+
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollSexSlave</defName>
+    <title>Sex Slave</title>
+    <titleShort>Concubine</titleShort>
+    <baseDescription>[PAWN_nameDef] was captured by slavers and sold into sexual slavery. [PAWN_pronoun] was forced to do all sorts of lewd acts for [PAWN_possessive] 'tribe', but was eventually broken. [PAWN_nameDef] eventually picked up on their language, helping matters somewhat.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	<maleCommonality>30</maleCommonality>
+	<femaleCommonality>10</femaleCommonality>
+    <slot>Adulthood</slot>
+    <workDisables>
+		<li>Hauling</li>
+		<li>Cleaning</li>
+    </workDisables>
+    <skillGains>
+		<li>
+			<defName>Social</defName>
+			<amount>2</amount>
+		</li>
+	   <li>
+			<defName>Cooking</defName>
+			<amount>4</amount>
+		</li>
+    </skillGains>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollTribeMiner</defName>
+    <title>Gnoll Tribe Miner</title>
+    <titleShort>Miner</titleShort>
+    <baseDescription>[PAWN_nameDef] learned how to swing pointy metal things at rocks in order to get more rocks that create more pointy metal things.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	<maleCommonality>30</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+		<li>
+			<defName>Melee</defName>
+			<amount>3</amount>
+		</li>
+		<li>
+			<defName>Mining</defName>
+			<amount>6</amount>
+		</li>
+	</skillGains>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+	<defName>GnollShaman</defName>
+    <title>Gnoll Shaman</title>
+    <titleShort>Shaman</titleShort>
+    <baseDescription>[PAWN_nameDef] is a bit of a strange thing, constantly jibbering about some great power in the sky that is angry at us. Somehow channels that into [PAWN_possessive] medical work though, so they keep [PAWN_pronoun] around.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+		<li>
+			<defName>Intellectual</defName>
+			<amount>3</amount>
+		</li>
+		<li>
+			<defName>Medicine</defName>
+			<amount>5</amount>
+		</li>
+    </skillGains>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollTribalBreeder</defName>
+    <title>Animal Breeder</title>
+    <titleShort>Breeder</titleShort>
+    <baseDescription>[PAWN_nameDef] has spent many years breeding all sorts of wildlife, sometimes even together. This experience has given [PAWN_pronoun] a great deal of insight into certain animal behaviours. Especially the dos and don'ts..</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+		<li>
+			<defName>Animals</defName>
+			<amount>6</amount>
+		</li>
+		<li>
+			<defName>Construction</defName>
+			<amount>2</amount>
+		</li>
+    </skillGains>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollOddJobTribe</defName>
+    <title>Tribal Handyman</title>
+    <titleShort>Handyman</titleShort>
+    <baseDescription>[PAWN_nameDef] was able to go through and fix what was broken, using whatever tools [PAWN_possessive] could find.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+		<li>
+			<defName>Crafting</defName>
+			<amount>6</amount>
+		</li>
+		<li>
+			<defName>Plants</defName>
+			<amount>3</amount>
+		</li>
+		<li>
+			<defName>Construction</defName>
+			<amount>5</amount>
+		</li>
+    </skillGains>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollTribalChef</defName>
+    <title>Tribal Cook</title>
+    <titleShort>Cookie</titleShort>
+    <baseDescription>[PAWN_nameDef] was the main cook for the encampment [PAWN_pronoun] was in. Fire and flesh, amirite?.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+		<li>
+			<defName>Cooking</defName>
+			<amount>8</amount>
+		</li>
+    </skillGains>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollTribeLead</defName>
+    <title>Gnoll Clan Keeper</title>
+    <titleShort>Keeper</titleShort>
+    <baseDescription>[PAWN_nameDef] bears the title of leadership among [PAWN_possessive] community. </baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	<maleCommonality>5</maleCommonality>
+	<femaleCommonality>5</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+		<li>
+			<defName>Social</defName>
+			<amount>8</amount>
+		</li>
+		<li>
+			<defName>Intellectual</defName>
+			<amount>8</amount>
+		</li>
+    </skillGains>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>LionKingGuard</defName>
+    <title>King's Guard</title>
+    <titleShort>Guard</titleShort>
+    <baseDescription>[PAWN_nameDef] was a member of the King's Guard, a highly skilled combatant trained to guard the royal family. [PAWN_pronoun] is ready for any situation that may threaten those in his care.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+        <li>LionBackstory</li>
+		<li>TribalLionBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>20</maleCommonality>
+    <femaleCommonality>10</femaleCommonality>
+    <skillGains>
+        <li>
+            <defName>Melee</defName>
+            <amount>6</amount>
+        </li>
+        <li>
+            <defName>Shooting</defName>
+            <amount>8</amount>
+        </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>LionBruiser</defName>
+    <title>Lion Bruiser</title>
+    <titleShort>Bruiser</titleShort>
+    <baseDescription>[PAWN_nameDef] liked to get into fights, over basically anything that could be called a slight against them. [PAWN_pronoun] got into a lot of trouble with the LAW, and ended up having to leave their home to avoid a massive prison sentence. </baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+        <li>LionBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>20</maleCommonality>
+    <femaleCommonality>10</femaleCommonality>
+    <skillGains>
+        <li>
+            <defName>Melee</defName>
+            <amount>8</amount>
+        </li>
+        <li>
+            <defName>Social</defName>
+            <amount>-3</amount>
+        </li>
+    </skillGains>
+	<forcedTraits>
+    <li>
+      <defName>Brawler</defName>
+    </li>
+	<li>
+      <defName>Bloodlust</defName>
+    </li>
+  </forcedTraits>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>LionNobleDoctor</defName>
+    <title>Cat Doctor</title>
+    <titleShort>Doctor</titleShort>
+    <baseDescription>[PAWN_nameDef] was a doctor to the rich people, and with the way in which nobility works, [PAWN_pronoun] saw many strange and interesting diseases and deformations.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+        <li>LionBackstory</li>
+		<li>TribalLionBackstory</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>20</maleCommonality>
+    <femaleCommonality>20</femaleCommonality>
+    <skillGains>
+        <li>
+            <defName>Medicine</defName>
+            <amount>8</amount>
+        </li>
+        <li>
+            <defName>Social</defName>
+            <amount>2</amount>
+        </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>LionSoldier</defName>
+    <title>Raorian Soldier</title>
+    <titleShort>Doctor</titleShort>
+    <baseDescription>[PAWN_nameDef] was a rank-and-file soldier for the glorious Raorian Empire.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+        <li>LionBackstory</li>
+		<li>TribalLionBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>20</maleCommonality>
+    <femaleCommonality>20</femaleCommonality>
+    <skillGains>
+        <li>
+            <defName>Shooting</defName>
+            <amount>6</amount>
+        </li>
+        <li>
+            <defName>Medicine</defName>
+            <amount>2</amount>
+        </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>LionMerchant</defName>
+    <title>Lion Merchant</title>
+    <titleShort>Merchant</titleShort>
+    <baseDescription>[PAWN_nameDef] used to sell everything that fell into the category of "fancy", saving only the best for [PAWN_possessive]self.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+        <li>LionBackstory</li>
+		<li>TribalLionBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>20</maleCommonality>
+    <femaleCommonality>20</femaleCommonality>
+    <skillGains>
+        <li>
+            <defName>Shooting</defName>
+            <amount>6</amount>
+        </li>
+        <li>
+            <defName>Medicine</defName>
+            <amount>2</amount>
+        </li>
+    </skillGains>
+	<forcedTraits>
+    <li>
+      <defName>Jealous</defName>
+    </li>
+    </forcedTraits>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>LionOutcast</defName>
+    <title>Exiled Noble</title>
+    <titleShort>Outcast</titleShort>
+    <baseDescription>[PAWN_nameDef] dared to challenge the heirarchy and was promptly ejected from lion society. [PAWN_pronoun] has had to learn how to fend for [PAWN_possessive]self.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+        <li>LionBackstory</li>
+		<li>TribalLionBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>20</maleCommonality>
+    <femaleCommonality>20</femaleCommonality>
+    <skillGains>
+        <li>
+            <defName>Shooting</defName>
+            <amount>4</amount>
+        </li>
+        <li>
+            <defName>Medicine</defName>
+            <amount>2</amount>
+        </li>
+		<li>
+            <defName>Melee</defName>
+            <amount>2</amount>
+        </li>
+	    <li>
+            <defName>Cooking</defName>
+            <amount>2</amount>
+        </li>
+    </skillGains>
+	<forcedTraits>
+    <li>
+      <defName>Abrasive</defName>
+    </li>
+    </forcedTraits>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>LionSaucier</defName>
+    <title>Lion Saucier</title>
+    <titleShort>Saucier</titleShort>
+    <baseDescription>[PAWN_nameDef] worked for a number of high profile chefs, learning the trade over a number of years. [PAWN_pronoun] is superb in their field and enjoys making homemade meals for their clan.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+        <li>LionBackstory</li>
+		<li>TribalLionBackstory</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>20</maleCommonality>
+    <femaleCommonality>20</femaleCommonality>
+    <skillGains>
+        <li>
+            <defName>Cooking</defName>
+            <amount>6</amount>
+        </li>
+        <li>
+            <defName>Plants</defName>
+            <amount>4</amount>
+        </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>LionScout</defName>
+    <title>Lion Scout</title>
+    <titleShort>Scout</titleShort>
+    <baseDescription>[PAWN_nameDef] was a scout for planet-side ventures. [PAWN_pronoun] worked alone or with a partner out in the wild, using only their wits to survive and give data back to their squad. </baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+        <li>LionBackstory</li>
+		<li>TribalLionBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>20</maleCommonality>
+    <femaleCommonality>20</femaleCommonality>
+    <skillGains>
+        <li>
+            <defName>Shooting</defName>
+            <amount>3</amount>
+        </li>
+        <li>
+            <defName>Cooking</defName>
+            <amount>3</amount>
+        </li>
+        <li>
+            <defName>Medicine</defName>
+            <amount>2</amount>
+        </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>LionArchitect</defName>
+    <title>Raorian Architect</title>
+    <titleShort>Architect</titleShort>
+    <baseDescription>[PAWN_nameDef] was celebrated architect for the glorious Raorian Empire. Employed by the monarchy directly, [PAWN_pronoun] was responsible for some of the fantastic Raorian buildings that populate the capital.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+        <li>LionBackstory</li>
+		<li>TribalLionBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>20</maleCommonality>
+    <femaleCommonality>20</femaleCommonality>
+    <skillGains>
+        <li>
+            <defName>Construction</defName>
+            <amount>12</amount>
+        </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>LionArtiste</defName>
+    <title>Artiste</title>
+    <titleShort>Artiste</titleShort>
+    <baseDescription>[PAWN_nameDef] was a highly respected artist. [PAWN_pronoun] made some beautiful sculptures. </baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+        <li>LionBackstory</li>
+		<li>TribalLionBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>10</maleCommonality>
+    <femaleCommonality>20</femaleCommonality>
+    <skillGains>
+        <li>
+            <defName>Artistic</defName>
+            <amount>12</amount>
+        </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+
+<AlienRace.BackstoryDef>
+    <defName>LionScientist</defName>
+    <title>Royal Scientist</title>
+    <titleShort>Scientist</titleShort>
+    <baseDescription>[PAWN_nameDef] was a coat toting science boasting researcher employed directly by the monarchy. [PAWN_pronoun] helped solve some of the empire's greatest challenges. </baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+        <li>LionBackstory</li>
+		<li>TribalLionBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>10</maleCommonality>
+    <femaleCommonality>20</femaleCommonality>
+    <skillGains>
+        <li>
+            <defName>Intellectual</defName>
+            <amount>12</amount>
+        </li>
+        <li>
+            <defName>Medicine</defName>
+            <amount>2</amount>
+        </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>LionHero</defName>
+    <title>Lion Hero</title>
+    <titleShort>Hero</titleShort>
+    <baseDescription>[PAWN_nameDef] was a hero of the people. Through use of clever thinking and physical perfection, [PAWN_nameDef] saved citizens and foiled villains.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+        <li>LionBackstory</li>
+		<li>TribalLionBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>1</maleCommonality>
+    <femaleCommonality>1</femaleCommonality>
+    <skillGains>
+        <li>
+            <defName>Shooting</defName>
+            <amount>8</amount>
+        </li>
+        <li>
+            <defName>Melee</defName>
+            <amount>8</amount>
+        </li>
+        <li>
+            <defName>Construction</defName>
+            <amount>4</amount>
+        </li>
+		
+        <li>
+            <defName>Medicine</defName>
+            <amount>2</amount>
+        </li>
+		
+        <li>
+            <defName>Plants</defName>
+            <amount>4</amount>
+        </li>
+		<li>
+            <defName>Social</defName>
+            <amount>4</amount>
+        </li>
+    </skillGains>
+	<forcedTraits>
+    <li>
+      <defName>Tough</defName>
+    </li>
+    <li>
+      <defName>Kind</defName>
+    </li>
+    </forcedTraits>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>PrivateTribalGnoll</defName>
+    <title>Tribal Warrior</title>
+    <titleShort>Warrior</titleShort>
+    <baseDescription>[PAWN_nameDef] is a rank-and-file warrior for the tribe.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+		<li>
+			<defName>Shooting</defName>
+			<amount>12</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>8</amount>
+		</li>
+    </skillGains>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RangerGnoll</defName>
+    <title>Ranger</title>
+    <titleShort>Ranger</titleShort>
+    <baseDescription>[PAWN_nameDef] spent much time hunting and being outdoors, guiding for profit and looting for fun.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+		<li>
+			<defName>Shooting</defName>
+			<amount>8</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>6</amount>
+		</li>
+		<li>
+			<defName>Intellectual</defName>
+			<amount>3</amount>
+		</li>
+    </skillGains>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollTribalTraderAdult</defName>
+    <title>Tribal Trader</title>
+    <titleShort>Trader</titleShort>
+    <baseDescription>[PAWN_nameDef] learned from an early age that people will give items for other items. [PAWN_nameDef] also learned they give shiny things for other things. This concept was all too fascinating to give up.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+	<spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+    <skillGains>
+		<li>
+			<defName>Melee</defName>
+			<amount>-1</amount>
+		</li>
+		<li>
+			<defName>Social</defName>
+			<amount>10</amount>
+		</li>
+		<li>
+			<defName>Shooting</defName>
+			<amount>-2</amount>
+		</li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollTracker</defName>
+    <title>Tracker</title>
+    <titleShort>Tracker</titleShort>
+    <baseDescription>[PAWN_nameDef] is something of a bounty hunter, tracking down what was "lost" for "profit".</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	<maleCommonality>18</maleCommonality>
+	<femaleCommonality>18</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+		<li>
+			<defName>Melee</defName>
+			<amount>6</amount>
+		</li>
+		<li>
+			<defName>Shooting</defName>
+			<amount>2</amount>
+		</li>
+		<li>
+			<defName>Medicine</defName>
+			<amount>4</amount>
+		</li>
+		<li>
+			<defName>Crafting</defName>
+			<amount>4</amount>
+		</li>
+    </skillGains>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollBarbarian</defName>
+    <title>Gnoll Barbarian</title>
+    <titleShort>Barbarian</titleShort>
+    <baseDescription>[PAWN_nameDef] was captured after a battle, tortured, broken, and forced to fight for the amusement of others.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	<maleCommonality>15</maleCommonality>
+	<femaleCommonality>6</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+		<li>
+			<defName>Melee</defName>
+			<amount>12</amount>
+		</li>
+		<li>
+			<defName>Crafting</defName>
+			<amount>4</amount>
+		</li>
+    </skillGains>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+  
+<AlienRace.BackstoryDef>
+    <defName>GnollTribalSlaveLord</defName>
+    <title>Gnoll Slaver</title>
+    <titleShort>Slaver</titleShort>
+    <baseDescription>[PAWN_nameDef] figured out that not only can they trade items, they can also trade things of various levels of sentience. To [PAWN_nameDef]'s surprise, the sentient ones that did cheap labor went for a decent price.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+		<li>
+			<defName>Shooting</defName>
+			<amount>1</amount>
+		</li>
+		<li>
+			<defName>Social</defName>
+			<amount>4</amount>
+		</li>
+		<li>
+			<defName>Medicine</defName>
+			<amount>4</amount>
+		</li>
+	</skillGains>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollExperiment1</defName>
+    <title>Modified Gnoll</title>
+    <titleShort>Mindgnoll</titleShort>
+    <baseDescription>[PAWN_nameDef] was captured during a raid from a far more advanced colony and quickly put to the operating table; nearly all being behavioural studies and cerebral modifications. All generally horrible stuff.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <maleCommonality>40</maleCommonality>
+    <femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+    <skillGains>
+		<li>
+			<defName>Social</defName>
+			<amount>4</amount>
+		</li>
+		<li>
+			<defName>Construction</defName>
+			<amount>-3</amount>
+		</li>
+		<li>
+			<defName>Intellectual</defName>
+			<amount>5</amount>
+		</li>
+    </skillGains>
+  <forcedTraits>
+    <li>
+      <defName>Kind</defName>
+    </li>
+    <li>
+      <defName>TooSmart</defName>
+    </li>
+  </forcedTraits>
+    <workDisables>
+      <li>ManualDumb</li>
+      <li>Violent</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollExperiment2</defName>
+    <title>Modified Gnoll</title>
+    <titleShort>Gibbering Gnoll</titleShort>
+    <baseDescription>[PAWN_nameDef] was captured during a raid from a far more advanced colony and quickly put to the hands of their scientists. Having to undergo immense amounts of psychological and mental experiments, it left [PAWN_nameDef] like a lunatic.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <maleCommonality>40</maleCommonality>
+    <femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+    <skillGains>
+		<li>
+			<defName>Social</defName>
+			<amount>-4</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>3</amount>
+		</li>
+		<li>
+			<defName>Intellectual</defName>
+			<amount>-5</amount>
+		</li>
+    </skillGains>
+  <forcedTraits>
+		<li>
+			<defName>Neurotic</defName>
+			<degree>2</degree>
+            <chance>50</chance>
+		</li>
+		<li>
+			<defName>Masochist</defName>
+		</li>
+  </forcedTraits>
+    <workDisables>
+      <li>ManualSkilled</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GnollExperiment3</defName>
+    <title>Modified Gnoll</title>
+    <titleShort>S-Fuse</titleShort>
+    <baseDescription>[PAWN_nameDef] was captured during a raid from a far more advanced colony and quickly put to the hands of their medical staff. After numerous musculoskeletal procedures, [PAWN_nameDef] "willingly" participated in behavioural studies.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <maleCommonality>40</maleCommonality>
+    <femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+		<li>GnollTribalBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+		<li>GnollBackstory</li>
+		<li>StripedGnollBackstory</li>
+    </spawnCategories>
+    <skillGains>
+		<li>
+			<defName>Social</defName>
+			<amount>-4</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>6</amount>
+		</li>
+		<li>
+			<defName>Mining</defName>
+			<amount>4</amount>
+		</li>
+    </skillGains>
+  <forcedTraits>
+		<li>
+			<defName>Neurotic</defName>
+			<degree>2</degree>
+            <chance>50</chance>
+		</li>
+		<li>
+			<defName>Masochist</defName>
+			<chance>50</chance>
+		</li>
+		<li>
+			<defName>Bloodlust</defName>
+			<chance>70</chance>
+		</li>
+  </forcedTraits>
+    <workDisables>
+      <li>Cleaning</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>SergalJerk</defName>
+    <title>Northern Sergal</title>
+	<titleShort>Northener</titleShort>
+    <baseDescription>[PAWN_nameDef] was born in the northern part of Vilous. [PAWN_pronoun] was able to rise above his rougher cohorts. [PAWN_pronoun] grew out of it... mostly, but was left a bit socially stunted as a result.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+	<maleCommonality>10</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+        <li>Social</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+
+<AlienRace.BackstoryDef>
+    <defName>SergalTerrorVictim</defName>
+    <title>Terror Victim</title>
+	<titleShort>Terror Victim</titleShort>
+    <baseDescription>During the great Avali plague, [PAWN_nameDef] was part of a colony that contained both Sergals and Avali when Creeg's virus hit. It left the colony crippled and [PAWN_nameDef] was lucky to get out of there alive.</baseDescription>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>SergalTerrorVictimAdult</defName>
+    <title>Terror Victim</title>
+	<titleShort>Terror Victim</titleShort>
+    <baseDescription>During the great Avali plague, [PAWN_nameDef] was part of a colony that contained both Sergals and Avali when Creeg's virus hit. Luckily, some bravery and a quick evac routines allowed [PAWN_pronoun] to escape.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>3</amount>
+      </li>
+	        <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>SergalEngineer</defName>
+    <title>R4 Engineer</title>
+	<titleShort>Engineer</titleShort>
+    <baseDescription>Outside of Vilous, the Sergal empire has expanded to some pretty strange designs. [PAWN_nameDef] was one of the many who followed the great Aufenhand builder's revolution and helped construct the latter works of R4.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>6</amount>
+      </li>
+	        <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>SergalArtist</defName>
+    <title>R4 Artist</title>
+	<titleShort>R4 Artist</titleShort>
+    <baseDescription>The Aufenhand was not some kind of workhorse; far from it, he had a great apprecation for the arts. [PAWN_nameDef] trained in the R4 school of arts.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Artistic</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>SergalSpacer</defName>
+    <title>Spacer Sergal</title>
+    <titleShort>Sergal Scout</titleShort>
+    <baseDescription>[PAWN_nameDef] took to the stars because planets are boring. [PAWN_pronoun] grew up learning to wheel, deal, and steal ("only when necessary!" said no one ever) enough to keep the ship in spaceworthy condition and delivering cargo on schedule.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+      <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+          <li>
+        <defName>Construction</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    </AlienRace.BackstoryDef>
+
+	    <AlienRace.BackstoryDef>
+    <defName>SergalFire</defName>
+    <title>Alien girl survivor</title>
+    <titleShort>Girlophobe</titleShort>
+    <baseDescription>[PAWN_nameDef] is allergic to women. That made for an interesting childhood. </baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+      <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+        <li>
+        <defName>Crafting</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+	   <workDisables>
+        <li>Caring</li>
+	   </workDisables>
+    </AlienRace.BackstoryDef>
+
+
+    <AlienRace.BackstoryDef>
+    <defName>SergalColonyKid</defName>
+    <title>Sergal colonypup</title>
+    <titleShort>Pup</titleShort>
+    <baseDescription>[PAWN_nameDef] was born in a small trading post on the outer rims of the Sergal Empire. [PAWN_pronoun] had to learn to carry [PAWN_possessive] weight and keep the colony running from an early age.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>80</maleCommonality>
+	<femaleCommonality>80</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>SergalCoreKid</defName>
+    <title>Sergal corepup</title>
+    <titleShort>Corepup</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on R4 in the Hamal Cluster. [PAWN_pronoun] grew up in one of the many ringworlds, spending much of [PAWN_possessive] time in the upper-level saloons.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+		<maleCommonality>90</maleCommonality>
+	<femaleCommonality>90</femaleCommonality>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+      <AlienRace.BackstoryDef>
+
+    <defName>SergalDigKid</defName>
+    <title>Sergal digger-kid</title>
+    <titleShort>Digger Pup</titleShort>
+    <baseDescription>[PAWN_nameDef] was always playing in the sandbox, or building in the mud, or otherwise finding excuses to make holes in the ground.</baseDescription>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Mining</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+
+  <!-- ====== Adult Stories - not porn ====== -->
+
+
+
+    <AlienRace.BackstoryDef>
+    <defName>SergalToymaker</defName>
+    <title>Toylord</title>
+    <titleShort>Toylord</titleShort>
+    <baseDescription>[PAWN_nameDef] found [PAWN_pronoun] had a natural talent for making delicate items such as small gears, and inscribing beautiful designs. [PAWN_pronoun] has made a name as an accomplished toylord. Damn these sergs have odd names for stuff.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+      <AlienRace.BackstoryDef>
+    <defName>SergalSexSlave</defName>
+    <title>Sex Slave</title>
+    <titleShort>Concubine</titleShort>
+    <baseDescription>[PAWN_nameDef] was captured by slavers and sold into sexual slavery. [PAWN_pronoun] was forced to do all sorts of lewd acts for [PAWN_possessive] 'owner', but grew accustomed to the otherwise lavish environment, and spoiled as far as labor is concerned.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>10</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>Hauling</li>
+	 <li>Cleaning</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+	   <li>
+        <defName>Cooking</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+      <AlienRace.BackstoryDef>
+    <defName>SergalLasminer</defName>
+    <title>Sergal lasminer</title>
+    <titleShort>Miner</titleShort>
+    <baseDescription>[PAWN_nameDef] operated a laser-mining rig at an advanced asteroidal mining station, and occasionally operated manual equipment when they'd pumped atmosphere into a particularly rich shaft. [PAWN_pronoun] developed a strong back and keen eye with [PAWN_possessive] laser-drill.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>30</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+
+    <defName>SergalBiogen</defName>
+    <title>Geneticist</title>
+    <titleShort>Biologist</titleShort>
+    <baseDescription>[PAWN_nameDef] is a bio scientist for the Sergal Empire. [PAWN_pronoun] has dedicated [PAWN_possessive] life to unravelling the genome and improving [PAWN_possessive] race... FOR THE CREEG!</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>SergalHunterBS</defName>
+    <title>Sergal hunter</title>
+    <titleShort>Vilous Hunter</titleShort>
+    <baseDescription>[PAWN_nameDef] is a professional hunter. Sometimes called to put down manhunters, or guide rich dentists on Safari, [PAWN_possessive] skills as a tracker are only matched by [PAWN_possessive] skill at handling.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>25</maleCommonality>
+	<femaleCommonality>25</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+
+  <AlienRace.BackstoryDef>
+    <defName>SergalXguanabreed</defName>
+    <title>Nivren breeder</title>
+    <titleShort>Breedlord</titleShort>
+    <baseDescription>[PAWN_nameDef] has spent many years breeding Vilous wildlife, which requires somewhat special handling due to their rapid reproductive rate. This experience has given [PAWN_pronoun] a great deal of insight into certain animal behaviours.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>SergalTrailblazer</defName>
+    <title>Trail blazer</title>
+    <titleShort>Colonial</titleShort>
+    <baseDescription>[PAWN_nameDef] is at the forefront of the effort to expand the Sergal Empire - rushing headlong into the unknown to colonize uncharted worlds and eke out a living, just like the Aufenhand.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+
+     <AlienRace.BackstoryDef>
+    <defName>SergalClerk</defName>
+    <title>Desk clerk</title>
+    <titleShort>Beaurocrat</titleShort>
+    <baseDescription>[PAWN_nameDef] was a clerk in an office, filing paperwork, submitting reports. During [PAWN_possessive] downtime, [PAWN_pronoun] would read and study various subjects on the global network through his workstation terminal. This left [PAWN_pronoun] with an unquenchable thirst for knowledge.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>SergalDoctor</defName>
+    <title>Sergal doctor</title>
+    <titleShort>Doctor</titleShort>
+    <baseDescription>[PAWN_nameDef] has taken an oath to devote [PAWN_possessive] life to healing others.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>25</maleCommonality>
+	<femaleCommonality>25</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	 <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>SergalChef</defName>
+    <title>Sergal saucier</title>
+    <titleShort>Chef-de-partie</titleShort>
+    <baseDescription>[PAWN_nameDef] is a saucier, a master chef who specializes in sauces, stews, hot hors d'œuvres, and sautés. [PAWN_pronoun] has helped prepare meals for some of the highest functionaries in Sergal society.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	 <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>SergalPackLead</defName>
+    <title>Sergal pack alpha</title>
+    <titleShort>Kerr</titleShort>
+    <baseDescription>[PAWN_nameDef] bears the title of leadership among [PAWN_possessive] community. Sergal society has changed many times over the years, but the most recent leader - designated the Kerr - is among the more brutal of titles.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>5</maleCommonality>
+	<femaleCommonality>5</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	 <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>PrivateSergal</defName>
+    <title>Army private</title>
+    <titleShort>Footsoldier</titleShort>
+    <baseDescription>[PAWN_nameDef] is a rank-and-file soldier for the Sergal Empire. [PAWN_pronoun] had served [PAWN_possessive] term of service without incident.... until now.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>KnightSergal</defName>
+    <title>Army Knight</title>
+    <titleShort>Knight</titleShort>
+    <baseDescription>[PAWN_nameDef] is an officer for the Sergal Empire's army. [PAWN_pronoun] is responsible for the soldiers under [PAWN_possessive] command, and takes that duty seriously.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>SergalSpacerAdult</defName>
+    <title>Space trader</title>
+    <titleShort>Spacer</titleShort>
+    <baseDescription>[PAWN_nameDef] was a free-trader, roving the Hamal Cluster and its neighbor's space searching for deals and opportunities for profit. Until now, [PAWN_pronoun] was flying a ship, making deals with colonies like these... I wonder what happened?</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+			<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+      <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+          <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>10</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    </AlienRace.BackstoryDef>
+
+	  <AlienRace.BackstoryDef>
+    <defName>SergalManhunter</defName>
+    <title>People Collector</title>
+    <titleShort>Collector</titleShort>
+    <baseDescription>[PAWN_nameDef] is something of a bounty hunter, often called "collectors" in the Hamal Cluster. Historians claim that this moniker comes from the act of collecting persons under the "I Arrest Your Bitch Ass" act. History aside, [PAWN_nameDef] is not to be taken lightly... or at all.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>28</maleCommonality>
+	<femaleCommonality>28</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+
+  	  <AlienRace.BackstoryDef>
+    <defName>SergalTerminator</defName>
+    <title>Assassin</title>
+    <titleShort>Assassin</titleShort>
+    <baseDescription>[PAWN_nameDef] has travelled through time to assassinate a specific target... [PAWN_pronoun] is fond of telling people that [PAWN_pronoun] will 'be back'.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>10</maleCommonality>
+	<femaleCommonality>10</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-4</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  	  <AlienRace.BackstoryDef>
+    <defName>SergalCommandoBS</defName>
+    <title>Retired Commando</title>
+    <titleShort>Creeg</titleShort>
+    <baseDescription>[PAWN_nameDef] used to be one of the most elite soldiers in the Sergal empire. Now [PAWN_pronoun] is retired... though [PAWN_possessive] former commander is always trying to get [PAWN_pronoun] back. Some time ago, [PAWN_pronoun] had to take out a family member who was on the verge of terrorism. Scary stuff. [PAWN_pronoun] never forgave his former commander or his colleagues.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>1</maleCommonality>
+	<femaleCommonality>1</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  	  <AlienRace.BackstoryDef>
+    <defName>SergalTXRanger</defName>
+    <title>Police Officer</title>
+    <titleShort>Cop</titleShort>
+    <baseDescription>[PAWN_nameDef] was a 'lawman' in a dusty R-Type colony. [PAWN_possessive] preference for working alone and constant 'bending' of the rules earned [PAWN_pronoun] the nickname "Lonely Will Sieger". [PAWN_pronoun] ran afoul of some corrupt military officials running weapons to some drug-lords. Many bullets later, [PAWN_pronoun] ended up taking out the mastermind. Stirring the pot so much probably landed them out here...</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>8</maleCommonality>
+	<femaleCommonality>8</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+	   <li>
+        <defName>Social</defName>
+        <amount>-4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+      <AlienRace.BackstoryDef>
+    <defName>SergalBarbarian</defName>
+    <title>Sergal Barbarian</title>
+    <titleShort>Barbarian</titleShort>
+    <baseDescription>[PAWN_nameDef] was captured after a battle on a medieval world, and forced to train as a pit-fighter. After crushing [PAWN_possessive] enemies, seeing them driven before [PAWN_pronoun], and hearing the lamentation of their women, [PAWN_pronoun] was released from captivity. [PAWN_pronoun] now seems to be seeking 'Daijin Kuremkul' or something?</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>15</maleCommonality>
+	<femaleCommonality>6</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>12</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+      <AlienRace.BackstoryDef>
+    <defName>SergalNavyCook</defName>
+    <title>Army Chef</title>
+    <titleShort>Cook</titleShort>
+    <baseDescription>[PAWN_nameDef] used to be one of the top Vilous special forces officers. Now [PAWN_pronoun]'s 'just' a cook... who can kill you nine different ways with just a pinky. [PAWN_pronoun] sometimes has knife-fights with Tommy-Lee Jones.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>25</maleCommonality>
+	<femaleCommonality>25</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+	  	<li>
+        <defName>Cooking</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>SergalKynen</defName>
+    <title>Full-On Doctor</title>
+    <titleShort>Medigod</titleShort>
+    <baseDescription>[PAWN_nameDef] was born of a terrible background but managed to defeat the odds and become a renowned medical practitioner who has in particular made excellent progress in the field of robotics.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>0</maleCommonality>
+	<femaleCommonality>1</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>8</amount>
+      </li>
+	  <li>
+        <defName>Intellectual</defName>
+        <amount>8</amount>
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>12</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>SergalAufen</defName>
+    <title>Sergal Aufen</title>
+    <titleShort>Musician</titleShort>
+    <baseDescription>[PAWN_nameDef] has spent many nights following [PAWN_possessive] hero's footsteps. [PAWN_pronoun] has founded colonies, started music businesses, and speaks with an intentional stutter. Jack would be proud.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>1</maleCommonality>
+	<femaleCommonality>0</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>12</amount>
+      </li>
+	  <li>
+        <defName>Construction</defName>
+        <amount>6</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+
+    <AlienRace.BackstoryDef>
+    <defName>SergalDrugLord</defName>
+    <title>Sergal Slaver</title>
+    <titleShort>Slaver</titleShort>
+    <baseDescription>[PAWN_nameDef] built a slave empire with brains, and more than a fair share of ruthlessness. [PAWN_pronoun] made a fortune, which attracted the attention of [PAWN_possessive] rivals, the dreaded Panstrumants Corporation. They struck [PAWN_possessive] base of operation with mercenary raids and terrorist attacks. Now [PAWN_pronoun] is out for revenge...</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+</Defs>

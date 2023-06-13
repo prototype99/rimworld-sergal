@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<FactionDef>
+	<defName>StripedGnollBrotherhood</defName>
+	<label>Striped Gnoll Brotherhood</label>
+    <description>An atypical group of Gnolls, banded together to form a decent colony. Known moreso as the Brotherhood clans, these Striped variants of Gnolls were a bit more "calm" than the others, being more nomadic in culture than their Spotted brethren, much like the other tribes around the Rim.</description>
+	<colorSpectrum>
+		<li>(127,255,0)</li>
+		<li>(255,127,80)</li>
+    </colorSpectrum>
+	<pawnsPlural>gnolls</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<settlementGenerationWeight>1</settlementGenerationWeight>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Clan Keeper</leaderTitle>
+    <startingGoodwill>
+		<min>-30</min>
+		<max>40</max>
+    </startingGoodwill>
+	<factionNameMaker>NamerFactionStripedGnoll</factionNameMaker>
+	<settlementNameMaker>NamerFactionStripedGnollBase</settlementNameMaker>
+	<techLevel>Medieval</techLevel>
+	<backstoryCategories>
+		<li>StripedGnollBackstory</li>
+		<li>StripedGnollTribalBackstory</li>
+	</backstoryCategories>
+	<hairTags>
+		<li>StripedGnollHair</li>
+	</hairTags>
+    <naturalColonyGoodwill>
+		<min>-60</min>
+		<max>0</max>
+    </naturalColonyGoodwill>
+    <visitorTraderKinds>
+		<li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+	<caravanTraderKinds>
+        <li>Base_Gnoll_OrganTrader</li>
+		<li>Caravan_Neolithic_BulkGoods</li>
+		<li>Caravan_Neolithic_WarMerchant</li>
+		<li>Caravan_Neolithic_ShamanMerchant</li>
+		<li>Caravan_Neolithic_Slaver</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+		<li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+		<min>-10</min>
+		<max>55</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+		<points>
+			<li>(0,35)</li>
+			<li>(70, 50)</li>
+			<li>(700, 100)</li>
+			<li>(1300, 150)</li>
+			<li>(100000, 10000)</li>
+		</points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+		<li>
+			<kindDef>Combat</kindDef>
+				<options>
+				<StripedGnollScavenger>50</StripedGnollScavenger>
+				<StripedGnollPackLeader>250</StripedGnollPackLeader>
+				<StripedGnollRecruit>100</StripedGnollRecruit>
+				<StripedGnollHunter>130</StripedGnollHunter>
+				<StripedGnollTracker>130</StripedGnollTracker>
+				<StripedGnollRanger>170</StripedGnollRanger>
+			</options>
+		</li>
+		<li>
+			<kindDef>Peaceful</kindDef>
+				<options>
+				<StripedGnollScavenger>50</StripedGnollScavenger>
+				<StripedGnollTracker>90</StripedGnollTracker>
+				<StripedGnollPackLeader>250</StripedGnollPackLeader>
+				<StripedGnollRecruit>100</StripedGnollRecruit>
+				<StripedGnollHunter>130</StripedGnollHunter>
+			</options>
+		</li>
+		<li>
+			<kindDef>Trader</kindDef>
+				<traders>
+				<StripedGnollTrader>1</StripedGnollTrader>
+				</traders>
+				<carriers>
+				<Muffalo>2</Muffalo>
+				<Dromedary>2</Dromedary>
+				</carriers>
+				<guards>
+				<StripedGnollTracker>90</StripedGnollTracker>
+				<StripedGnollRecruit>100</StripedGnollRecruit>
+				<StripedGnollHunter>130</StripedGnollHunter>
+				<StripedGnollSentinel>130</StripedGnollSentinel>
+				</guards>
+		</li>
+		<li>
+			<kindDef>Settlement</kindDef>
+				<options>
+				<StripedGnollScavenger>50</StripedGnollScavenger>
+				<StripedGnollTracker>90</StripedGnollTracker>
+				<StripedGnollPackLeader>250</StripedGnollPackLeader>
+				<StripedGnollRecruit>100</StripedGnollRecruit>
+				<StripedGnollHunter>130</StripedGnollHunter>
+				<StripedGnollSentinel>130</StripedGnollSentinel>
+				<StripedGnollRanger>170</StripedGnollRanger>
+				</options>
+		</li>
+	</pawnGroupMakers>
+    <homeIconPath>World/StripedGnollBaseIcon</homeIconPath>
+	<expandingIconTexture>World/StripedGnollBaseIcon</expandingIconTexture>
+</FactionDef>
+  
+<FactionDef>
+	<defName>StripedGnollRovers</defName>
+	<label>Striped Gnoll Rovers</label>
+    <description>A group of Gnolls that loosely formed a colony, this band was outside of the Brotherhood's bounds. They are moreso feral than their brethren, though not as much as their Spotted brethren. These Striped variants make their living off of the spoils of others' raids, and can sometimes be communicated with.</description>
+	<colorSpectrum>
+		<li>(127,255,0)</li>
+		<li>(255,127,80)</li>
+    </colorSpectrum>
+	<pawnsPlural>gnolls</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<settlementGenerationWeight>1</settlementGenerationWeight>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Scavenge Director</leaderTitle>
+    <startingGoodwill>
+		<min>-80</min>
+		<max>-100</max>
+    </startingGoodwill>
+	<factionNameMaker>NamerFactionStripedGnoll</factionNameMaker>
+	<settlementNameMaker>NamerFactionStripedGnollBase</settlementNameMaker>
+	<techLevel>Medieval</techLevel>
+	<backstoryCategories>
+		<li>StripedGnollTribalBackstory</li>
+  	</backstoryCategories>
+	<hairTags>
+		<li>StripedGnollHair</li>
+	</hairTags>
+    <naturalColonyGoodwill>
+		<min>-60</min>
+		<max>0</max>
+    </naturalColonyGoodwill>
+    <visitorTraderKinds>
+		<li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+	<caravanTraderKinds>
+		<li>Caravan_Neolithic_BulkGoods</li>
+		<li>Caravan_Neolithic_WarMerchant</li>
+		<li>Caravan_Neolithic_ShamanMerchant</li>
+		<li>Caravan_Neolithic_Slaver</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+		<li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+		<min>-10</min>
+		<max>55</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+		<points>
+			<li>(0,35)</li>
+			<li>(70, 50)</li>
+			<li>(700, 100)</li>
+			<li>(1300, 150)</li>
+			<li>(100000, 10000)</li>
+		</points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+		<li>
+			<kindDef>Combat</kindDef>
+			<commonality>100</commonality>
+				<options>
+				<StripedGnoll_Penitent>10</StripedGnoll_Penitent>
+				<StripedGnoll_Archer>40</StripedGnoll_Archer>
+				<StripedGnoll_ChiefMelee>150</StripedGnoll_ChiefMelee>
+				<StripedGnoll_Warrior>50</StripedGnoll_Warrior>
+				<StripedGnoll_Hunter>60</StripedGnoll_Hunter>
+				<StripedGnoll_HeavyArcher>60</StripedGnoll_HeavyArcher>
+				<StripedGnoll_Berserker>60</StripedGnoll_Berserker>
+				</options>
+		</li>
+		<li>
+			<kindDef>Peaceful</kindDef>
+				<options>
+				<StripedGnoll_Warrior>20</StripedGnoll_Warrior>
+				<StripedGnoll_Archer>10</StripedGnoll_Archer>
+				<StripedGnoll_Hunter>10</StripedGnoll_Hunter>
+				<StripedGnoll_HeavyArcher>10</StripedGnoll_HeavyArcher>
+				<StripedGnoll_Berserker>5</StripedGnoll_Berserker>
+				<StripedGnoll_ChiefRanged>3</StripedGnoll_ChiefRanged>
+				<StripedGnoll_ChiefMelee>1.5</StripedGnoll_ChiefMelee>
+				</options>
+		</li>
+		<li>
+			<kindDef>Trader</kindDef>
+				<traders>
+				<StripedGnoll_Trader>1</StripedGnoll_Trader>
+				</traders>
+				<carriers>
+				<Muffalo>4</Muffalo>
+				<Dromedary>2</Dromedary>
+				</carriers>
+				<guards>
+				<StripedGnoll_HeavyArcher>3</StripedGnoll_HeavyArcher>
+				<StripedGnoll_Hunter>3</StripedGnoll_Hunter>
+				<StripedGnoll_Warrior>3</StripedGnoll_Warrior>
+				<StripedGnoll_Berserker>3</StripedGnoll_Berserker>
+				</guards>
+		</li>
+		<li>
+			<kindDef>Settlement</kindDef>
+				<options>
+				<StripedGnoll_Warrior>20</StripedGnoll_Warrior>
+				<StripedGnoll_Archer>10</StripedGnoll_Archer>
+				<StripedGnoll_Hunter>10</StripedGnoll_Hunter>
+				<StripedGnoll_HeavyArcher>10</StripedGnoll_HeavyArcher>
+				<StripedGnoll_Berserker>5</StripedGnoll_Berserker>
+				<StripedGnoll_ChiefRanged>3</StripedGnoll_ChiefRanged>
+				<StripedGnoll_ChiefMelee>1.5</StripedGnoll_ChiefMelee>
+				</options>
+		</li>
+    </pawnGroupMakers>
+    <homeIconPath>World/StripedGnollBaseIcon</homeIconPath>
+	<expandingIconTexture>World/StripedGnollBaseIcon</expandingIconTexture>
+</FactionDef>
+  
+</Defs>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Injuries -->
+
+  <!--HediffDef Name="InjuryBase" Abstract="True">
+    <hediffClass>Hediff_Injury</hediffClass>
+    <tendable>true</tendable>
+    <displayWound>true</displayWound>
+    <labelNounPretty>{0} in the {1}</labelNounPretty>
+  </HediffDef-->
+
+	<!-- ASMD -->
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>PridePistolShot</defName>
+    <label>hot liquid</label>
+    <description>Hot liquid</description>
+    <labelNoun>third degree burn</labelNoun>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>superglued</labelTendedWell>
+        <labelTendedWellInner>hopes and dreams</labelTendedWellInner>
+        <labelSolidTendedWell>thoughts and prayers</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.15</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>third degree burn wound</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0325</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00125</averagePainPerSeverityPermanent>
+      <bleedRate>0.01</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>melted off</destroyedLabel>
+      <destroyedOutLabel>melted out</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+    
+    
+  <HediffDef ParentName="InjuryBase">
+    <defName>GaussShot</defName>
+    <label>Electromagnetic Slug</label>
+    <description>Electromagnetic Slug</description>
+    <labelNoun>high velocity electric puncture</labelNoun>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>superglued</labelTendedWell>
+        <labelTendedWellInner>hopes and dreams</labelTendedWellInner>
+        <labelSolidTendedWell>thoughts and prayers</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.25</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>high velocity puncture wound</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0125</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0.02</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>physics'd off</destroyedLabel>
+      <destroyedOutLabel>physics'd out</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+  
+</Defs>

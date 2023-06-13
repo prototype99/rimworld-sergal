@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+	<BodyPartDef>
+   	 <defName>LionTail</defName>
+   	 <label>lion tail</label>
+   	 <hitPoints>55</hitPoints>
+   	 <frostbiteVulnerability>4</frostbiteVulnerability>
+   	 <spawnThingOnRemoved>LionTail</spawnThingOnRemoved>
+   	 <skinCovered>true</skinCovered>
+         <beautyRelated>true</beautyRelated>
+	</BodyPartDef>
+
+</Defs>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<AlienRace.AlienBackstoryDef>
+    <defName>SergalJackAufenhandKid</defName>
+    <title>Average Child</title>
+	<titleShort>Mediocre</titleShort>
+    <baseDesc>[PAWN_nameDef] didn't really do much as a child, except for get into a few fights. [PAWN_pronoun] was also a little dumb.</baseDesc>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<maleCommonality>100</maleCommonality>
+	<femaleCommonality>0</femaleCommonality>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+	  <li>
+        <key>Melee</key>
+        <value>5</value>
+      </li>
+      <li>
+        <key>Intellectual</key>
+        <value>-2</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>SergalJackAufenhandAdult</defName>
+    <title>Jack Of All Trades</title>
+	<titleShort>Mayor</titleShort>
+    <baseDesc>[PAWN_pronoun] went through a lot as an adult, from brain surgery to homelessness to musical virtuosity to mayoral rampages on R4, founding homeworld of the Hamal Amalgamation; [PAWN_nameDef] did a lot to get here, but is most notably known as a musician.
+    </baseDesc>
+    <slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>0</femaleCommonality>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+	  <li>
+        <key>Artistic</key>
+        <value>18</value>
+      </li>
+	  <li>
+        <key>Social</key>
+        <value>14</value>
+      </li>
+    </skillGains>
+      <forcedTraitsChance>
+        <li>
+            <defName>Gay</defName>
+            <chance>100</chance>
+        </li>
+        <li>
+            <defName>Kind</defName>
+            <chance>100</chance>
+        </li>
+      </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>SergalCSKid</defName>
+    <title>Stargazer</title>
+	<titleShort>Stargazer</titleShort>
+    <baseDesc>A young [PAWN_nameDef] stared at the sky too much. This started [PAWN_possessive] path to astronomy and astrophysics. Unfortunately, when [PAWN_pronoun] learned that the sun was a star, [PAWN_pronoun] stared at it too and went nearly blind.</baseDesc>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>10</value>
+      </li>
+	        <li>
+        <key>Shooting</key>
+        <value>-10</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>SergalSaganAdult</defName>
+    <title>Astrophysics professor</title>
+	<titleShort>Professor</titleShort>
+    <baseDesc>Over time, [PAWN_nameDef]'s passion for scientific discovery pushed [PAWN_pronoun] to write a multitude of books and other media devoted to astronomy and astrophysics. Still blind though.
+    </baseDesc>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>8</value>
+      </li>
+	   <li>
+        <key>Crafting</key>
+        <value>6</value>
+      </li>
+	  	   <li>
+        <key>Shooting</key>
+        <value>-14</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>SergalRipKid</defName>
+    <title>Dork</title>
+  	<titleShort>Dork</titleShort>
+    <baseDesc>[PAWN_nameDef] had a sad childhood because [PAWN_pronoun] never learned how to socialize without sounding like a dork until way later. Was able to kick some serious butt though, so it all evens out.
+    </baseDesc>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>6</value>
+      </li>
+    </skillGains>
+	<workDisables>
+        <li>Social</li>
+    </workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>SergalRipAdult</defName>
+    <title>Survivor</title>
+	<titleShort>Survivor</titleShort>
+    <baseDesc>Still struggling with a mouth fit for a dork, [PAWN_nameDef] decided to focus on a career that required no social skills whatsoever - the military.
+    </baseDesc>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>8</value>
+      </li>
+	   <li>
+        <key>Shooting</key>
+        <value>6</value>
+      </li>
+	  	   <li>
+        <key>Medicine</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+	<workDisables>
+        <li>Social</li>
+    </workDisables>
+</AlienRace.AlienBackstoryDef>
+
+
+<AlienRace.AlienBackstoryDef>
+    <defName>SergalJackBKid</defName>
+    <title>Impressionable Youth</title>
+	<titleShort>Youth</titleShort>
+    <baseDesc>After struggling socially, [PAWN_nameDef] became enamoured with social ideaologies that most people would call "extreme".</baseDesc>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>1</value>
+      </li>
+	  <li>
+        <key>Melee</key>
+        <value>6</value>
+      </li>
+	  <li>
+        <key>Medicine</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>SergalJackBAdt</defName>
+    <title>Terrorist</title>
+	<titleShort>Terrorist</titleShort>
+    <baseDesc>[PAWN_nameDef] went on to do terrible things to innocent people. [PAWN_possessive] actions resulted in the death of many, many avali through the distribution of a deadly virus. 
+    </baseDesc>
+    <slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <key>Medicine</key>
+        <value>12</value>
+      </li>
+      <li>
+        <key>Melee</key>
+        <value>7</value>
+      </li>
+    </skillGains>
+      <forcedTraitsChance>
+        <li>
+            <defName>Psychopath</defName>
+            <chance>100</chance>
+        </li>
+        <li>
+            <defName>Brawler</defName>
+            <chance>100</chance>
+        </li>
+      </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+
+<AlienRace.AlienBackstoryDef>
+    <defName>SergalBarkKid</defName>
+    <title>Southern Sergal</title>
+	<titleShort>Dancer</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up in a hot southern region (on Vilous), dreaming of becoming a cabaret star, or sometimes just fish. (Eating them, not becoming them)</baseDesc>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>5</value>
+      </li>
+	  <li>
+        <key>Cooking</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>SergalBarkAdt</defName>
+    <title>Borderline Pornstar</title>
+	<titleShort>Star</titleShort>
+    <baseDesc>[PAWN_nameDef] got established as a cabaret dancer, producing holovids and live holostreams... on pornhub. Somehow, [PAWN_nameDef] ended up here. Cocaine is a hell of a drug.
+    </baseDesc>
+    <slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+      <li>SergalBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>5</value>
+      </li>
+    </skillGains>
+      <forcedTraitsChance>
+        <li>
+            <defName>Kind</defName>
+            <chance>100</chance>
+        </li>
+      </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+</Defs>

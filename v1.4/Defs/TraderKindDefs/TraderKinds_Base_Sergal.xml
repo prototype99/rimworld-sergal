@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>Base_Sergal_DirtTrader</defName>
+    <label>Sergal dirt trader</label>
+    <stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>WearableDirt</thingDef>
+				<countRange>102~20000</countRange>
+			</li>
+            <li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>100~4504</countRange>
+			</li>
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

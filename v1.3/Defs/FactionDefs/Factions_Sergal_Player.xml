@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase" Abstract="True" Name="SergalFactionBase">
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+  <FactionDef ParentName="FactionBase">
+    <defName>SergalPlayerColony</defName>
+    <label>Sergal Empire</label>
+    <description>Your own community.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Sergal</basicMemberKind>
+    <pawnsPlural>sergals</pawnsPlural>
+    <settlementNameMaker>NamerFactionSergalBase</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerFactionSergalBase</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionSergal</factionNameMaker>
+    <techLevel>Ultra</techLevel>
+    <backstoryCategories>
+			<li>SergalBackstory</li>
+  	</backstoryCategories>
+    <settlementTexturePath>World/SergalBaseIcon</settlementTexturePath>
+    <factionIconPath>World/SergalBaseIcon</factionIconPath>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+
+  </FactionDef>
+  
+    <FactionDef ParentName="FactionBase">
+    <defName>SergalPlayerColonyTribal</defName>
+    <label>Sergal Empire Tribal-like</label>
+    <description>Sergal semi-tribal start.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Sergal</basicMemberKind>
+    <pawnsPlural>sergs</pawnsPlural>
+    <settlementNameMaker>NamerFactionSergalBase</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerFactionSergalBase</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionSergal</factionNameMaker>
+    <techLevel>Medieval</techLevel>
+    <backstoryCategories>
+			<li>SergalTribalBackstory</li>
+  	</backstoryCategories>
+    <settlementTexturePath>World/SergalBaseIcon</settlementTexturePath>
+    <factionIconPath>World/SergalBaseIcon</factionIconPath>
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <categoryTag>Tribal</categoryTag>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <colorSpectrum>
+      <li>(0, 0.437, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+
+</Defs>
