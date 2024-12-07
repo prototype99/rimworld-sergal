@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<AlienRace.RaceSettings>
+    <defName>Frog_Settings</defName>
+     <pawnKindSettings>
+            <alienslavekinds>
+                <li>
+                    <kindDefs>
+                        <li>FrogSlave</li>
+                    </kindDefs>
+                    <chance>40.0</chance>
+                </li>
+            </alienslavekinds>
+            <alienrefugeekinds>
+                <li>
+                    <kindDefs>
+                        <li>FrogRefugee</li>
+                    </kindDefs>
+                    <chance>50.0</chance>
+                </li>
+            </alienrefugeekinds>
+			<startingColonists>
+				<li>
+				<pawnKindEntries>
+					<li>
+                        <kindDefs>
+                            <li>FrogHunter</li>
+                            <li>FrogTracker</li>
+                            <li>FrogRanger</li>
+                            <li>FrogScavenger</li>
+                        </kindDefs>
+                    <chance>10.0</chance>
+					</li>
+				</pawnKindEntries>
+					<factionDefs>
+						<li>FrogPlayerColony</li> 
+					</factionDefs>
+				</li>
+			</startingColonists>
+            <alienwandererkinds>
+                <li>
+                    <pawnKindEntries>
+                        <li>
+                            <kindDefs>
+                                <li>FrogHunter</li>
+                                <li>FrogTracker</li>
+                                <li>FrogRanger</li>
+                                <li>FrogScavenger</li>
+                            </kindDefs>
+                            <chance>50.0</chance>
+                        </li>
+                    </pawnKindEntries>
+                    <factionDefs>
+                        <li>FrogPlayerColony</li> 
+                    </factionDefs>
+                </li>
+            </alienwandererkinds>
+        </pawnKindSettings>
+  </AlienRace.RaceSettings>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>Alien_Frog</defName>
+    <label>Frog</label>
+    <description>A largely benign race of junkies and master craftsmen.</description>
+    <alienRace>
+        <raceRestriction>
+			<blackGeneList>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+                </blackGeneList>
+                <blackGeneTags>
+                    <li>SkinColor</li>
+                    <li>HairColor</li>
+                    <li>EyeColor</li>
+                    <li>BodyType</li>
+                    <li>Ears</li>
+                    <li>Nose</li>
+                    <li>Jaw</li>
+                    <li>Head</li>
+                    <li>Headbone</li>
+                    <li>HairStyle</li>
+                    <li>BeardStyle</li>
+                    <li>SkinColorOverride</li>
+                    <li>Fur</li>
+                    <li>Tail</li>
+                </blackGeneTags>
+                <blackEndoCategories>
+                    <li>Melanin</li>
+                    <li>HairColor</li>
+                    <li>Ears</li>
+                    <li>Nose</li>
+                    <li>Jaw</li>
+                    <li>Head</li>
+                    <li>BodyType</li>
+                </blackEndoCategories>
+        </raceRestriction>
+        <generalSettings>
+            <maleGenderProbability>0.5</maleGenderProbability>
+            <immuneToAge>true</immuneToAge>
+            <forcedRaceTraitEntries>
+                <li>
+                    <options>
+                      <li>
+                        <defName Degree="2">DrugDesire</defName>
+                      </li>
+                    </options>
+                    <count>2</count>
+                    <chance>50</chance>
+                </li>
+                <li>
+                    <options>
+                      <li>
+                        <defName Degree="2">NaturalMood</defName>
+                      </li>
+                    </options>
+                    <count>1</count>
+                    <chance>20</chance>
+                </li>
+            </forcedRaceTraitEntries>
+            <factionRelations>
+                <li>
+                    <factions>
+                       <li>StripedGnollBrotherhood</li>
+                       <li>GnollBrotherhood</li>
+                       <li>GnollPlayerColony</li>
+                       <li>StripedGnollPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-99</min>
+                       <max>-100</max>
+                    </goodwill>
+                </li>               
+            </factionRelations>
+            <alienPartGenerator>
+                <colorChannels>
+                    <li>
+                        <name>skin</name>
+                        <first Class="ColorGenerator_Options">
+                            <options>
+                                 <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.639,0.941,0.458,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.952,0.462,0.384,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.450,0.376,0.917,1)</only>
+                                </li>
+                                 <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.627,0.933,0.462,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.572,0.990,0.415,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.958,0.556,0.474,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.931, 0.352, 0.286,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.282, 0.935, 0.2,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.498, 0.345, 0.923,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.905, 0.223, 0.196,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.486, 0.982, 0.211,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.662, 0.403, 0.917,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.909, 0.496, 0.290,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.909, 0.496, 0.290,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.909, 0.996, 0.990,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.909, 0.496, 0.990,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.909, 0.196, 0.90,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.309, 0.396, 0.390,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.409, 0.796, 0.290,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.409, 0.696, 0.290,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.309, 0.396, 0.290,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.109, 0.196, 0.290,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.909, 0.196, 0.190,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <min>RGBA(0.45,0.46,0.3,1)</min>
+                                    <max>RGBA(0.65,0.55,0.47,1)</max>
+                                </li>
+                            </options>
+                        </first>
+                        <second Class="ColorGenerator_Options">
+                            <options>
+                                 <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.639,0.941,0.458,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.952,0.462,0.384,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.450,0.376,0.917,1)</only>
+                                </li>
+                                 <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.627,0.933,0.462,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.572,0.990,0.415,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.958,0.556,0.474,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.931, 0.352, 0.286,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.282, 0.935, 0.2,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.498, 0.345, 0.923,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.905, 0.223, 0.196,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.486, 0.982, 0.211,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.662, 0.403, 0.917,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.909, 0.496, 0.290,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.909, 0.496, 0.290,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.909, 0.996, 0.990,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.909, 0.496, 0.990,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.909, 0.196, 0.90,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.309, 0.396, 0.390,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.409, 0.796, 0.290,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.409, 0.696, 0.290,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.309, 0.396, 0.290,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.109, 0.196, 0.290,1)</only>
+                                </li>
+                                            <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(0.909, 0.196, 0.190,1)</only>
+                                </li>
+                                <li>
+                                    <weight>5</weight>
+                                    <min>RGBA(0.45,0.46,0.3,1)</min>
+                                    <max>RGBA(0.65,0.55,0.47,1)</max>
+                                </li>
+                            </options>
+                        </second>
+                    </li>
+                </colorChannels><anchorReplacements>
+                        <li>
+                            <originalTag>LeftEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
+                            <replacement> 
+                                <tag>Null</tag>
+                                <rotation>South</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>LeftEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
+                            <replacement> 
+                                <tag>Null</tag>
+                                <rotation>West</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>LeftEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
+                            <replacement> 
+                                <tag>Null</tag>
+                                <rotation>South</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>LeftEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
+                            <replacement> 
+                                <tag>Null</tag>
+                                <rotation>East</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>RightEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
+                            <replacement> 
+                                <tag>Null</tag>
+                                <rotation>South</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>RightEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
+                            <replacement> 
+                                <tag>Null</tag>
+                                <rotation>West</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>RightEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
+                            <replacement> 
+                                <tag>Null</tag>
+                                <rotation>South</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>RightEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
+                            <replacement> 
+                                <tag>Null</tag>
+                                <rotation>East</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                    </anchorReplacements>
+                    <bodyAddons>  
+                    <li>
+                        <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                        <path>Things/Frog/Eyes/FrogEyeLeft</path>
+                        <conditions> <!-- if HAR.feature.New = "Pain In My Ass": add(HAR.feature.New) -->
+                          <RotStage>Fresh,Rotting</RotStage>
+                          <BodyPart>
+                            <bodyPart>Eye</bodyPart>
+                            <bodyPartLabel>left eye</bodyPartLabel>
+                          </BodyPart>
+                          <Posture>
+                            <drawnStanding>true</drawnStanding>
+                            <drawnLaying>true</drawnLaying>
+                            <drawnInBed>false</drawnInBed>
+                          </Posture>
+                          <Apparel>
+                            <hiddenUnderApparelFor>
+                                <li>FullHead</li>
+                            </hiddenUnderApparelFor>
+                          </Apparel>
+                        </conditions>
+                        <extendedGraphics>
+                          <Hediff For="GnollstromBionicEyeTargeter">Things/Frog/Eyes/GnollBioniceye</Hediff>
+                          <Hediff For="BionicEye">Things/Frog/Eyes/BionicEyeLeft</Hediff>
+                          <Hediff For="ArchotechEye">Things/Frog/Eyes/ArchotechEyeLeft</Hediff>
+                        </extendedGraphics>
+                        <inFrontOfBody>true</inFrontOfBody>
+                        <colorChannel>skin</colorChannel>
+                        <defaultOffset>Center</defaultOffset>
+                        <alignWithHead>true</alignWithHead>
+                        <layerInvert>False</layerInvert>
+                        <offsets>
+                            <south>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(-0.1356912,0.04308729)</Male>
+                                    <Female>(-0.1356912,0.04308729)</Female>
+                                    <Thin>(-0.1356912,0.04308729)</Thin>
+                                    <Hulk>(-0.1356912,0.04308729)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-0.1048235,0.03279727)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-0.1048235,0.03279727)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </south>
+                            <north>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes> <!-- LOOK I KNOW I GET IT LEAVE ME ALONE -->
+                                    <Male>(-121,-121)</Male>
+                                    <Female>(-121,-121)</Female>
+                                    <Thin>(-121,-121)</Thin>
+                                    <Hulk>(-121,-121)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-121,-121)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-121,-121)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </north>
+                            <east>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(0.01607717,0.1035368)</Male>
+                                    <Female>(0.01607717,0.1035368)</Female>
+                                    <Thin>(0.01607717,0.1035368)</Thin>
+                                    <Hulk>(0.01607717,0.1035368)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-0.005787938,0.07266913)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-0.005787938,0.07266913)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </east>
+                            <west>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(121,121)</Male>
+                                    <Female>(121,121)</Female>
+                                    <Thin>(121,121)</Thin>
+                                    <Hulk>(121,121)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-121,-121)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-121,-121)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </west>
+                        </offsets>
+                    </li>
+                    <li>
+                        <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                        <path>Things/Frog/Eyes/FrogEyeRight</path>
+                        <conditions> <!-- if HAR.feature.New = "Pain In My Ass": add(HAR.feature.New) -->
+                          <RotStage>Fresh,Rotting</RotStage>
+                          <BodyPart>
+                            <bodyPart>Eye</bodyPart>
+                            <bodyPartLabel>right eye</bodyPartLabel>
+                          </BodyPart>
+                          <Posture>
+                            <drawnStanding>true</drawnStanding>
+                            <drawnLaying>true</drawnLaying>
+                            <drawnInBed>false</drawnInBed>
+                          </Posture>
+                          <Apparel>
+                            <hiddenUnderApparelFor>
+                                <li>FullHead</li>
+                            </hiddenUnderApparelFor>
+                          </Apparel>
+                        </conditions>
+                        <extendedGraphics>
+                          <Hediff For="GnollstromBionicEyeTargeter">Things/Frog/Eyes/GnollBioniceyeRight</Hediff>
+                          <Hediff For="BionicEye">Things/Frog/Eyes/BionicEyeRight</Hediff>
+                          <Hediff For="ArchotechEye">Things/Frog/Eyes/ArchotechEyeRight</Hediff>
+                        </extendedGraphics>
+                        <inFrontOfBody>true</inFrontOfBody>
+                        <colorChannel>skin</colorChannel>
+                        <defaultOffset>Center</defaultOffset>
+                        <alignWithHead>true</alignWithHead>
+                        <layerInvert>false</layerInvert>
+                        <offsets>
+                            <south>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(0.1356912,0.04308729)</Male>
+                                    <Female>(0.1356912,0.04308729)</Female>
+                                    <Thin>(0.1356912,0.04308729)</Thin>
+                                    <Hulk>(0.1356912,0.04308729)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(0.1048235,0.03279727)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(0.1048235,0.03279727)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </south>
+                            <north>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(-121,-121)</Male>
+                                    <Female>(-121,-121)</Female>
+                                    <Thin>(-121,-121)</Thin>
+                                    <Hulk>(-121,-121)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-121,-121)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-121,-121)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </north>
+                            <east>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(-121,-121)</Male>
+                                    <Female>(-121,-121)</Female>
+                                    <Thin>(-121,-121)</Thin>
+                                    <Hulk>(-121,-121)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-121,-121)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-121,-121)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </east>
+                            <west>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(0.03151141,0.1035368)</Male>
+                                    <Female>(0.03151141,0.1035368)</Female>
+                                    <Thin>(0.03151141,0.1035368)</Thin>
+                                    <Hulk>(0.03151141,0.1035368)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(0.005787938,0.07266913)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(0.005787938,0.07266913)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </west>
+                        </offsets>
+                    </li>
+            </bodyAddons>
+            <!--<headBodyPartDef>Head</headBodyPartDef> -->
+			<headTypes Inherit="False">
+			<li>Female_AverageNormal</li>
+			<li>Male_AverageNormal</li>
+			<li>Female_NarrowNormal</li>
+			<li>Male_NarrowNormal</li>
+		</headTypes>
+		<bodyTypes Inherit="False">
+			<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+		</bodyTypes>
+            </alienPartGenerator>
+    
+			<chemicalSettings />	
+            <humanRecipeImport>true</humanRecipeImport>
+            <maxDamageForSocialfight>2</maxDamageForSocialfight>
+        </generalSettings>
+        <graphicPaths>
+			  <head>
+				<path>Things/Frog/Heads/</path>
+				<headtypeGraphics>
+					<Male_AverageNormal>Things/Frog/Heads/Male_Average_Normal</Male_AverageNormal>
+					<Male_NarrowNormal>Things/Frog/Heads/Male_Thin_Normal</Male_NarrowNormal>
+					<Female_AverageNormal>Things/Frog/Heads/Female_Average_Normal</Female_AverageNormal>
+					<Female_NarrowNormal>Things/Frog/Heads/Female_Thin_Normal</Female_NarrowNormal>
+				</headtypeGraphics>
+			  </head>
+			  <body>Things/Frog/Bodies/</body>
+			  <skinShader>Cutout</skinShader>
+        </graphicPaths>
+        <styleSettings>
+            <li>
+                <key>BeardDef</key>
+                <value>
+                    <hasStyle>false</hasStyle>
+                    <styleTags>
+                    </styleTags>
+                </value>
+            </li>
+            <li>
+                <key>HairDef</key>
+                <value>
+                    <hasStyle>false</hasStyle>
+                    <styleTags>
+                    </styleTags>
+                </value>
+            </li>
+        </styleSettings>
+        <relationSettings>
+            <relationChanceModifierChild>1.6</relationChanceModifierChild>
+            <relationChanceModifierExLover>1</relationChanceModifierExLover>
+            <relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+            <relationChanceModifierFiance>1.1</relationChanceModifierFiance>
+            <relationChanceModifierLover>1.05</relationChanceModifierLover>
+            <relationChanceModifierParent>1.5</relationChanceModifierParent>
+            <relationChanceModifierSibling>1</relationChanceModifierSibling>
+            <relationChanceModifierSpouse>1.1</relationChanceModifierSpouse>
+        </relationSettings>
+		<thoughtSettings>
+			<cannotReceiveThoughts>
+				<li>Nuzzled</li>
+				<li>Naked</li>
+				<li>CrashedTogether</li>
+				<li>SoakingWet</li>
+				<li>SleepDisturbed</li>
+                <li>SmokeleafHigh</li>
+                <li>SmokeleafWithdrawal</li>
+                <li>RippitHigh</li>
+                <li>RippitWithdrawal</li>
+			</cannotReceiveThoughts>
+			<replacerList>
+                <li>
+                    <original>Nuzzled</original>
+                    <replacer>FrogTouched</replacer> 
+                </li>
+				<li>
+                    <original>SmokeleafWithdrawal</original>
+                    <replacer>SmokeleafWithdrawalFrog</replacer> 
+                </li>
+				<li>
+                    <original>SmokeleafHigh</original>
+                    <replacer>SmokeleafHighFrog</replacer> 
+                </li>
+				<li>
+                    <original>SleepDisturbed</original>
+                    <replacer>FrogSpace</replacer> 
+                </li>
+                <li>
+                    <original>SoakingWet</original>
+                    <replacer>SoakingWetFrog</replacer>
+                </li>
+				<li>
+                    <original>CrashedTogether</original>
+                    <replacer>CrashedTogetherFrog</replacer> 
+                </li>
+                <li>
+                    <original>RippitHigh</original>
+                    <replacer>RippitHighFrog</replacer>
+                </li>
+                <li>
+                    <original>RippitWithdrawal</original>
+                    <replacer>RippitWithdrawalFrog</replacer>
+                </li>
+            </replacerList>
+			<restrictedThoughts>
+				<li>FrogTouched</li>
+				<li>CrashedTogetherFrog</li>
+				<li>SoakingWetFrog</li>
+				<li>FrogSpace</li>
+                <li>SmokeleafHighFrog</li>
+                <li>SmokeleafWithdrawalFrog</li>
+                <li>RippitHighFrog</li>
+                <li>RippitWithdrawalFrog</li>
+			</restrictedThoughts>
+		</thoughtSettings>
+    </alienRace>
+	<statBases>
+      <MarketValue>3000</MarketValue>
+      <MoveSpeed>5.62</MoveSpeed>
+      <Flammability>0.3</Flammability>
+      <ComfyTemperatureMin>-16</ComfyTemperatureMin>
+      <ComfyTemperatureMax>58</ComfyTemperatureMax>
+      <LeatherAmount>25</LeatherAmount>
+      <RoyalFavorValue>4</RoyalFavorValue>
+	  <ToxicResistance>0.99</ToxicResistance>
+	   <PsychicSensitivity>0.15</PsychicSensitivity>
+	   <WorkSpeedGlobal>2</WorkSpeedGlobal>
+       <FoodPoisonChance>-0.3</FoodPoisonChance>
+	   <ConstructSuccessChance>2.55</ConstructSuccessChance>
+       <ConstructionSpeed>5.5</ConstructionSpeed>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.1</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>22</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+         <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.1</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>32</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>tongue</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.1</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <fleshType>SGLF_HeadScarRemover</fleshType>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>80</lifeExpectancy>
+      <leatherDef>Leather_frog</leatherDef>
+      <nameGenerator>NamerPersonFrogMale</nameGenerator>
+      <nameGeneratorFemale>NamerPersonFrogFemale</nameGeneratorFemale>
+      <body>Frog</body>
+      <bloodDef>FilthBloodFrog</bloodDef>	
+			<bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
+      <meatColor>(128, 0, 1)</meatColor>
+      <baseBodySize>1.5</baseBodySize>
+      <baseHealthScale>1.45</baseHealthScale>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>15</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.01, 0.02)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>BabyStageFrog</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>ChildStageFrog</def>
+          <minAge>4</minAge>
+        </li>
+		<li>
+          <def>TeenStageFrog</def>
+          <minAge>13</minAge>
+        </li>
+        <li>
+          <def>AdultStageFrog</def>
+          <minAge>18</minAge>
+        </li>
+      </lifeStageAges>
+	  <lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+        <Firefighter>7</Firefighter>
+        <Patient>0</Patient>
+        <Doctor>10</Doctor>
+        <PatientBedRest>0</PatientBedRest>
+        <Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+        <BasicWorker>3</BasicWorker>
+        <Warden>10</Warden>
+        <Handling>7</Handling>
+        <Cooking>7</Cooking>
+        <Hunting>7</Hunting>
+        <Construction>10</Construction>
+        <Growing>7</Growing>
+        <Mining>7</Mining>
+        <PlantCutting>7</PlantCutting>
+        <Smithing>13</Smithing>
+        <Tailoring>7</Tailoring>
+        <Art>10</Art>
+        <Crafting>7</Crafting>
+        <Hauling>3</Hauling>
+        <Cleaning>3</Cleaning>
+        <Research>13</Research>
+      </lifeStageWorkSettings>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+			<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>  <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->  
+			<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>  
+			<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>      
+			<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li><!-- End exclude -->
+			<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+			<li>(14,0)</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+			<li>(16,100)</li>
+			<li>(20,100)</li>
+			<li>(30,30)</li>
+			<li>(45,18)</li>
+			<li>(50,10)</li>
+			<li>(55,3)</li>
+			<li>(70,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+		<li>Human</li>
+      </hediffGiverSets>
+      <renderTree>Humanlike</renderTree>
+    </race>
+    <recipes>
+      <li>InstallArchotechEye</li>
+      <li>InstallArchotechArm</li>
+      <li>InstallArchotechLeg</li>
+      <li>InstallPowerClaw</li>
+      <li>InstallBionicEye</li>
+      <li>InstallBionicArm</li>
+      <li>InstallBionicLeg</li>
+      <li>InstallBionicSpine</li>
+      <li>InstallBionicHeart</li>
+      <li>InstallBionicStomach</li>
+      <li>InstallBionicEar</li>
+      <li>InstallSimpleProstheticArm</li>
+      <li>InstallSimpleProstheticLeg</li>
+      <li>InstallSimpleProstheticHeart</li>
+      <li>InstallCochlearImplant</li>
+      <li>InstallPegLeg</li>
+      <li>InstallWoodenFoot</li>
+      <li>InstallDenture</li>
+      <li>InstallJoywire</li>
+      <li>InstallPainstopper</li>
+      <li>InstallNaturalHeart</li>
+      <li>InstallNaturalLung</li>
+      <li>InstallNaturalKidney</li>
+      <li>InstallNaturalLiver</li>
+      <li>ExciseCarcinoma</li>
+      <li>AdministerMechSerumHealer</li>
+      <li>RemoveBodyPart</li>
+      <li>Euthanize</li>
+      <li>Anesthetize</li>
+      <li>InstallFrogEye</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Vasectomy</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ReverseVasectomy</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">TubalLigation</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ExtractOvum</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ExtractHemogenPack</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">BloodTransfusion</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ImplantXenogerm</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ImplantIUD</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">RemoveIUD</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
+    </recipes>
+    <ingredient>
+      <mergeCompatibilityTags>
+        <li>HumanMeat</li>
+      </mergeCompatibilityTags>
+    </ingredient>
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>

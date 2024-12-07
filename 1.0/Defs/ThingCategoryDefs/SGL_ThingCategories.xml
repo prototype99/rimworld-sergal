@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
-  <ThingCategoryDef>
-    <defName>Lion_Apparel</defName>
-    <label>lion apparel</label>
-    <parent>Root</parent>
-  </ThingCategoryDef>
-</Defs>

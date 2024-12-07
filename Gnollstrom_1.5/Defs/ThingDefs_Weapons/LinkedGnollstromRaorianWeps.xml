@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	<RulePackDef>
+			<defName>NamerWeaponBladelinkGnoll</defName>
+			<rulePack>
+			  <rulesStrings>
+				<li>r_weapon_name(p=1)->[noun] [verber]</li>
+				<li>r_weapon_name(p=1)->[beginSyl][middleSyl][endSyl]</li>
+				<li>r_weapon_name(p=1)->[beginSyl][endSyl]</li>
+
+				<li>noun->hate</li>
+				<li>noun->fuck</li>
+				<li>noun->death</li>
+				<li>noun->pain</li>
+				<li>noun->blood</li>
+				<li>noun->doom</li>
+				<li>noun->murder</li>
+				<li>noun->chaos</li>
+				<li>noun->fear</li>
+				<li>noun->terror</li>
+				<li>noun->war</li>
+				<li>noun->shit</li>
+				<li>noun->cunt</li>
+				<li>noun->piss</li>
+				<li>noun->mool</li>
+				<li>verber->thrower</li>
+				<li>verber->bringer</li>
+				<li>verber->sender</li>
+				<li>verber->giver</li>
+				<li>verber->maker</li>
+				<li>verber->crusher</li>
+				<li>verber->breaker</li>
+				<li>verber->smasher</li>
+				<li>verber->bender</li>
+				<li>verber->knower</li>
+				<li>verber->doer</li>
+				<li>verber->reaver</li>
+				<li>verber->reaper</li>
+				<li>verber->pillager</li>
+				<li>verber->thief</li>
+
+				<li>beginSyl->cu</li>
+				<li>beginSyl->elt</li>
+				<li>beginSyl->vu</li>
+				<li>beginSyl->wunt</li>
+				<li>beginSyl->shu</li>
+				<li>beginSyl->rapu</li>
+				<li>beginSyl->pa</li>
+				<li>beginSyl->ka</li>
+				<li>beginSyl->kre</li>
+				<li>beginSyl->ra</li>
+				<li>beginSyl->bo</li>
+				<li>beginSyl->bar</li>
+				<li>beginSyl->bax</li>
+				<li>beginSyl->pax</li>
+				<li>beginSyl->nax</li>
+				<li>beginSyl->six</li>
+				<li>beginSyl->wex</li>
+				<li>beginSyl->thix</li>
+				<li>beginSyl->surn</li>
+				<li>middleSyl->we</li>
+				<li>middleSyl->fe</li>
+				<li>middleSyl->sa</li>
+				<li>middleSyl->cur</li>
+				<li>middleSyl->meer</li>
+				<li>middleSyl->feer</li>
+				<li>middleSyl->har</li>
+				<li>middleSyl->war</li>
+				<li>middleSyl->gor</li>
+				<li>middleSyl->nullur</li>
+				<li>middleSyl->wur</li>
+				<li>middleSyl->hox</li>
+				<li>endSyl->vys</li>
+				<li>endSyl->vin</li>
+				<li>endSyl->jor</li>
+				<li>endSyl->mond</li>
+				<li>endSyl->gord</li>
+				<li>endSyl->god</li>
+				<li>endSyl->gur</li>
+				<li>endSyl->uck</li>
+				<li>endSyl->ack</li>
+			  </rulesStrings>
+			</rulePack>
+		  </RulePackDef>
+
+	  <ThingDef Name="BaseWeapon_BladelinkGnollstrom" ParentName="BaseWeapon" Abstract="True">
+		<techLevel>Ultra</techLevel>
+		<tradeNeverStack>true</tradeNeverStack>
+		<relicChance>3</relicChance>
+		<weaponTags>
+		  <li MayRequire="Ludeon.RimWorld.Royalty">Bladelink</li>
+		</weaponTags>
+		<tradeTags>
+		  <li>WeaponMelee</li>
+		</tradeTags>
+		<weaponClasses>
+		  <li>Ultratech</li>
+		</weaponClasses>
+		<comps>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_BladelinkWeapon">
+			<biocodeOnEquip>true</biocodeOnEquip>
+		  </li>
+		  <li Class="CompProperties_GeneratedName">
+			<nameMaker>NamerWeaponBladelinkGnoll</nameMaker>
+		  </li>
+		</comps>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<notifyMapRemoved>true</notifyMapRemoved>
+		<thingCategories>
+		  <li>WeaponsMeleeBladelink</li>
+		</thingCategories>
+		<thingSetMakerTags>
+		  <li>WeaponBladelink</li>
+		</thingSetMakerTags>
+	  </ThingDef>
+
+        <ThingDef ParentName="BaseWeapon_BladelinkGnollstrom">
+        <defName>MeleeWeapon_GnollstromScythe</defName>
+        <label>Gnollstrom Reaper</label>
+            <description>Clearly designed by a fan of a certain space ninja video game and good weaponsmithery, this blade has proliferated out into the Gnollstrom organization as an extremely effective though highly expensive melee weapon. They are hard to find, they cost a lot of money, and if someone comes at you with one, kill them before they get close.</description>
+        <statBases>
+          <MarketValue>50000</MarketValue>
+          <Mass>2</Mass>
+        </statBases>
+        <equippedAngleOffset>-35</equippedAngleOffset>
+        <graphicData>
+          <graphicClass>Graphic_Single</graphicClass>
+          <texPath>Things/Item/Equipment/WeaponMelee/ReaperPrimeGnollstrom</texPath>
+          <color>(200,200,255)</color>
+        </graphicData>
+        <soundInteract>Interact_BladelinkMonoSword</soundInteract>
+        <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+        <smeltable>false</smeltable>
+        <weaponClasses>
+          <li>Melee</li>
+          <li>MeleePiercer</li>
+        </weaponClasses>
+        <tools>
+          <li>
+            <label>handle blade</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <power>28</power>
+            <cooldownTime>1.1</cooldownTime>
+          </li>
+          <li>
+            <label>points</label>
+            <capacities>
+              <li>Stab</li>
+            </capacities>
+            <power>39</power>
+            <cooldownTime>1.1</cooldownTime>
+            <armorPenetration>0.7</armorPenetration>
+          </li>
+          <li>
+            <label>edges</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <power>35</power>
+            <cooldownTime>1.1</cooldownTime>
+            <armorPenetration>0.9</armorPenetration>
+          </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseWeapon_BladelinkGnollstrom">
+        <defName>MeleeWeapon_GnollstromLionsword</defName>
+        <label>Gnollstrom Halberd</label>
+            <description>A lion sword that's been hacked to emit a laser. High damage slow to wield. \nThis weapon has an onboard persona roughly hacked into it, that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <statBases>
+          <MarketValue>5000</MarketValue>
+          <Mass>2</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <graphicData>
+          <graphicClass>Graphic_Single</graphicClass>
+          <texPath>Things/Item/Equipment/WeaponMelee/lionsword</texPath>
+          <color>(200,200,255)</color>
+        </graphicData>
+        <soundInteract>Interact_BladelinkMonoSword</soundInteract>
+        <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+        <smeltable>false</smeltable>
+        <weaponClasses>
+          <li>Melee</li>
+          <li>MeleePiercer</li>
+        </weaponClasses>
+        <tools>
+          <li>
+            <label>handle</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>28</power>
+            <cooldownTime>2.1</cooldownTime>
+          </li>
+          <li>
+            <label>point</label>
+            <capacities>
+              <li>Stab</li>
+            </capacities>
+            <power>39</power>
+            <cooldownTime>2.1</cooldownTime>
+            <armorPenetration>0.7</armorPenetration>
+          </li>
+          <li>
+            <label>edge</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <power>35</power>
+            <cooldownTime>2.1</cooldownTime>
+            <armorPenetration>0.9</armorPenetration>
+          </li>
+        </tools>
+    </ThingDef>
+
+
+    <ThingDef Abstract="True" Name="BaseGnollstromWeapon">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>true</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<equipmentType>Primary</equipmentType>
+		<useHitPoints>true</useHitPoints>
+		<pathCost>10</pathCost>
+		<selectable>true</selectable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Beauty>-6</Beauty>
+			<SellPriceFactor>0.20</SellPriceFactor>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef Name="BaseGnollstromGun" Abstract="True" ParentName="BaseGnollstromWeapon">
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+			<li>WeaponsRanged</li>
+		</thingCategories>
+        <tradeTags>
+		  <li>WeaponRanged</li>
+		</tradeTags>
+		<weaponClasses>
+		  <li>Ultratech</li>
+		</weaponClasses>
+        <weaponTags>
+		  <li>Bladelink</li>
+		</weaponTags>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_BladelinkWeapon">
+                <biocodeOnEquip>true</biocodeOnEquip>
+            </li>
+            <li Class="CompProperties_GeneratedName">
+                <nameMaker>NamerWeaponBladelinkGnoll</nameMaker>
+            </li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+  
+  <ThingDef ParentName="BaseGnollstromGun">
+		<defName>GnollstromWep_Gauss</defName>
+		<label>Gnollstrom Gauss Rifle</label>
+		<description>Stolen from Raorian research labs, this prototype pride gauss rifle has been hacked and had it's persona coding overwritten with the hacky but effective Gnollstrom software.</description>
+		<graphicData>
+			<texPath>Things/Guns/lionrifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <color>(200,200,255)</color>
+		</graphicData>
+		<soundInteract>Interact_ChargeLance</soundInteract>
+		<statBases>
+			<Mass>8.5</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.97</AccuracyLong>
+			<RangedWeapon_Cooldown>3.4</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Gauss</defaultProjectile>
+				<warmupTime>1.8</warmupTime>
+				<range>42</range>
+				<soundCast>LionGauss</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+    </tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeapon_BladelinkGnollstrom">
+    <defName>MeleeWeapon_GnollstromHalberd</defName>
+    <label>Gnollstrom Halberd</label>
+		<description>A laser based halberd, commonly wielded by the personal bodyguards of upper echelon Gnollstrom executives. The laser isn't super high quality, but this allows for the halberd to be light and thus strike quickly. In combination with a Gnollstrom Fistya Unit, this weapon can be rather dangerous. \nThis weapon has an onboard persona roughly hacked into it, that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+    <statBases>
+      <MarketValue>5000</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>-15</equippedAngleOffset>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Item/Equipment/WeaponMelee/GnollstromHalberd</texPath>
+      <color>(200,200,255)</color>
+    </graphicData>
+    <soundInteract>Interact_BladelinkMonoSword</soundInteract>
+    <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+    <smeltable>false</smeltable>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.1</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>1.1</cooldownTime>
+        <armorPenetration>0.7</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>1.1</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+  <WeaponTraitDef>
+    <defName>TweakerInsomnia</defName>
+    <label>Insomniac</label>
+    <description>This weapon confers insomnia to it's user, keeping them awake with rambling annoying stories that go nowhere.</description>
+    <bondedHediffs>
+      <li>TweakerInsomnia</li>
+    </bondedHediffs>
+    <bondedThought>
+      <li>TweakerInsomnia</li>
+      </bondedThought>
+    <commonality>1</commonality>
+    <marketValueOffset>100</marketValueOffset>
+  </WeaponTraitDef>
+  <HediffDef>
+    <defName>TweakerInsomnia</defName>
+    <label>insomniac</label>
+    <description>Pawn stays awake for longer, because this weapon won't shut the hell up.</description>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <restFallFactor>0.5</restFallFactor>
+      </li>
+	</stages>
+	</HediffDef>
+  <ThoughtDef>
+    <defName>TweakerInsomnia</defName>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <workerClass>ThoughtWorker_WeaponTraitBonded</workerClass>
+    <stages>
+	  <li>
+        <label>{WEAPON}'s insomnia</label>
+        <description>My bonded weapon keeps me alert and wakeful with nonstop chatter. They're not rude but they won't shut up!</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <WeaponTraitDef>
+    <defName>FightHappy</defName>
+    <label>Bickerer</label>
+    <description>This weapon loves to fight. It confers skills unto it's user, but also increases their chance to start social fights.</description>
+    <bondedHediffs>
+      <li>FightHappy</li>
+    </bondedHediffs>
+    <bondedThought>
+      <li>FightHappy</li>
+    </bondedThought>
+    <commonality>1</commonality>
+    <marketValueOffset>100</marketValueOffset>
+  </WeaponTraitDef>
+  <HediffDef>
+    <defName>FightHappy</defName>
+    <label>Argumentative</label>
+    <description>{WEAPON}'s knowledge comes with judgment of those around this pawn.</description>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+            <MeleeHitChance>0.5</MeleeHitChance>
+            <MeleeDodgeChance>0.7</MeleeDodgeChance>
+        </statOffsets>
+        <socialFightChanceFactor>1.5</socialFightChanceFactor>
+      </li>
+    </stages>
+  </HediffDef>
+  <ThoughtDef>
+    <defName>FightHappy</defName>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <workerClass>ThoughtWorker_WeaponTraitBonded</workerClass>
+    <stages>
+	  <li>
+        <label>{WEAPON}'s fighting instinct</label>
+        <description>Using this weapon in battle is so addictive, so graceful. I must have more!</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <WeaponTraitDef>
+    <defName>SightGazer</defName>
+    <label>Visual Offload</label>
+    <description>This weapon utilizes it's psychic connection to the wielder to provide enhanced analysis of visual data, allowing for more effective sight in the wielder.</description>
+    <bondedHediffs>
+      <li>SightGazer</li>
+    </bondedHediffs>
+    <commonality>1</commonality>
+    <marketValueOffset>100</marketValueOffset>
+  </WeaponTraitDef>
+  <HediffDef>
+    <defName>SightGazer</defName>
+    <label>Sight enhancement</label>
+    <description>{WEAPON}'s enhancement of visual data. Strange the things you don't notice.</description>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.85</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+
+</Defs>

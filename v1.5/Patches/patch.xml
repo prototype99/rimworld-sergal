@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "ElectricSmelter"]/recipes</xpath>
+    <value>
+      <li>MakeVCeramic</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>//linkableFacilities</xpath>
+    <value>
+        <li>GnollToolCabinet</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+    <value> <!-- Lions not included because Raorian empire canonically is at war with Shattered Empire -->
+      <li>FrogCamp</li>
+      <li>GnollBrotherhood</li>
+      <li>SergalEmpire</li>
+      <li>SergalTribe</li>
+      <li>SergalGnollEmpire</li>
+      <li>SergalEmpireNME</li>
+      <li>StripedGnollBrotherhood</li>
+      <li>FrogPlayerColony</li>
+      <li>FrogPlayerColonyTribal</li>
+      <li>GnollPlayerColony</li>
+      <li>GnollPlayerColonyTribal</li>
+      <li>SergalPlayerColony</li>
+      <li>SergalPlayerColonyTribal</li>
+      <li>StripedGnollPlayerColony</li>
+      <li>StripedGnollPlayerColonyTribal</li>
+    </value>
+    </match>
+  </Operation>
+
+</Patch>
+  
+  

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>Base_Frog_DrugTrader</defName>
+    <label>Frog drug trader</label>
+    <stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Antisick</thingDef>
+				<countRange>
+					<min>1</min>
+					<max>20</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>FrogleafJoint</thingDef>
+				<countRange>
+					<min>1</min>
+					<max>20</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>GodsBlood</thingDef>
+				<countRange>
+					<min>1</min>
+					<max>20</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Blotter</thingDef>
+				<countRange>
+					<min>1</min>
+					<max>200</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Beamers</thingDef>
+				<countRange>
+					<min>1</min>
+					<max>200</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>PowerThirst</thingDef>
+				<countRange>
+					<min>1</min>
+					<max>20</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Sniff</thingDef>
+				<countRange>
+					<min>1</min>
+					<max>200</max>
+				</countRange>
+			</li>
+            <li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>
+					<min>1</min>
+					<max>2000</max>
+				</countRange>
+			</li>
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

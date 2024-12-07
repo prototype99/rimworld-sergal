@@ -175,29 +175,27 @@
                     </li>
                 </colorChannels><anchorReplacements>
                           <li>
-                            <originalTag>LeftEye</originalTag> 
-                            <originalGroup>Torso</originalGroup>
+                            <originalTag>LeftEye</originalTag> <!--Which wound anchor is this replacing -->
+                            <originalGroup>Torso</originalGroup> <!--??? I dunno use the torso hitbox or something? -->
                             <replacement> 
-                              <rotation>South</rotation>
-                              <tag>LeftEye</tag>
-                              <canMirror>false</canMirror>
-                              <crownType>Average</crownType>
-                              <range>0</range>
-                              <layer>Head</layer>
+                              <rotation>South</rotation> <!-- Annoying but it makes sense. You define a wound anchor for each direction the head can face. Each direction needs to be it's own list element with the relevant offset. -->
+                              <tag>LeftEye</tag> <!-- BodyDef tag -->
+                              <canMirror>false</canMirror> <!--Shows up on back of head or other side of face. Not sure what this would be good for. -->
+                              <range>0</range> <!--idfk-->
+                              <layer>Head</layer> <!-- which layer we're placing this on, which is guess is what replaces originalGroup -->
                               <debugColor>(1,0,0,1)</debugColor>
-                            </replacement>
-                            <offsets> 
+                              <offset>(0.12, 0, 0.251)</offset>
+                            </replacement> <!-- idfk -->
+                                <offsets> <!-- only define the offset direction related to the rotation. -->
                                     <south>
-                                        <bodyTypes>
-                                        <Female>(0.14, 0.251)</Female>
-										<Thin>(0.14, 0.251)</Thin>
-                                        <Male>(0.14, 0.251)</Male>
-                                        </bodyTypes>
-                                        <crownTypes>
-                                            <Normal_Average>(0,0)</Normal_Average>
-                                        </crownTypes>
+                                        <bodyTypes> <!--facing south means x is reversed. Positive values to the left, negative to the right.-->
+                                        <Female>(0.12, 0, 0.251)</Female> <!-- note to self: invent new body type just to make this harder. -->
+                                        <Thin>(0.12,0, 0.251)</Thin> 
+                                        <Male>(0.12,0, 0.251)</Male>
+                                        <Hulk>(0.12,0, 0.251)</Hulk>
+                                        </bodyTypes><!-- Note to better coders than me: please add please wound anchor please sliders please -->
                                     </south>
-                                </offsets>
+                                </offsets>  
                           </li>
                           <li>
                             <originalTag>LeftEye</originalTag> 
@@ -206,21 +204,19 @@
                               <rotation>West</rotation>
                               <tag>LeftEye</tag>
                               <canMirror>false</canMirror>
-                              <crownType>Average</crownType>
                               <range>0</range>
                               <layer>Head</layer>
                               <debugColor>(1,0,0,1)</debugColor>
+                              <offset>(0.12, 0, 0.251)</offset>
                             </replacement>
                             <offsets> 
-                                    <west>
+                                    <west> <!--facing weest means x is reversed. Positive values to the left, negative to the right.-->
                                         <bodyTypes>
-                                        <Female>(-0.21, 0.33)</Female>
-										<Thin>(-0.21, 0.33)</Thin>
-                                        <Male>(-0.21, 0.33)</Male>
-                                        </bodyTypes>    
-                                        <crownTypes>
-                                            <Normal_Average>(0,0)</Normal_Average>
-                                        </crownTypes>
+                                        <Female>(-0.18,0, 0.358)</Female>
+										<Thin>(-0.18,0, 0.358)</Thin>
+                                        <Male>(-0.18,0, 0.358)</Male>
+                                        <Hulk>(-0.18,0, 0.358)</Hulk>
+                                        </bodyTypes>
                                     </west>
                                 </offsets>
                           </li>
@@ -231,21 +227,19 @@
                               <rotation>South</rotation>
                               <tag>RightEye</tag>
                               <canMirror>false</canMirror>
-                              <crownType>Average</crownType>
                               <range>0</range>
                               <layer>Head</layer>
                               <debugColor>(1,0,0,1)</debugColor>
+                              <offset>(0.12, 0, 0.251)</offset>
                             </replacement>
                             <offsets> 
                                 <south> <!--facing south means x is reversed. Positive values to the left, negative to the right.-->
                                     <bodyTypes>
-                                        <Female>(-0.14, 0.251)</Female>
-										<Thin>(-0.14, 0.251)</Thin>
-                                        <Male>(-0.14, 0.251)</Male>
+                                        <Female>(-0.12,0, 0.255)</Female>
+										<Thin>(-0.12,0, 0.255)</Thin>
+                                        <Male>(-0.12,0, 0.255)</Male>
+                                        <Hulk>(-0.12,0, 0.255)</Hulk>
                                     </bodyTypes>
-                                    <crownTypes>
-                                        <Normal_Average>(0,0)</Normal_Average>
-                                    </crownTypes>
                                 </south>
                             </offsets>
                           </li>
@@ -256,21 +250,19 @@
                               <rotation>East</rotation>
                               <tag>RightEye</tag>
                               <canMirror>false</canMirror>
-                              <crownType>Average</crownType>
                               <range>0</range>
                               <layer>Head</layer>
                               <debugColor>(1,0,0,1)</debugColor>
+                              <offset>(0.12, 0, 0.251)</offset>
                             </replacement>
                             <offsets> 
                                 <east>
                                     <bodyTypes>
-                                        <Female>(0.21, 0.33)</Female>
-										<Thin>(0.21, 0.33)</Thin>
-                                        <Male>(0.21, 0.33)</Male>
+                                        <Female>(0.18,0, 0.358)</Female>
+										<Thin>(0.18,0, 0.358)</Thin>
+                                        <Male>(0.18,0, 0.358)</Male>
+                                        <Hulk>(0.18,0, 0.358)</Hulk>
                                     </bodyTypes>
-                                    <crownTypes>
-                                        <Normal_Average>(0,0)</Normal_Average>
-                                    </crownTypes>
                                 </east>
                             </offsets>
                           </li>
@@ -284,6 +276,76 @@
 					<li>Female</li>
                 </alienbodytypes>
                 <bodyAddons>
+                <li>
+                    <path>Things/StripedGnoll/Eyes/</path>
+                    <bodyPart>Head</bodyPart>
+                    <genderGraphics>
+                        <Male>
+                        <path>Things/StripedGnoll/Eyes/Female_Eye</path>
+                        <colorChannel>skin</colorChannel>
+                        <drawnInBed>True</drawnInBed>
+                        <inFrontOfBody>True</inFrontOfBody>
+                        <defaultOffset>Head</defaultOffset>
+                        <headtypeGraphics>
+                            <Male_AverageNormal>Things/StripedGnoll/Eyes/Female_Eye</Male_AverageNormal>
+                        </headtypeGraphics>
+                        <offset>(0,0)</offset>
+                        <offsets>
+                        <south>
+                            <bodyTypes>
+                                <Female>(-0.12,0, 0.255)</Female>
+                                <Thin>(-0.12,0, 0.255)</Thin>
+                                <Male>(-0.12,0, 0.255)</Male>
+                                <Hulk>(-0.12,0, 0.255)</Hulk>
+                            </bodyTypes>
+                        </south>
+                        <east>
+                            <bodyTypes>
+                            <Male>(0.18, 0.358)</Male>
+                            <Female>(0.18, 0.358)</Female>
+                            <Hulk>(0.18, 0.358)</Hulk>
+                            <Thin>(0.18, 0.358)</Thin>
+                            </bodyTypes>
+                        </east>
+                        </offsets>
+                        <hediffGraphics>
+                        <GnollstromBionicEyeTargeter>Things/Gnollstrom/Wounds/GnollBioniceye</GnollstromBionicEyeTargeter>
+                        </hediffGraphics>
+                        </Male>
+                        <Female>
+                        <path>Things/StripedGnoll/Eyes/Female_Eye</path>
+                        <colorChannel>skin</colorChannel>
+                        <drawnInBed>True</drawnInBed>
+                        <inFrontOfBody>True</inFrontOfBody>
+                        <defaultOffset>Head</defaultOffset>
+                        <headtypeGraphics>
+                            <Female_AverageNormal>Things/StripedGnoll/Eyes/Female_Eye</Female_AverageNormal>
+                        </headtypeGraphics>
+                        <offset>(0,0)</offset>
+                        <offsets>
+                        <south>
+                            <bodyTypes>
+                            <Male>(0.22,0)</Male>
+                            <Female>(0,0)</Female>
+                            <Hulk>(0,0)</Hulk>
+                            <Thin>(0,0)</Thin>
+                            </bodyTypes>
+                        </south>
+                        <east>
+                            <bodyTypes>
+                            <Male>(0,0)</Male>
+                            <Female>(0,0)</Female>
+                            <Hulk>(0,0)</Hulk>
+                            <Thin>(0,0)</Thin>
+                            </bodyTypes>
+                        </east>
+                        </offsets>
+                        <hediffGraphics>
+                        <GnollstromBionicEyeTargeter>Things/Gnollstrom/Wounds/GnollBioniceye</GnollstromBionicEyeTargeter>
+                        </hediffGraphics>
+                        </Female>
+                    <genderGraphics>
+                </li>
             <li>
 				<path>Things/Gnoll/Tails/TailX</path>
                 <bodyPart>Tail</bodyPart>

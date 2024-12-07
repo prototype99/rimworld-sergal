@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Neurocalculator -->
+
+
+  
+    <ThingDef ParentName="BodyPartBionicBase">
+    <defName>GnollstromFistya</defName>
+    <label>Fistya Unit</label>
+    <description>A Gnollstrom hackjob trying to match the power of the FITEME 2.0. Like most things Gnollstrom, it is more about overwhelming strength than practicality. The user is given less information on incoming attacks and more emphasis on outgoing attacks than in the more traditional FITEME 2.0 unit.</description>
+    <descriptionHyperlinks><RecipeDef>InstallGnollstromFistya</RecipeDef></descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(199,119,119)</color>
+    </graphicData>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>250</Plasteel>
+      <ComponentSpacer>16</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallGnollstromFistya</defName>
+    <label>install Fistya Unit</label>
+    <description>Install a Fistya Unit</description>
+    <descriptionHyperlinks><ThingDef>GnollstromFistya</ThingDef></descriptionHyperlinks>
+    <jobString>Installing Fistya Unit.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GnollstromFistya</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GnollstromFistya</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>GnollstromFistyaHediff</addsHediff>
+  </RecipeDef>
+  
+    <HediffDef ParentName="ImplantHediffBase">
+    <defName>GnollstromFistyaHediff</defName>
+    <label>Fistya Unit</label>
+    <labelNoun>a Gnollstrom Fistya Unit</labelNoun>
+    <description>An installed Gnollstrom Fistya Unit.</description>
+    <spawnThingOnRemoved>GnollstromFistya</spawnThingOnRemoved>
+    <comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDefs>
+          <li>FuryCharge</li>
+        </abilityDefs>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeDodgeChance>50</MeleeDodgeChance>
+          <MeleeDPS>16</MeleeDPS>
+          <MeleeHitChance>60</MeleeHitChance>
+          <MeleeWeapon_CooldownMultiplier>-1.4</MeleeWeapon_CooldownMultiplier>
+          <ShootingAccuracyPawn>-90</ShootingAccuracyPawn>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+      <HediffDef ParentName="ImplantHediffBase">
+    <defName>GnollstromRipperGlove</defName>
+    <label>Ripper Glove</label>
+    <labelNoun>a Gnollstrom Ripper Glove</labelNoun>
+    <description>An installed Gnollstrom Ripper Glove.</description>
+    <spawnThingOnRemoved>GnollstromRipperGlove</spawnThingOnRemoved>
+    <comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDefs>
+          <li>GnollstromCureAll</li>
+        </abilityDefs>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <MedicalTendSpeed>10</MedicalTendSpeed>
+          <MedicalOperationSpeed>10</MedicalOperationSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  
+    <ThingDef ParentName="BodyPartBionicBase">
+    <defName>GnollstromRipperGlove</defName>
+    <label>Gnollstrom Ripper Glove</label>
+    <description>A Gnollstrom tool designed to enhance the speed and effectiveness of medicinal activities, such as surgery and tending. Comes with various medicine dispensers for curing diseases such as the flu, various parasites, and the plague.</description>
+    <descriptionHyperlinks><RecipeDef>InstallGnollstromRipperGlove</RecipeDef></descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.82</drawSize>
+      <color>(119,119,128)</color>
+    </graphicData>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>150</Plasteel>
+      <ComponentSpacer>12</ComponentSpacer>
+    </costList>
+  </ThingDef>
+  
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallGnollstromRipperGlove</defName>
+    <label>install Gnollstrom Ripper Glove</label>
+    <description>Install a Gnollstrom Ripper Glove.</description>
+    <descriptionHyperlinks><ThingDef>GnollstromRipperGlove</ThingDef></descriptionHyperlinks>
+    <jobString>Installing a Gnollstrom Ripper Glove.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GnollstromRipperGlove</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GnollstromRipperGlove</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>GnollstromRipperGlove</addsHediff>
+  </RecipeDef>
+  
+  <!--
+    <HediffDef>
+    <defName>RemoteRepairerImplant</defName>
+    <hediffClass>Hediff_Level</hediffClass>
+    <descriptionHyperlinks><ThingDef>RemoteRepairer</ThingDef></descriptionHyperlinks>
+    <label>remote repairer</label>
+    <description>A mechlink upgrade which allows the mechanitor to repair mechs from a distance. The user links with the mechanoid and uses their own brain to psychically guide its self-repair mechanites.\n\nThis implant can be installed up to 3 times to increase its range.</description>
+    <descriptionShort>An implant which allows the user to repair mechs from a distance. This can be installed up to 3 times.</descriptionShort>
+    <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+    <isBad>false</isBad>
+    <priceImpact>true</priceImpact>
+    <initialSeverity>1</initialSeverity> Severity is bound to level of implant
+    <minSeverity>0</minSeverity>
+    <maxSeverity>3</maxSeverity>
+    <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+    <levelIsQuantity>true</levelIsQuantity>
+    <duplicationAllowed>false</duplicationAllowed>
+    <comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDefs>
+          <li>RemoteRepair</li>
+        </abilityDefs>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+          <MechRemoteRepairDistance>7.9</MechRemoteRepairDistance>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <statOffsets>
+          <MechRemoteRepairDistance>13.9</MechRemoteRepairDistance>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>3</minSeverity>
+        <statOffsets>
+          <MechRemoteRepairDistance>19.9</MechRemoteRepairDistance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  -->
+  
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>GnollstromKevlar</defName>
+    <label>GnollstromKevlar</label>
+    <description>A Gnollstrom hack of armorskin that ups the anti-bullet but leaves the user very flammable.</description>
+    <descriptionHyperlinks><RecipeDef>InstallGnollstromKevlar</RecipeDef></descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.82</drawSize>
+      <color>(119,119,128)</color>
+    </graphicData>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>150</Plasteel>
+      <ComponentSpacer>12</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallGnollstromKevlar</defName>
+    <label>install Gnollstrom kevlar body kit</label>
+    <description>Install a Gnollstrom kevlar body kit.</description>
+    <descriptionHyperlinks><ThingDef>GnollstromKevlar</ThingDef></descriptionHyperlinks>
+    <jobString>Installing a Gnollstrom subdermal kevlar kit.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GnollstromKevlar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GnollstromKevlar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>GnollstromKevlar</addsHediff>
+  </RecipeDef>
+  
+    <HediffDef ParentName="ImplantHediffBase">
+    <defName>GnollstromKevlar</defName>
+    <label>Gnollstrom kevlar body kit</label>
+    <labelNoun>a Gnollstrom kevlar body kit</labelNoun>
+    <description>A Gnollstrom kevlar body kit applied directly to the torso.</description>
+    <spawnThingOnRemoved>GnollstromKevlar</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Heat>-50</ArmorRating_Heat>
+          <ArmorRating_Sharp>500</ArmorRating_Sharp>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>Burn</damageDefIncoming>
+        <createHediff>FirePsychosis</createHediff>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>FirePsychosis</defName>
+    <label>fire psychosis</label>
+    <labelNoun>fire psychosis</labelNoun>
+    <description>When the user of a gnollstrom kevlar skin mod catches fire, they go berserk and become harder to stop.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2500~3500</disappearsAfterTicks>
+      </li>
+	  <li Class="HediffCompProperties_CauseMentalState">
+		<humanMentalState>Berserk</humanMentalState>
+        <letterDef>NegativeEvent</letterDef>
+	  </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>2.0</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  
+</Defs>

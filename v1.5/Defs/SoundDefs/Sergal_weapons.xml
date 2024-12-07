@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>Pawn_Melee_Punch_HitSergal</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+        <li Class="AudioGrain_Folder">
+            <clipFolderPath>Impact/PunchHitPawn</clipFolderPath>
+            </li>
+        <li Class="AudioGrain_Folder">
+            <clipFolderPath>Impact/PunchHitPawn</clipFolderPath>
+            </li>
+        <li Class="AudioGrain_Folder">
+            <clipFolderPath>Impact/PunchHitPawn</clipFolderPath>
+            </li>
+        <li Class="AudioGrain_Folder">
+            <clipFolderPath>Impact/PunchHitPawn</clipFolderPath>
+            </li>
+        <li Class="AudioGrain_Folder">
+            <clipFolderPath>Impact/PunchHitPawn</clipFolderPath>
+            </li>
+        <li Class="AudioGrain_Folder">
+            <clipFolderPath>Voices/sergalmerp</clipFolderPath>
+            </li>
+        </grains>      
+        <volumeRange>30.51151~42.93479</volumeRange>      
+        <pitchRange>1~1.54837</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+	<SoundDef>
+		<defName>Sergalgun</defName>
+		<eventNames />   
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Guns/SergalGun</clipPath>
+					</li>
+				</grains>
+        <volumeRange>50.51151~50.93479</volumeRange>      
+        <pitchRange>1~1.04837</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+		<SoundDef>
+		<defName>Sergalbox</defName>
+		<eventNames />   
+		<context>MapOnly</context>
+		<maxSimultaneous>3</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Guns/SergalBox</clipPath>
+					</li>
+				</grains>
+        <volumeRange>30.51151~42.93479</volumeRange>      
+        <pitchRange>1~1.14837</pitchRange>
+        </li>
+        </subSounds>
+	</SoundDef>
+	
+</Defs>

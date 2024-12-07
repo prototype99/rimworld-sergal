@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<SoundDef>
+		<defName>Liongun</defName>
+		<eventNames />   
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Guns/SergalGun</clipPath>
+					</li>
+				</grains>
+
+        <volumeRange>50.51151~50.93479</volumeRange>      
+        <pitchRange>0.6~1.14837</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+		<SoundDef>
+		<defName>Lionbox</defName>
+		<eventNames />   
+		<context>MapOnly</context>
+		<maxSimultaneous>3</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Guns/SergalBox</clipPath>
+					</li>
+				</grains>
+
+        <volumeRange>50.51151~50.93479</volumeRange>      
+        <pitchRange>0.6~1.14837</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+</Defs>

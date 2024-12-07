@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="SergalTribalBase" Abstract="True">
+    <race>Alien_Sergal</race>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>5~23</initialResistanceRange>
+    <defaultFactionType>TribeCivil</defaultFactionType>
+    <backstoryCategories>
+      <li>Tribal</li>
+    </backstoryCategories>
+    <maxGenerationAge>60</maxGenerationAge>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <invNutrition>2.55</invNutrition>
+    <invFoodDef>Pemmican</invFoodDef>
+    <gearHealthRange>0.2~1.8</gearHealthRange>
+    <apparelMoney>300~1800</apparelMoney>
+    <weaponMoney>300~1800</weaponMoney>
+    <techHediffsMoney>500~3500</techHediffsMoney>
+    <apparelTags>
+      <li>Medieval</li>
+      <li>Neolithic</li>
+    </apparelTags>
+  </PawnKindDef>
+
+  <!-- Poverty tier - penitent -->
+
+  <PawnKindDef ParentName="SergalTribalBase">
+    <defName>Sergal_Tribal_Penitent</defName>
+    <label>penitent</label>
+    <combatPower>5</combatPower>
+    <chemicalAddictionChance>0.10</chemicalAddictionChance>
+    <invNutrition>0</invNutrition>
+    <itemQuality>Excellent</itemQuality>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>300~1100</apparelMoney>
+    <weaponMoney>300~1100</weaponMoney>
+    <techHediffsMoney>500~3500</techHediffsMoney>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.11</techHediffsChance>
+  </PawnKindDef>
+
+  <!-- Low tier - archer -->
+
+  <PawnKindDef ParentName="SergalTribalBase">
+		<defName>Sergal_Tribal_Archer</defName>
+		<label>archer</label>
+    <combatPower>18</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.2~1.3</gearHealthRange>
+    <apparelMoney>400~1400</apparelMoney>
+    <weaponMoney>400~1400</weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+		</weaponTags>
+    <techHediffsMoney>500~3500</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.03</techHediffsChance>
+	</PawnKindDef>
+
+  <!-- Mid tier - warrior, hunter, trader -->
+  
+  <PawnKindDef ParentName="SergalTribalBase">
+    <defName>Sergal_Tribal_Warrior</defName>
+    <label>warrior</label>
+    <combatPower>30</combatPower>
+    <itemQuality>Excellent</itemQuality>
+    <canBeSapper>true</canBeSapper>
+    <apparelRequired>
+      <li>Apparel_WarVeil</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>NeolithicMeleeDecent</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SergalTribalBase" Name="Sergal_Tribal_Hunter">
+    <defName>Sergal_Tribal_Hunter</defName>
+    <label>hunter</label>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>5~23</initialResistanceRange>
+    <combatPower>25</combatPower>
+    <gearHealthRange>0.5~1.1</gearHealthRange>
+    <apparelMoney>800~1800</apparelMoney>
+    <weaponMoney>800~1800</weaponMoney>
+    <techHediffsMoney>500~3500</techHediffsMoney>
+    <weaponTags>
+      <li>NeolithicRangedDecent</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="Sergal_Tribal_Hunter">
+    <defName>Sergal_Tribal_Trader</defName>
+    <label>trader</label>
+    <trader>true</trader>
+    <apparelRequired Inherit="False">
+      <li>Apparel_TribalHeaddress</li>
+    </apparelRequired>
+  </PawnKindDef>
+
+  <!-- High tier - berserker, heavy archer, chief melee, chief ranged -->
+
+  <PawnKindDef ParentName="SergalTribalBase">
+    <defName>Sergal_Tribal_Berserker</defName>
+    <label>berserker</label>
+    <combatPower>45</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>100~600</apparelMoney>
+    <weaponMoney>1300~2100</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SergalTribalBase">
+    <defName>Sergal_Tribal_HeavyArcher</defName>
+    <label>heavy archer</label>
+    <combatPower>45</combatPower>
+    <gearHealthRange>0.6~1.8</gearHealthRange>
+    <apparelMoney>1200~2600</apparelMoney>
+    <weaponMoney>1300~2100</weaponMoney>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SergalTribalBase" Name="SergalTribalChiefBase" Abstract="True">
+    <defName>Sergal_Tribal_ChiefMelee</defName>
+    <combatPower>130</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>60</maxGenerationAge>
+    <itemQuality>Masterwork</itemQuality>
+    <factionLeader>true</factionLeader>
+    <canBeSapper>true</canBeSapper>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>100~600</apparelMoney>
+    <weaponMoney>1300~2100</weaponMoney>
+    <techHediffsMoney>2400~7500</techHediffsMoney>
+    <techHediffsChance>0.71</techHediffsChance>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SergalTribalChiefBase">
+    <defName>Sergal_Tribal_ChiefMelee</defName>
+    <label>berserker chief</label>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+	<PawnKindDef ParentName="SergalTribalChiefBase">
+		<defName>Sergal_Tribal_ChiefRanged</defName>
+		<label>archer chief</label>
+		<weaponTags>
+			<li>NeolithicRangedChief</li>
+		</weaponTags>
+	</PawnKindDef>
+
+</Defs>

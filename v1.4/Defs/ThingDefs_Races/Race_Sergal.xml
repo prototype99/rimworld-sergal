@@ -272,117 +272,386 @@
                     </li>
                 </colorChannels>
                 <anchorReplacements>
-                          <li>
-                            <originalTag>LeftEye</originalTag> 
-                            <originalGroup>Torso</originalGroup>
+                        <li>
+                            <originalTag>LeftEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
                             <replacement> 
-                              <rotation>South</rotation>
-                              <tag>LeftEye</tag>
-                              <canMirror>false</canMirror>
-                              <range>0</range>
-                              <layer>Head</layer>
-                              <debugColor>(1,0,0,1)</debugColor>
-                            </replacement>
-                            <offsets> 
-                                    <south>
-                                        <bodyTypes>
-                                        <Female>(0.15, 0.31)</Female>
-										<Thin>(0.15, 0.31)</Thin>
-                                        <Male>(0.15, 0.31)</Male>
-                                        </bodyTypes>
-                                        <headTypes>
-                                            <Male_AverageNormal>(0.15, 0.31)</Male_AverageNormal>
-                                            <Female_AverageNormal>(0.15, 0.31)</Female_AverageNormal>
-                                        </headTypes>
-                                    </south>
-                                </offsets>
-                          </li>
-                          <li>
-                            <originalTag>LeftEye</originalTag> 
-                            <originalGroup>Torso</originalGroup>
+                                <tag>Null</tag>
+                                <rotation>South</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>LeftEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
                             <replacement> 
-                              <rotation>West</rotation>
-                              <tag>LeftEye</tag>
-                              <canMirror>false</canMirror>
-                              
-                              <range>0</range>
-                              <layer>Head</layer>
-                              <debugColor>(1,0,0,1)</debugColor>
-                            </replacement>
-                            <offsets> 
-                                    <west>
-                                        <bodyTypes>
-                                        <Female>(-0.096, 0.40)</Female>
-										<Thin>(-0.085, 0.40)</Thin>
-                                        <Male>(-0.035, 0.40)</Male>
-                                        </bodyTypes>
-                                        <headTypes>
-                                            <Male_AverageNormal>(-0.035, 0.40)</Male_AverageNormal>
-                                            <Female_AverageNormal>(-0.096, 0.40)</Female_AverageNormal>
-                                        </headTypes>
-                                    </west>
-                                </offsets>
-                          </li>
-                            <li>
-                            <originalTag>RightEye</originalTag> 
-                            <originalGroup>Torso</originalGroup>
+                                <tag>Null</tag>
+                                <rotation>West</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>LeftEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
                             <replacement> 
-                              <rotation>South</rotation>
-                              <tag>RightEye</tag>
-                              <canMirror>false</canMirror>
-                              
-                              <range>0</range>
-                              <layer>Head</layer>
-                              <debugColor>(1,0,0,1)</debugColor>
-                            </replacement>
-                            <offsets> 
-                                <south>
-                                    <bodyTypes>
-                                        <Female>(-0.15, 0.31)</Female>
-										<Thin>(-0.15, 0.31)</Thin>
-                                        <Male>(-0.15, 0.31)</Male>
-                                    </bodyTypes>
-                                    <headTypes>
-                                        <Male_AverageNormal>(-0.15, 0.31)</Male_AverageNormal>
-										<Female_AverageNormal>(-0.15, 0.31)</Female_AverageNormal>
-                                    </headTypes>
-                                </south>
-                            </offsets>
-                          </li>
-                          <li>
-                            <originalTag>RightEye</originalTag> 
-                            <originalGroup>Torso</originalGroup>
+                                <tag>Null</tag>
+                                <rotation>South</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>LeftEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
                             <replacement> 
-                              <rotation>East</rotation>
-                              <tag>RightEye</tag>
-                              <canMirror>false</canMirror>
-                              
-                              <range>0</range>
-                              <layer>Head</layer>
-                              <debugColor>(1,0,0,1)</debugColor>
-                            </replacement>
-							
-                            <offsets> 
-                                <east>
-                                    <bodyTypes>
-                                        <SergalFemale>(0.096, 0.40)</SergalFemale>
-										<SergalThin>(0.085, 0.40)</SergalThin>
-                                        <SergalMale>(0.035, 0.40)</SergalMale>
-                                    </bodyTypes>
-                                    <headTypes>
-                                        <Male_AverageNormal>(0.035, 0.40)</Male_AverageNormal>
-										<Female_AverageNormal>(0.096, 0.40)</Female_AverageNormal>
-                                    </headTypes>
-                                </east>
-                            </offsets>
-                          </li>
-                        </anchorReplacements>
-            <bodyAddons>
-            <li>
+                                <tag>Null</tag>
+                                <rotation>East</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>RightEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
+                            <replacement> 
+                                <tag>Null</tag>
+                                <rotation>South</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>RightEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
+                            <replacement> 
+                                <tag>Null</tag>
+                                <rotation>West</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>RightEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
+                            <replacement> 
+                                <tag>Null</tag>
+                                <rotation>South</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>RightEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
+                            <replacement> 
+                                <tag>Null</tag>
+                                <rotation>East</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                    </anchorReplacements>
+            
+                <bodyAddons>  
+                    <li>
+                        <drawnDesiccated>false</drawnDesiccated>
+                        <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                        <path>Things/Sergal/Eyes/SergalEyeLeft</path>
+                        <bodyPart>Eye</bodyPart>
+                        <drawnInBed>false</drawnInBed>
+                        <bodyPartLabel>left eye</bodyPartLabel>
+                        <inFrontOfBody>true</inFrontOfBody>
+                        <colorChannel>skin</colorChannel>
+                        <defaultOffset>Center</defaultOffset>
+                        <alignWithHead>true</alignWithHead>
+                        <layerInvert>False</layerInvert>
+                        <offsets>
+                            <south>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(-0.1498395,-0.05080402)</Male>
+                                    <Female>(-0.1498395,-0.05080402)</Female>
+                                    <Thin>(-0.1498395,-0.05080402)</Thin>
+                                    <Hulk>(-0.1498395,-0.05080402)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-0.1151127,-0.01221881)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-0.1151127,-0.01221881)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </south>
+                            <north>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(-121,-121)</Male>
+                                    <Female>(-121,-121)</Female>
+                                    <Thin>(-121,-121)</Thin>
+                                    <Hulk>(-121,-121)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-121,-121)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-121,-121)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </north>
+                            <east>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(-0.009646302,0.07652749)</Male>
+                                    <Female>(-0.009646302,0.07652749)</Female>
+                                    <Thin>(-0.009646302,0.07652749)</Thin>
+                                    <Hulk>(-0.009646302,0.07652749)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(0.005787938,0.06752411)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(0.005787938,0.06752411)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </east>
+                            <west>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(-121,-121)</Male>
+                                    <Female>(-121,-121)</Female>
+                                    <Thin>(-121,-121)</Thin>
+                                    <Hulk>(-121,-121)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-121,-121)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-121,-121)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </west>
+                        </offsets>
+                        <hiddenUnderApparelFor>
+                            <li>FullHead</li>
+                        </hiddenUnderApparelFor>
+                        <genderGraphics>
+                        <Male>
+                        <hediffGraphics>
+                            <GnollstromBionicEyeTargeter>
+                                <path>Things/Sergal/Eyes/GnollBioniceye</path>
+                                <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>False</layerInvert>
+                            </GnollstromBionicEyeTargeter>
+                            <BionicEye>
+                                <path>Things/Sergal/Eyes/BionicEyeLeft</path>
+                                <scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>True</layerInvert>
+                            </BionicEye>
+                            <ArchotechEye>
+                                <path>Things/Sergal/Eyes/ArchotechEyeLeft</path>
+                                <scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>True</layerInvert>
+                            </ArchotechEye>
+                        </hediffGraphics>
+                        </Male>
+                        <Female>
+                            <hediffGraphics>
+                            <GnollstromBionicEyeTargeter>
+                                <path>Things/Sergal/Eyes/GnollBioniceye</path>
+                                <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>False</layerInvert>
+                            </GnollstromBionicEyeTargeter>
+                            <BionicEye>
+                                <path>Things/Sergal/Eyes/BionicEyeLeft</path>
+                                <scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>True</layerInvert>
+                            </BionicEye>
+                            <ArchotechEye>
+                                <path>Things/Sergal/Eyes/ArchotechEyeLeft</path>
+                                <scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>True</layerInvert>
+                            </ArchotechEye>
+                        </hediffGraphics>
+                        </Female>
+                        </genderGraphics>
+                    </li>
+                    <li>
+                        <drawnDesiccated>false</drawnDesiccated>
+                        <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                        <path>Things/Sergal/Eyes/SergalEyeRight</path>
+                        <bodyPart>Eye</bodyPart>
+                        <bodyPartLabel>right eye</bodyPartLabel>
+                        <drawnInBed>false</drawnInBed>
+                        <inFrontOfBody>true</inFrontOfBody>
+                        <colorChannel>skin</colorChannel>
+                        <defaultOffset>Center</defaultOffset>
+                        <alignWithHead>true</alignWithHead>
+                        <layerInvert>false</layerInvert>
+                        <offsets>
+                            <south>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(0.1498395,-0.05080402)</Male>
+                                    <Female>(0.1498395,-0.05080402)</Female>
+                                    <Thin>(0.1498395,-0.05080402)</Thin>
+                                    <Hulk>(0.1498395,-0.05080402)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(0.1151127,-0.01221881)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(0.1151127,-0.01221881)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </south>
+                            <north>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(-121,-121)</Male>
+                                    <Female>(-121,-121)</Female>
+                                    <Thin>(-121,-121)</Thin>
+                                    <Hulk>(-121,-121)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(0.016,0.17)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(0.025,0.146)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </north>
+                            <east>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(-121,-121)</Male>
+                                    <Female>(-121,-121)</Female>
+                                    <Thin>(-121,-121)</Thin>
+                                    <Hulk>(-121,-121)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-121,-121)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-121,-121)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </east>
+                            <west>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(0.009646302,0.07652749)</Male>
+                                    <Female>(0.009646302,0.07652749)</Female>
+                                    <Thin>(0.009646302,0.07652749)</Thin>
+                                    <Hulk>(0.009646302,0.07652749)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-0.005787938,0.06752411)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-0.005787938,0.06752411)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </west>
+                        </offsets>
+                        <hiddenUnderApparelFor>
+                            <li>FullHead</li>
+                        </hiddenUnderApparelFor>
+                        <genderGraphics>
+                        <Male>
+                        <hediffGraphics>
+                            <GnollstromBionicEyeTargeter>
+                                <path>Things/Sergal/Eyes/GnollBioniceyeRight</path>
+                                <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>False</layerInvert>
+                            </GnollstromBionicEyeTargeter>
+                            <BionicEye>
+                                <path>Things/Sergal/Eyes/BionicEyeRight</path>
+                                <scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>True</layerInvert>
+                            </BionicEye>
+                            <ArchotechEye>
+                                <path>Things/Sergal/Eyes/ArchotechEyeRight</path>
+                                <scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>True</layerInvert>
+                            </ArchotechEye>
+                        </hediffGraphics>
+                        </Male>
+                        <Female>
+                            <hediffGraphics>
+                            <GnollstromBionicEyeTargeter>
+                                <path>Things/Sergal/Eyes/GnollBioniceyeRight</path>
+                                <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>False</layerInvert>
+                            </GnollstromBionicEyeTargeter>
+                            <BionicEye>
+                                <path>Things/Sergal/Eyes/BionicEyeRight</path>
+                                <scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>True</layerInvert>
+                            </BionicEye>
+                            <ArchotechEye>
+                                <path>Things/Sergal/Eyes/ArchotechEyeRight</path>
+                                <scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>True</layerInvert>
+                            </ArchotechEye>
+                        </hediffGraphics>
+                        </Female>
+                        </genderGraphics>
+                    </li>
+                <li>
 				<path>Things/Sergal/Tails/TailX</path>
                 <bodyPart>Tail</bodyPart>
-                <drawnInBed>false</drawnInBed>
                 <colorChannel>skin</colorChannel>
+                <drawnInBed>false</drawnInBed>
                 <inFrontOfBody>false</inFrontOfBody>
                 <defaultOffset>Tail</defaultOffset>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -391,12 +660,21 @@
                     <bodyTypes>
                     <Male>(0,-0.22)</Male>
                     <Female>(0,-0.22)</Female>
-                    <Fat>(0,-0.22)</Fat>
                     <Thin>(0,-0.22)</Thin>
-					<Child>(0,0.242444)</Child>
+					<Child>(0.02,-0.2)</Child>
 					<Baby>(0,0)</Baby>
                     </bodyTypes>
                 </south>
+
+                <north>
+					<bodyTypes>
+					<Male>(0,-0.25)</Male>
+					<Female>(0,-0.25)</Female>
+					<Thin>(0,-0.25)</Thin>
+					<Child>(0,0.1292601)</Child>
+					<Baby>(0,0.1292601)</Baby>
+					</bodyTypes>
+                </north>
                 <west>
 					<bodyTypes>
 					<Male>(0,-0.22)</Male>
@@ -406,32 +684,20 @@
 					<Baby>(-0.1806424,0.03151124)</Baby>
 					</bodyTypes>
                 </west>
-                <north>
-                    <bodyTypes>
-                    <Male>(0,-0.05)</Male>
-                    <Female>(0,-0.05)</Female>
-                    <Fat>(0,-0.05)</Fat>
-                    <Thin>(0,-0.05)</Thin>
-					<Child>(0,0.242444)</Child>
-					<Baby>(0,0.242444)</Baby>
-                    </bodyTypes>
-                </north>
-
                 <east>
-                    <bodyTypes>
-                    <Male>(0,-0.22)</Male>
-                    <Female>(0,-0.22)</Female>
-                    <Fat>(0.02,-0.22)</Fat>
-                    <Thin>(0,-0.22)</Thin>
-					<Child>(-0.1394855,0.03151124)</Child>
-					<Baby>(-0.1394855,0.03151124)</Baby>
-                    </bodyTypes>
+					<bodyTypes>
+					<Male>(0,-0.22)</Male>
+					<Female>(0,-0.22)</Female>
+					<Thin>(0,-0.22)</Thin>
+					<Child>(-0.1806424,0.03151124)</Child>
+					<Baby>(-0.1806424,0.03151124)</Baby>
+					</bodyTypes>
                 </east>
                 </offsets>
                 <hediffGraphics>
-                <SergalTailBionic>Things/Sergal/Tails/TailXBionic</SergalTailBionic>
+                    <SergalTailBionic>Things/Sergal/Tails/TailXBionic</SergalTailBionic>
                 </hediffGraphics>
-            </li>
+                </li>
             </bodyAddons>
             <atlasScale>4</atlasScale>
             <borderScale>1.3</borderScale>
@@ -615,6 +881,7 @@
       </li>
     </tools>
     <race>
+      <fleshType>SGLF_HeadScarRemover</fleshType>
       <thinkTreeMain>Humanlike</thinkTreeMain>
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
@@ -744,6 +1011,7 @@
       <li>RemoveBodyPart</li>
       <li>Euthanize</li>
       <li>Anesthetize</li>
+      <li>InstallSergalEye</li>
       <li MayRequire="Ludeon.RimWorld.Biotech">Vasectomy</li>
       <li MayRequire="Ludeon.RimWorld.Biotech">ReverseVasectomy</li>
       <li MayRequire="Ludeon.RimWorld.Biotech">TubalLigation</li>

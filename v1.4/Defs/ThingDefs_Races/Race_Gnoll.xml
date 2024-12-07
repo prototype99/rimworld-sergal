@@ -202,113 +202,394 @@
                             </second>
                         </li>
                     </colorChannels><anchorReplacements>
-                          <li>
-                            <originalTag>LeftEye</originalTag> <!--Which wound anchor is this replacing -->
-                            <originalGroup>Torso</originalGroup> <!--??? I dunno use the torso hitbox or something? -->
+                        <li>
+                            <originalTag>LeftEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
                             <replacement> 
-                              <rotation>South</rotation> <!-- Annoying but it makes sense. You define a wound anchor for each direction the head can face. Each direction needs to be it's own list element with the relevant offset. -->
-                              <tag>LeftEye</tag> <!-- BodyDef tag -->
-                              <canMirror>false</canMirror> <!--Shows up on back of head or other side of face. Not sure what this would be good for. -->
-                               <!-- Crown types this applies to, if you're into that sort of thing, which we are not. -->
-                              <range>0</range> <!--idfk-->
-                              <layer>Head</layer> <!-- which layer we're placing this on, which is guess is what replaces originalGroup -->
-                              <debugColor>(1,0,0,1)</debugColor> <!-- idfk -->
-                            </replacement>
-                            <offsets> <!-- only define the offset direction related to the rotation. -->
-                                    <south>
-                                        <bodyTypes> <!--facing south means x is reversed. Positive values to the left, negative to the right.-->
-                                        <Female>(0.12, 0.251)</Female> <!-- note to self: invent new body type just to make this harder. -->
-										<Thin>(0.12, 0.251)</Thin> 
-                                        <Male>(0.12, 0.251)</Male>
-                                        </bodyTypes><!-- Note to better coders than me: please add please wound anchor please sliders please -->
-                                        <headTypes>
-                                            <Male_AverageNormal>(0,0)</Male_AverageNormal>
-                                            <Female_AverageNormal>(0,0)</Female_AverageNormal>
-                                        </headTypes>
-                                    </south>
-                                </offsets>
-                          </li>
-                          <li>
-                            <originalTag>LeftEye</originalTag> 
-                            <originalGroup>Torso</originalGroup>
+                                <tag>Null</tag>
+                                <rotation>South</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>LeftEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
                             <replacement> 
-                              <rotation>West</rotation>
-                              <tag>LeftEye</tag>
-                              <canMirror>false</canMirror>
-                              
-                              <range>0</range>
-                              <layer>Head</layer>
-                              <debugColor>(1,0,0,1)</debugColor>
-                            </replacement>
-                            <offsets> 
-                                    <west> <!--facing weest means x is reversed. Positive values to the left, negative to the right.-->
-                                        <bodyTypes>
-                                        <Female>(-0.18, 0.358)</Female>
-										<Thin>(-0.18, 0.358)</Thin>
-                                        <Male>(-0.18, 0.358)</Male>
-                                        </bodyTypes>    
-                                        <headTypes>
-                                           <Male_AverageNormal>(0,0)</Male_AverageNormal>
-                                            <Female_AverageNormal>(0,0)</Female_AverageNormal>
-                                        </headTypes>
-                                    </west>
-                                </offsets>
-                          </li>
-                            <li>
-                            <originalTag>RightEye</originalTag> 
-                            <originalGroup>Torso</originalGroup>
+                                <tag>Null</tag>
+                                <rotation>West</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>LeftEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
                             <replacement> 
-                              <rotation>South</rotation>
-                              <tag>RightEye</tag>
-                              <canMirror>false</canMirror>
-                              
-                              <range>0</range>
-                              <layer>Head</layer>
-                              <debugColor>(1,0,0,1)</debugColor>
-                            </replacement>
-                            <offsets> 
-                                <south> <!--facing south means x is reversed. Positive values to the left, negative to the right.-->
-                                    <bodyTypes>
-                                        <Female>(-0.12, 0.255)</Female>
-										<Thin>(-0.12, 0.255)</Thin>
-                                        <Male>(-0.12, 0.255)</Male>
-                                    </bodyTypes>
-                                    <headTypes>
-                                        <Male_AverageNormal>(0,0)</Male_AverageNormal>
-                                            <Female_AverageNormal>(0,0)</Female_AverageNormal>
-                                    </headTypes>
-                                </south>
-                            </offsets>
-                          </li>
-                          <li>
-                            <originalTag>RightEye</originalTag> 
-                            <originalGroup>Torso</originalGroup>
+                                <tag>Null</tag>
+                                <rotation>South</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>LeftEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
                             <replacement> 
-                              <rotation>East</rotation>
-                              <tag>RightEye</tag>
-                              <canMirror>false</canMirror>
-                              
-                              <range>0</range>
-                              <layer>Head</layer>
-                              <debugColor>(1,0,0,1)</debugColor>
-                            </replacement>
-                            <offsets> 
-                                <east>
-                                    <bodyTypes>
-                                        <Female>(0.18, 0.358)</Female>
-										<Thin>(0.18, 0.358)</Thin>
-                                        <Male>(0.18, 0.358)</Male>
-                                    </bodyTypes>
-                                    <headTypes>
-                                        <Male_AverageNormal>(0,0)</Male_AverageNormal>
-                                            <Female_AverageNormal>(0,0)</Female_AverageNormal>
-                                    </headTypes>
-                                </east>
-                            </offsets>
-                          </li>
-                        </anchorReplacements>
-            <bodyAddons>
-            <li>
+                                <tag>Null</tag>
+                                <rotation>East</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>RightEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
+                            <replacement> 
+                                <tag>Null</tag>
+                                <rotation>South</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>RightEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
+                            <replacement> 
+                                <tag>Null</tag>
+                                <rotation>West</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>RightEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
+                            <replacement> 
+                                <tag>Null</tag>
+                                <rotation>South</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                        <li>
+                            <originalTag>RightEye</originalTag>
+                            <originalGroup>FullHead</originalGroup>
+                            <replacement> 
+                                <tag>Null</tag>
+                                <rotation>East</rotation>
+                                <canMirror>false</canMirror>
+                                <layer>Head</layer>
+                                <debugColor>(0,0,0,0)</debugColor>
+                            </replacement> 
+                        </li>
+                    </anchorReplacements>
+            
+                <bodyAddons>  
+                    <li>
+                        <drawnDesiccated>false</drawnDesiccated>
+                        <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                        <path>Things/Gnoll/Eyes/FemaleEyeLeft</path>
+                        <bodyPart>Eye</bodyPart>
+                        <drawnInBed>false</drawnInBed>
+                        <bodyPartLabel>left eye</bodyPartLabel>
+                        <inFrontOfBody>true</inFrontOfBody>
+                        <colorChannel>skin</colorChannel>
+                        <defaultOffset>Center</defaultOffset>
+                        <alignWithHead>true</alignWithHead>
+                        <layerInvert>False</layerInvert>
+                        <offsets>
+                            <south>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(-0.1112535,-0.03536978)</Male>
+                                    <Female>(-0.1112535,-0.03536978)</Female>
+                                    <Thin>(-0.1112535,-0.03536978)</Thin>
+                                    <Hulk>(-0.1112535,-0.03536978)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-0.015,0.11)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-0.029,0.094)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </south>
+                            <north>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(-12,-12)</Male>
+                                    <Female>(-12,-12)</Female>
+                                    <Thin>(-12,-12)</Thin>
+                                    <Hulk>(-12,-12)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(0.016,0.17)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(0.025,0.146)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </north>
+                            <east>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(-0.1073952,-0.003215434)</Male>
+                                    <Female>(-0.1073952,-0.003215434)</Female>
+                                    <Thin>(-0.1073952,-0.003215434)</Thin>
+                                    <Hulk>(-0.1073952,-0.003215434  )</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(0.016,0.17)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(0.025,0.146)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </east>
+                            <west>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(12,12)</Male>
+                                    <Female>(12,12)</Female>
+                                    <Thin>(12,12)</Thin>
+                                    <Hulk>(12,12)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(0.016,0.17)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(0.025,0.146)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </west>
+                        </offsets>
+                        <hiddenUnderApparelFor>
+                            <li>FullHead</li>
+                        </hiddenUnderApparelFor>
+                        <genderGraphics>
+                        <Male>
+                        <hediffGraphics>
+                            <GnollstromBionicEyeTargeter>
+                                <path>Things/StripedGnoll/Eyes/GnollBioniceye</path>
+                                <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <colorChannel>skin</colorChannel>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>False</layerInvert>
+                            </GnollstromBionicEyeTargeter>
+                            <BionicEye>
+                                <path>Things/StripedGnoll/Eyes/BionicEyeLeft</path>
+                                <scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <colorChannel>skin</colorChannel>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>True</layerInvert>
+                            </BionicEye>
+                            <ArchotechEye>
+                                <path>Things/StripedGnoll/Eyes/ArchotechEyeLeft</path>
+                                <scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <colorChannel>skin</colorChannel>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>True</layerInvert>
+                            </ArchotechEye>
+                        </hediffGraphics>
+                        </Male>
+                        <Female>
+                            <hediffGraphics>
+                            <GnollstromBionicEyeTargeter>
+                                <path>Things/StripedGnoll/Eyes/GnollBioniceyeLeft</path>
+                                <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <colorChannel>skin</colorChannel>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>False</layerInvert>
+                            </GnollstromBionicEyeTargeter>
+                            <BionicEye>
+                                <path>Things/StripedGnoll/Eyes/BionicEyeLeft</path>
+                                <scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <colorChannel>skin</colorChannel>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>True</layerInvert>
+                            </BionicEye>
+                            <ArchotechEye>
+                                <path>Things/StripedGnoll/Eyes/ArchotechEyeLeft</path>
+                                <scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <colorChannel>skin</colorChannel>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>True</layerInvert>
+                            </ArchotechEye>
+                        </hediffGraphics>
+                        </Female>
+                        </genderGraphics>
+                    </li>
+                    <li>
+                        <drawnDesiccated>false</drawnDesiccated>
+                        <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                        <path>Things/Gnoll/Eyes/FemaleEyeRight</path>
+                        <bodyPart>Eye</bodyPart>
+                        <bodyPartLabel>right eye</bodyPartLabel>
+                        <drawnInBed>false</drawnInBed>
+                        <inFrontOfBody>true</inFrontOfBody>
+                        <colorChannel>skin</colorChannel>
+                        <defaultOffset>Center</defaultOffset>
+                        <alignWithHead>true</alignWithHead>
+                        <layerInvert>true</layerInvert>
+                        <offsets>
+                            <south>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(0.1112535,-0.03536978)</Male>
+                                    <Female>(0.1112535,-0.03536978)</Female>
+                                    <Thin>(0.1112535,-0.03536978)</Thin>
+                                    <Hulk>(0.1112535,-0.03536978)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-0.015,0.11)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-0.029,0.094)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </south>
+                            <north>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(-12,-12)</Male>
+                                    <Female>(-12,-12)</Female>
+                                    <Thin>(-12,-12)</Thin>
+                                    <Hulk>(-12,-12)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(0.016,0.17)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(0.025,0.146)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </north>
+                            <east>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(-12,-12)</Male>
+                                    <Female>(-12,-12)</Female>
+                                    <Thin>(-12,-12)</Thin>
+                                    <Hulk>(-12,-12)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(0.016,0.17)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(0.025,0.146)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </east>
+                            <west>
+                                <layerOffset>-0.2720256</layerOffset>
+                                <bodyTypes>
+                                    <Male>(-0.1073952,-0.003215434)</Male>
+                                    <Female>(-0.1073952,-0.003215434)</Female>
+                                    <Thin>(-0.1073952,-0.003215434)</Thin>
+                                    <Hulk>(-0.1073952,-0.003215434)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(0.016,0.17)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(0.025,0.146)</Baby>
+                                </bodyTypes>
+                                <headTypes>
+                                    <Male_AverageNormal>(0,0)</Male_AverageNormal>
+                                    <Female_AverageNormal>(0,0)</Female_AverageNormal>
+                                </headTypes>
+                            </west>
+                        </offsets>
+                        <hiddenUnderApparelFor>
+                            <li>FullHead</li>
+                        </hiddenUnderApparelFor>
+                        <genderGraphics>
+                        <Male>
+                        <hediffGraphics>
+                            <GnollstromBionicEyeTargeter>
+                                <path>Things/StripedGnoll/Eyes/GnollBioniceyeRight</path>
+                                <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <colorChannel>skin</colorChannel>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>False</layerInvert>
+                            </GnollstromBionicEyeTargeter>
+                            <BionicEye>
+                                <path>Things/StripedGnoll/Eyes/BionicEyeRight</path>
+                                <scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <colorChannel>skin</colorChannel>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>True</layerInvert>
+                            </BionicEye>
+                            <ArchotechEye>
+                                <path>Things/StripedGnoll/Eyes/ArchotechEyeRight</path>
+                                <scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <colorChannel>skin</colorChannel>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>True</layerInvert>
+                            </ArchotechEye>
+                        </hediffGraphics>
+                        </Male>
+                        <Female>
+                            <hediffGraphics>
+                            <GnollstromBionicEyeTargeter>
+                                <path>Things/StripedGnoll/Eyes/GnollBioniceyeRight</path>
+                                <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <colorChannel>skin</colorChannel>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>False</layerInvert>
+                            </GnollstromBionicEyeTargeter>
+                            <BionicEye>
+                                <path>Things/StripedGnoll/Eyes/BionicEyeRight</path>
+                                <scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <colorChannel>skin</colorChannel>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>True</layerInvert>
+                            </BionicEye>
+                            <ArchotechEye>
+                                <path>Things/StripedGnoll/Eyes/ArchotechEyeRight</path>
+                                <scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                                <drawSize>(0.1,0.1)</drawSize>
+                                <inFrontOfBody>true</inFrontOfBody>
+                                <colorChannel>skin</colorChannel>
+                                <defaultOffset>Center</defaultOffset>
+                                <alignWithHead>true</alignWithHead>
+                                <layerInvert>True</layerInvert>
+                            </ArchotechEye>
+                        </hediffGraphics>
+                        </Female>
+                        </genderGraphics>
+                    </li>
+                <li>
 				<path>Things/Gnoll/Tails/TailX</path>
                 <bodyPart>Tail</bodyPart>
                 <colorChannel>skin</colorChannel>
@@ -322,6 +603,8 @@
                     <Male>(0,-0.22)</Male>
                     <Female>(0,-0.22)</Female>
                     <Thin>(0,-0.22)</Thin>
+					<Child>(0.02,-0.2)</Child>
+					<Baby>(0,0)</Baby>
                     </bodyTypes>
                 </south>
 
@@ -354,7 +637,7 @@
                 </east>
                 </offsets>
                 <hediffGraphics>
-                <GnollTailBionic>Things/Gnoll/Tails/TailXBionic</GnollTailBionic>
+                    <GnollTailBionic>Things/Gnoll/Tails/TailXBionic</GnollTailBionic>
                 </hediffGraphics>
                 </li>
             </bodyAddons>
@@ -368,24 +651,6 @@
 				<li>Thin</li>
 				<li>Male</li>
 				<li>Female</li>
-				 <!--li>
-					<rotation>South</rotation>
-					<tag>RightEye</tag>
-					<canMirror>false</canMirror>
-					<offset>(-0.09, 0, 0.235)</offset>
-					<range>0</range>
-					<layer>Head</layer>
-					<debugColor>(1,1,1,1)</debugColor>
-				  </li>
-				  <li>
-					<rotation>South</rotation>
-					<tag>LeftEye</tag>
-					<canMirror>false</canMirror>
-					<offset>(0.09, 0, 0.235)</offset>
-					<range>0</range>
-					<layer>Head</layer>
-					<debugColor>(0,0,0,1)</debugColor>
-				</li -->
 			</bodyTypes>
             </alienPartGenerator>
 			<chemicalSettings />	
@@ -623,6 +888,7 @@
 		</li>
     </tools>
     <race>
+      <fleshType>SGLF_HeadScarRemover</fleshType>
       <thinkTreeMain>Humanlike</thinkTreeMain>
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
@@ -749,6 +1015,7 @@
       <li>RemoveBodyPart</li>
       <li>Euthanize</li>
       <li>Anesthetize</li>
+      <li>InstallGnollEye</li>
       <li MayRequire="Ludeon.RimWorld.Biotech">Vasectomy</li>
       <li MayRequire="Ludeon.RimWorld.Biotech">ReverseVasectomy</li>
       <li MayRequire="Ludeon.RimWorld.Biotech">TubalLigation</li>

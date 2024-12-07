@@ -4,12 +4,22 @@
 	<BodyPartDef>
    	 <defName>GnollTail</defName>
    	 <label>gnoll tail</label>
-   	 <hitPoints>25</hitPoints>
+   	 <hitPoints>45</hitPoints>
    	 <frostbiteVulnerability>8</frostbiteVulnerability>
    	 <spawnThingOnRemoved>GnollTail</spawnThingOnRemoved>
    	 <skinCovered>true</skinCovered>
          <beautyRelated>true</beautyRelated>
 	</BodyPartDef>
 
+    <BodyPartDef>
+   	 <defName>GnollEye</defName>
+   	 <label>gnoll eye</label>
+   	 <hitPoints>12</hitPoints>
+   	 <frostbiteVulnerability>8</frostbiteVulnerability>
+   	 <spawnThingOnRemoved>GnollEye</spawnThingOnRemoved>
+   	 <skinCovered>true</skinCovered>
+         <beautyRelated>true</beautyRelated>
+	</BodyPartDef>
+    
 
 </Defs>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>Base_Gnoll_OrganTrader</defName>
+    <label>Gnoll organ trader</label>
+    <stockGenerators>
+            <li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>1~2000
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>GnollTail</thingDef>
+				<countRange>1~5
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>GnollTailBionic</thingDef>
+				<countRange>1~5
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>SergalTailBionic</thingDef>
+				<countRange>1~5
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>LionTail</thingDef>
+				<countRange>1~5
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>LionTailBionic</thingDef>
+				<countRange>1~5
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>SergTail</thingDef>
+				<countRange>1~5
+				</countRange>
+			</li>
+            <li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineUltratech</thingDef>
+				<countRange>1~15
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>SergalTailBionic</thingDef>
+				<countRange>1~5
+				</countRange>
+			</li>
+			      <li Class="StockGenerator_Category">
+        <categoryDef>BodyPartsNatural</categoryDef>
+        <thingDefCountRange>
+          <min>3</min>
+          <max>34</max>
+        </thingDefCountRange>
+        <totalPriceRange>
+          <min>500</min>
+          <max>5000</max>
+        </totalPriceRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>BodyPartsArchotech</categoryDef>
+        <thingDefCountRange>
+          <min>3</min>
+          <max>34</max>
+        </thingDefCountRange>
+        <totalPriceRange>
+          <min>500</min>
+          <max>5000</max>
+        </totalPriceRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>BodyPartsBionic</categoryDef>
+        <thingDefCountRange>
+          <min>3</min>
+          <max>34</max>
+        </thingDefCountRange>
+        <totalPriceRange>
+          <min>500</min>
+          <max>5000</max>
+        </totalPriceRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

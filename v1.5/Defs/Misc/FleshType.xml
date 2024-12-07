@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FleshTypeDef>
+    <defName>SGLF_HeadScarRemover</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitFlesh</damageEffecter>
+	<ateDirect>AteHumanlikeMeatDirect</ateDirect>
+	<ateAsIngredient>AteHumanlikeMeatAsIngredient</ateAsIngredient>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC</texture>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+
+</Defs>

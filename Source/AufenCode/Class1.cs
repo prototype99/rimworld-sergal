@@ -10,14 +10,14 @@ namespace AufenCode
     public class IngestionOutcomeDoer_RemoveHediff : IngestionOutcomeDoer
     {
         public HediffDef hediffDef;
-        protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested)
+        /*protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested)
         {
             Hediff hediff = pawn.health.hediffSet.hediffs.Find((Hediff hDefToRemove) => hDefToRemove.def == hediffDef);
             if (hediff != null)
             {
                 pawn.health.RemoveHediff(hediff);
             }
-        }
+        }*/
 
         public override IEnumerable<StatDrawEntry> SpecialDisplayStats(ThingDef parentDef)
         {
@@ -29,6 +29,15 @@ namespace AufenCode
                 }
             }
             yield break;
+        }
+
+        protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested, int ingestedCount)
+        {
+            Hediff hediff = pawn.health.hediffSet.hediffs.Find((Hediff hDefToRemove) => hDefToRemove.def == hediffDef);
+            if (hediff != null)
+            {
+                pawn.health.RemoveHediff(hediff);
+            }
         }
     }
 
