@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>PowerThirst</defName>
+    <label>Power Thirst</label>
+    <description>HEY! Do you want to feel SO ENERGETIC? Try POWERTHIRST! Energy drink for people who need GRATUITOUS AMOUNTS OF ENERGY. With all new flavours like SHOCKOLATE! Chocolate energy; its like adding chocolate to an ELECTRICAL STORM! Sound the alarm, you are going to feel UNCOMFORTABLY ENERGETIC. What's that!? You want strawberry? Well, how about RAWberry!? Made with lightening, REAL LIGHTENING! Sports. AGHHHH!!! You'll be good at them. It's an energy drink for men. MENERGY!! These aren't your dad's puns, these are energy puns. TURBO-PUNS! Science, energy, science, energy. Electrolytes, turbolights, powerlights. More lights than YOUR BODY HAS ROOM FOR! You'll be so fast that mother nature will be like: "sloooowww ddoooowwwnnnnnn", and you'll be like "fuck you!" and kick her in the face with your ENERGY LEGS. You'll have so much energy, AGHHHH! Just running all the time! Power running. Power lifting. Power sweeping. Power dating. Power eating. Power laughing. Power spawning BABIES! You'll have so many babies. 400 BABIES! Give Powerthirst to your babies, and they'll be good at sports! Make your babies run ABNORMALLY FAST! They'll run as fast as KENYANS! People will watch them running and think they are KENYANS! They'll race as fast as KENYANS! Against actual KENYANS! And there will be a time when they'll get deported back to KENYYAAAA! Hey! Go with the sure thing, don't gamble on your energy. Snake eyeeess... Try POWERTHIRST! The energy drink that will make you ARHHHH! Sports! ARHHHH!</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/PowerThirst</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>200</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <joyKind>Chemical</joyKind>
+      <joy>0.40</joy>
+      <drugCategory>Hard</drugCategory>
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>90</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>PowerThirstHigh</hediffDef>
+          <severity>0.75</severity>
+          <toleranceChemical>PowerThirst</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>0.4</offset>
+          <toleranceChemical>PowerThirst</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>PowerThirstTolerance</hediffDef>
+          <severity>0.044</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+			<researchPrerequisite>PowerThirstProduction</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>6</Neutroamine>
+      <Yayo>6</Yayo>
+      <Leather_frog>1</Leather_frog>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>PowerThirst</chemical>
+        <addictiveness>0.08</addictiveness>
+        <minToleranceToAddict>0.03</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+        <needLevelOffset>1</needLevelOffset>
+        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+        <listOrder>200</listOrder>
+        <overdoseSeverityOffset>
+          <min>0.18</min>
+          <max>0.35</max>
+        </overdoseSeverityOffset>
+        <largeOverdoseChance>0.01</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>PowerThirstHigh</defName>
+    <description>I feel like a KENYAN!! I'm ready to have FOUR HUNDRED babies!! SPORTS, ARHHHH, ENERGY!</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>high on Power Thirst</label>
+    <labelNoun>a Power Thirst high</labelNoun>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.40</severityPerDay>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <painFactor>0.1</painFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <offset>0.50</offset>
+            </li>
+            <li>
+                <capacity>Manipulation</capacity>
+                <offset>0.55</offset>
+            </li>
+            <li>
+              <capacity>Moving</capacity>
+              <offset>0.50</offset>
+            </li>
+          </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>PowerThirstHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>PowerThirstHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>high on Power Thirst</label>
+        <description>I feel like a KENYAN!! I'm ready to have FOUR HUNDRED babies!! SPORTS, ARHHHH, ENERGY!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!-- Power Thirst addiction -->
+
+  <ChemicalDef>
+    <defName>PowerThirst</defName>
+    <label>Power Thirst</label>
+    <addictionHediff>PowerThirstAddiction</addictionHediff>
+    <toleranceHediff>PowerThirstTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+	</ChemicalDef>
+  
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_PowerThirst</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>Power Thirst</label>
+    <description>Being addicted to power thirst is awfully uncool. This person will be extremely slow and grumpy until the RAWberry wears off.</description>
+    <listPriority>45</listPriority>
+  </NeedDef>
+
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>PowerThirstTolerance</defName>
+    <label>Power Thirst tolerance</label>
+    <description>kenya tolerance</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.015</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>PowerThirst</chemical>
+      </li>
+    </comps>
+		<hediffGivers>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>ChemicalDamageModerate</hediff>
+				<minSeverity>0.50</minSeverity>
+				<baseMtbDays>120</baseMtbDays>
+				<partsToAffect>
+					<li>Brain</li>
+				</partsToAffect>
+			</li>
+		</hediffGivers>
+  </HediffDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>PowerThirstAddiction</defName>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <label>Power Thirst addiction</label>
+    <chemicalNeed>Chemical_PowerThirst</chemicalNeed>
+    <description>Being addicted to power thirst is awfully uncool. This person will be extremely slow and grumpy until the RAWberry wears off.</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.04</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <painFactor>3</painFactor>
+        <restFallFactorOffset>0.3</restFallFactorOffset>
+        <hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.50</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.30</offset>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+              <mentalState>Binging_DrugExtreme</mentalState>
+              <mtbDays>40</mtbDays>
+          </li>
+          <li>
+            <mentalState>Wander_Psychotic</mentalState>
+            <mtbDays>2</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>PowerThirstWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>PowerThirstAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>Power Thirst withdrawal</label>
+        <description>I feel like a canadian antivax soccer mum on her way to soccer practice, and everything around me is moving too fast for me to keep up damn it.</description>
+        <baseMoodEffect>-35</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>

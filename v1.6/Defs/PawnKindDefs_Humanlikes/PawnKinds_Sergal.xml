@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================ Sergal Base ========================== -->
+
+  <PawnKindDef Name="SergalBase" Abstract="True">
+    <defaultFactionType>SergalEmpire</defaultFactionType>
+    <race>Alien_Sergal</race>
+	<backstoryCategories>
+        <li>SergalBackstory</li>
+  	</backstoryCategories>
+    <itemQuality>Good</itemQuality>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.10</backstoryCryptosleepCommonality>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <apparelMoney>700~1700</apparelMoney>
+    <weaponMoney>400~1000</weaponMoney>
+    <techHediffsMoney>100~1500</techHediffsMoney>
+    <apparelTags>
+    <li>Outlander</li>
+    <li>IndustrialBasic</li>
+    <li>IndustrialAdvanced</li>
+    </apparelTags>
+	 <weaponTags>
+	  <li>ShortShots</li>
+      <li>RangedLight</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Sergal Civilian Base ========================== -->
+
+  <PawnKindDef Name="SergalCivBase" ParentName="SergalBase" Abstract="True">
+    <combatPower>25</combatPower>
+	<race>Alien_Sergal</race>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>5~23</initialResistanceRange>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2</gearHealthRange>
+    <apparelMoney>500~1500</apparelMoney>
+    <weaponMoney>400~1500</weaponMoney>
+    <techHediffsMoney>500~2000</techHediffsMoney>
+    <weaponTags>
+      <li>Gun</li>
+      <li>NonNeolithicOnlyMelee</li>
+    </weaponTags>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.21</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.75</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>25~70</countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>700~1000</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Sergal Civilians ========================== -->
+  
+  <PawnKindDef ParentName="SergalCivBase">
+    <defName>SergalColonist</defName>
+    <label>colonist</label>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SergalCivBase">
+    <defName>SergalPackLeader</defName>
+    <label>Kerr</label>
+    <labelPlural>Kerrs</labelPlural>
+    <factionLeader>true</factionLeader>
+	<minGenerationAge>19</minGenerationAge>
+	<maxGenerationAge>55</maxGenerationAge>
+    <gearHealthRange>0.2~2</gearHealthRange>
+    <apparelMoney>1500~3500</apparelMoney>
+    <weaponMoney>1400~3500</weaponMoney>
+    <techHediffsMoney>1500~6000</techHediffsMoney>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SergalCivBase">
+    <defName>SergalTrader</defName>
+    <label>colony trader</label>
+    <trader>true</trader>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SergalCivBase">
+    <defName>SergalSlave</defName>
+    <label>slave</label>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SergalCivBase">
+    <defName>SergalRefugee</defName>
+    <label>refugee</label>
+  </PawnKindDef>
+
+  
+  <!-- ============================ Sergal Security ========================== -->
+  
+  <PawnKindDef ParentName="SergalCivBase">
+    <defName>SergalSecurityGuard</defName>
+    <label>security guard</label>
+    <combatPower>50</combatPower>
+    <maxGenerationAge>100</maxGenerationAge>
+    <gearHealthRange>0.2~2</gearHealthRange>
+    <apparelMoney>500~1500</apparelMoney>
+    <weaponMoney>400~1500</weaponMoney>
+    <techHediffsMoney>500~2000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.20</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>30~100</countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+ 
+  <!-- ============================ Sergal Military Base ========================== -->
+  
+  <PawnKindDef Name="SergalMilBase" ParentName="SergalBase" Abstract="True">
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <initialWillRange>11~33</initialWillRange>
+    <initialResistanceRange>15~53</initialResistanceRange>
+    <isFighter>true</isFighter>
+	<race>Alien_Sergal</race>
+    <invNutrition>2.55</invNutrition>
+    <itemQuality>Normal</itemQuality>
+	<minGenerationAge>19</minGenerationAge>
+    <maxGenerationAge>46</maxGenerationAge>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <apparelMoney>700~1500</apparelMoney>
+    <weaponMoney>300~1000</weaponMoney>
+    <techHediffsMoney>100~1100</techHediffsMoney>
+    <weaponTags>
+	  <li>ShortShots</li>
+      <li>LongShots</li>
+      <li>RangedLight</li>
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.1</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>50~200</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1~3</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Sergal Military ========================== -->
+  
+  <PawnKindDef ParentName="SergalMilBase">
+    <defName>SergalRecruit</defName>
+    <label>recruit</label>
+    <combatPower>70</combatPower>
+  </PawnKindDef>
+
+  
+  <PawnKindDef ParentName="SergalMilBase">
+    <defName>SergalHunter</defName>
+    <label>hunter</label>
+    <combatPower>90</combatPower>
+    <minGenerationAge>19</minGenerationAge>
+    <gearHealthRange>0.2~2</gearHealthRange>
+    <apparelMoney>500~1500</apparelMoney>
+    <weaponMoney>400~1500</weaponMoney>
+    <techHediffsMoney>500~2000</techHediffsMoney>
+    <weaponTags>
+	  <li>ShortShots</li>
+      <li>LongShots</li>
+      <li>RangedLight</li>
+    </weaponTags>
+    <combatEnhancingDrugsCount>1~3</combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.23</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>50~200</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1~3</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+
+  <PawnKindDef ParentName="SergalMilBase">
+    <defName>SergalCommando</defName>
+    <label>commando</label>
+    <combatPower>135</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <gearHealthRange>0.7~2</gearHealthRange>
+    <apparelMoney>1500~3500</apparelMoney>
+    <weaponMoney>800~2500</weaponMoney>
+    <techHediffsMoney>1500~4000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.58</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>180~480</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1~2</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  
+  <PawnKindDef ParentName="SergalMilBase">
+     <defName>SergalCommandoElite</defName>
+    <label>elite commando</label>
+    <combatPower>220</combatPower>
+    <minGenerationAge>26</minGenerationAge>
+    <gearHealthRange>0.2~2</gearHealthRange>
+    <apparelMoney>2500~3500</apparelMoney>
+    <weaponMoney>1400~2500</weaponMoney>
+    <techHediffsMoney>2500~4000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <weaponTags>
+      <li>LongShots</li>
+      <li>ShortShots</li>
+      <li>EliteGun</li>
+    </weaponTags>
+    <techHediffsChance>0.80</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>120~480</countRange>
+        </li>
+        <li> 
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1~2</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+
+</Defs>

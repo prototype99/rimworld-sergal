@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_sergal</defName>
+    <label>sergal leather</label>
+    <description>Tanned, dried, scraped sergal rind. Sometimes made of wax, sometimes mold, cheeses have a variety of skins.</description>
+    <graphicData>
+      <color>(142,164,211)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>4.2</MarketValue>
+      <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(142,164,211)</color>
+      <commonality>0.0025</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_gnoll</defName>
+    <label>gnoll leather</label>
+    <description>Tanned, dried, scraped gnoll skin. It smells worse than it sounds.</description>
+    <graphicData>
+      <color>(142,164,211)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>4.2</MarketValue>
+      <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(176,153,109)</color>
+      <commonality>0.0025</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+    <ThingDef ParentName="LeatherBase">
+    <defName>Leather_frog</defName>
+    <label>frog leather</label>
+    <description>Tanned, dried, scraped frog skin. It smells worse than it sounds and tastes worse than that.</description>
+    <graphicData>
+      <color>(142,164,211)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>4.2</MarketValue>
+      <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(176,153,109)</color>
+      <commonality>0.0025</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+    <ThingDef ParentName="LeatherBase">
+    <defName>Leather_stripedgnoll</defName>
+    <label>striped gnoll leather</label>
+    <description>Tanned, dried, scraped striped gnoll skin. It smells worse than it sounds.</description>
+    <graphicData>
+      <color>(204,204,204)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>4.2</MarketValue>
+      <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(142,164,211)</color>
+      <commonality>0.0025</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+      <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Lion</defName>
+    <label>Lion Leather</label>
+    <description>Tanned, dried, scraped lion skin. There's more than one way to skin a cat.</description>
+    <graphicData>
+      <color>(204,204,204)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>4.2</MarketValue>
+      <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(142,164,211)</color>
+      <commonality>0.0025</commonality>
+    </stuffProps>
+  </ThingDef>
+  <!--SHUT UP DON'T ASK QUESTIONS -->
+  <!-- BUT IT CONFUSED ME FOR HALF A SECOND -->
+    <ThingDef ParentName="RoughPlantBase">
+    <defName>FrogleafLeaves</defName>
+    <label>frogleaf leaves</label>
+    <description>Raw cut leaves of a frogleaf plant. Can be rolled into joints at a crafting spot.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/PlantFoodRaw/FrogleafLeaves</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.6</MarketValue>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+    </ingestible>
+  </ThingDef>
+  
+</Defs>

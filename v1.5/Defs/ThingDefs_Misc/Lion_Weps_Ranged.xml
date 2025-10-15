@@ -126,6 +126,72 @@
     </tools>
 	</ThingDef>
 	
+        <ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>GnollWep_WaspRifle</defName>
+		<label>Wasp Rifle</label>
+            <weaponTags>
+      <li>GnollstromWeapons</li>
+    </weaponTags>
+		<description>Rare in-house gnollstrom technology. Fires a series of little laserlets at high velocity.</description>
+		<graphicData>
+			<texPath>Things/Guns/wasp_rifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_ChargeLance</soundInteract>
+		<recipeMaker>
+            <researchPrerequisite>PrideStuff</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>240</Plasteel>
+			<ComponentIndustrial>12</ComponentIndustrial>
+			<ComponentSpacer>14</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>82000</WorkToMake>
+            <MarketValue>75000</MarketValue>
+			<Mass>9.5</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.57</AccuracyLong>
+			<RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GnollWasp</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+                <burstShotCount>5</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<range>40</range>
+				<soundCast>GnollWasp</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+    </tools>
+	</ThingDef>
+    
+    
     <ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>LionWep_Chaingauss</defName>
 		<label>Pride Machinegun</label>
@@ -274,6 +340,23 @@
 			<damageAmountBase>12</damageAmountBase>
 			<stoppingPower>1.1</stoppingPower>
 			<speed>70</speed>
+		</projectile>
+  </ThingDef>
+  
+  
+  	  <ThingDef ParentName="BaseBullet">
+    <defName>GnollWasp</defName>
+    <label>laser wasp</label>
+    <graphicData>
+      <texPath>Things/Projectile/laser_wasp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+		<projectile>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>4</damageAmountBase>
+			<stoppingPower>1.1</stoppingPower>
+			<speed>120</speed>
 		</projectile>
   </ThingDef>
   

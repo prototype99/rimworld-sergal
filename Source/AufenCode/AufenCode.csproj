@@ -50,9 +50,6 @@
     <Reference Include="ISharpZipLib">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\ISharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Posix">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Mono.Posix.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.Security">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Mono.Security.dll</HintPath>
     </Reference>
@@ -65,6 +62,9 @@
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ScreenCaptureModule">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
@@ -90,9 +90,6 @@
     <Reference Include="UnityEngine.TerrainPhysicsModule">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.TextCoreModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
@@ -114,9 +111,6 @@
     <Reference Include="UnityEngine.UmbraModule">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.UmbraModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UNETModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.UNETModule.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UnityAnalyticsModule">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
     </Reference>
@@ -137,7 +131,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AufenBetty.cs" />
+    <Compile Include="AufenBetty_Ability.cs" />
+    <Compile Include="AufenBetty_Projectiles.cs" />
+    <Compile Include="PlasmaFire.cs" />
+    <Compile Include="PlasmaFireThingy.cs" />
+    <Compile Include="IngestionOutcomeDoer_RemoveHediff.cs" />
     <Compile Include="CompAbilityEffect_RemoveHediffList.cs" />
     <Compile Include="CompPropertiesAbility_RemoveHediffList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

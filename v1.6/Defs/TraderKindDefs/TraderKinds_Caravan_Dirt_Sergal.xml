@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>Caravan_Sergal_Dirt</defName>
+    <label>bulk dirt trader</label>
+    <commonality>1</commonality>
+        <stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>WearableDirt</thingDef>
+				<countRange>105~2000
+				</countRange>
+			</li>
+            <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>750~1200</countRange>
+      </li>
+    </stockGenerators>
+	</TraderKindDef>
+
+</Defs>

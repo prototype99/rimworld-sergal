@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>Rippit</defName>
+    <label>rippit</label>
+    <description>Sergals and gnolls working in tandem discovered something about frogs; they take a lot of drugs. They take so many drugs that it all permeates into the skin, and if you bake their leather, it oozes a slimy liquid that is like a drug parfet. Gnolls and sergals love it, frogs hate it, and everyone else feels like it's a basic high. Bake in a smelter with some smokeleaves to create a joint made of frog souls.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/Rippit</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.75</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>350</WorkToMake>
+      <MarketValue>100</MarketValue>
+      <Mass>0.05</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.90</joy>
+      <drugCategory>Hard</drugCategory>
+      <baseIngestTicks>240</baseIngestTicks>
+      <ingestSound>Ingest_Smoke</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.21,0,0.05)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestHoldUsesTable>true</ingestHoldUsesTable>
+      <ingestCommandString>Rip {0}</ingestCommandString>
+      <ingestReportString>Ripping {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>RippitHigh</hediffDef>
+          <severity>0.75</severity>
+          <toleranceChemical>Rippit</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>0.4</offset>
+          <toleranceChemical>Rippit</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>RippitTolerance</hediffDef>
+          <severity>0.040</severity>
+					<divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+			<researchPrerequisite>RippitProduction</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricSmelter</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Leather_frog>4</Leather_frog>
+      <SmokeleafLeaves>4</SmokeleafLeaves>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Rippit</chemical>
+        <addictiveness>0.10</addictiveness>
+        <minToleranceToAddict>0.54</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+        <needLevelOffset>1</needLevelOffset>
+        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+        <listOrder>100</listOrder>
+        <overdoseSeverityOffset>
+          <min>0.18</min>
+          <max>0.35</max>
+        </overdoseSeverityOffset>
+				<largeOverdoseChance>0.01</largeOverdoseChance>
+			</li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>RippitHigh</defName>
+    <description>I feel energized but I can't see with such heavy visual strobing.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>high on rippit</label>
+    <labelNoun>a rippit high</labelNoun>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>true</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.5</severityPerDay>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <painFactor>0.5</painFactor>
+          <restFallFactor>0.33</restFallFactor>
+        <statOffsets>
+          <TradePriceImprovement>1.4</TradePriceImprovement>
+        </statOffsets>
+          <capMods>
+            <li>
+              <capacity>Sight</capacity>
+              <offset>-0.35</offset>
+            </li>
+            <li>
+              <capacity>Moving</capacity>
+              <offset>0.35</offset>
+            </li>
+          </capMods>
+          <!--mentalStateGivers>
+          <li>
+            <mentalState>InsultingSpree</mentalState>
+            <mtbDays>0.2</mtbDays>
+          </li>
+        </mentalStateGivers-->
+        </li>
+      </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>RippitHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>RippitHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>high on rippit</label>
+        <description>Though I can't see too well, I feel energized and happy.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>RippitHighSergal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>RippitHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>high on rippit</label>
+        <description>Frog slaves are the best.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>RippitHighGnoll</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>RippitHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>high on rippit</label>
+        <description>Hehe I love dead frog juice.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>RippitHighFrog</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>RippitHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>high on rippit</label>
+        <description>I'm high on the souls of my fellow frogs!</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+   <!-- Rippit addiction -->
+
+  <ChemicalDef>
+    <defName>Rippit</defName>
+    <label>Rippit</label>
+    <addictionHediff>RippitAddiction</addictionHediff>
+    <toleranceHediff>RippitTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+	</ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_Rippit</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>rippit</label>
+    <description>Because of a rippit dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <listPriority>25</listPriority>
+  </NeedDef>
+  
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>RippitTolerance</defName>
+    <label>rippit tolerance</label>
+    <description>rippit tolerance</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.15</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>Rippit</chemical>
+      </li>
+    </comps>
+		<hediffGivers>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Asthma</hediff>
+				<baseMtbDays>180</baseMtbDays>
+				<minSeverity>0.50</minSeverity>
+				<partsToAffect>
+					<li>Lung</li>
+				</partsToAffect>
+				<countToAffect>2</countToAffect>
+			</li>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Carcinoma</hediff>
+				<baseMtbDays>180</baseMtbDays>
+				<minSeverity>0.40</minSeverity>
+				<partsToAffect>
+					<li>Lung</li>
+				</partsToAffect>
+				<countToAffect>1</countToAffect>
+			</li>
+		</hediffGivers>
+	</HediffDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>RippitAddiction</defName>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <label>rippit dependence</label>
+    <chemicalNeed>Chemical_Rippit</chemicalNeed>
+    <description>Because of a rippit dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.0333</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.10</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.15</offset>
+          </li>
+        </capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Binging_Food</mentalState>
+						<mtbDays>30</mtbDays>
+					</li>
+					<li>
+						<mentalState>Binging_DrugMajor</mentalState>
+						<mtbDays>50</mtbDays>
+					</li>
+				</mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>RippitWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>RippitAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>rippit withdrawal</label>
+        <description>If I don't get more rippit, I'm going to croak.</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>RippitWithdrawalFrog</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>RippitAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>rippit withdrawal</label>
+        <description>I need more... I'm even considering peeling my own skin off... kill me.</description>
+        <baseMoodEffect>-200</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

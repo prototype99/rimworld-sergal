@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>    
+  <SoundDef>
+    <defName>Recipe_Cremate_Gnoll</defName>  
+    <sustain>True</sustain>
+    <context>MapOnly</context>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <sustainStopSound>Crematorium_Stop</sustainStopSound>  
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Music/departed/departed</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>1</volumeRange>      
+        <pitchRange>1</pitchRange>
+        <distRange>10~38</distRange>
+      </li>    
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Music/departed</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>1</volumeRange>
+        <pitchRange>1</pitchRange>
+        <distRange>10~38</distRange>
+        <sustainLoop>False</sustainLoop>
+        <sustainIntervalRange>0</sustainIntervalRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

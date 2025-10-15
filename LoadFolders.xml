@@ -22,6 +22,12 @@
     <li>/</li>
     <li>v1.5</li>
     <li IfModActive="rim.job.world">PatchesForThatOneModder</li>
-    <li IfModActive="Ludeon.RimWorld.Anomaly">Gnollstrom_1.5</li>
+    <li IfModActive="Ludeon.RimWorld.Biotech">Gnollstrom_1.5</li>
   </v1.5>
+  <v1.6>
+    <li>/</li>
+    <li>v1.6</li>
+    <li IfModActive="this.mod.does.not.exist">PatchesForThatOneModder</li>
+    <li IfModActive="Ludeon.RimWorld.Biotech">Gnollstrom_1.6</li>
+  </v1.6>
 </loadFolders>

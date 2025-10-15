@@ -1,3 +1,8 @@
 D:\Shifty_Steam\steamapps\common\RimWorld\Mods\SergalRace\Assemblies\AufenCode.dll
 D:\Shifty_Steam\steamapps\common\RimWorld\Mods\SergalRace\Source\AufenCode\obj\Debug\AufenCode.csprojResolveAssemblyReference.cache
 D:\Shifty_Steam\steamapps\common\RimWorld\Mods\SergalRace\Source\AufenCode\obj\Debug\AufenCode.dll
+F:\Shifty_Steam\steamapps\common\RimWorld\Mods\SergalRace\Assemblies\AufenCode.dll
+F:\Shifty_Steam\steamapps\common\RimWorld\Mods\SergalRace\Source\AufenCode\obj\Debug\AufenCode.csproj.AssemblyReference.cache
+F:\Shifty_Steam\steamapps\common\RimWorld\Mods\SergalRace\Source\AufenCode\obj\Debug\AufenCode.csproj.CoreCompileInputs.cache
+F:\Shifty_Steam\steamapps\common\RimWorld\Mods\SergalRace\Source\AufenCode\obj\Debug\AufenCode.csproj.CopyComplete
+F:\Shifty_Steam\steamapps\common\RimWorld\Mods\SergalRace\Source\AufenCode\obj\Debug\AufenCode.dll

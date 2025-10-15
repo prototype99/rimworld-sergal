@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--AbilityDef Name="PsycastBase" Abstract="True">
+    <abilityClass>Psycast</abilityClass>
+    <statBases>
+      <Ability_Duration>0</Ability_Duration>
+      <Ability_DetectChancePerEntropy>0.005</Ability_DetectChancePerEntropy>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastPsycast</verbClass>
+      <range>34.9</range>
+      <requireLineOfSight>True</requireLineOfSight>
+      <warmupTime>1</warmupTime>
+      <targetParams>
+        <canTargetBuildings>False</canTargetBuildings>
+        <canTargetAnimals>False</canTargetAnimals>
+        <thingCategory>Item</thingCategory>
+        <mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+  
+
+  <GeneDef>
+    <defName>Gene_BerserkerMode</defName>
+    <label>Berserker Mode Gene</label>
+    <description>A gene that grants the ability to activate Berserker Mode, greatly enhancing movement speed and melee damage temporarily but causing severe exhaustion afterward.</description>
+    <displayCategory>Physical</displayCategory>
+    <iconPath>UI/Icons/Genes/BerserkerMode</iconPath>
+    <abilities>
+      <li>BerserkerAbility</li>
+    </abilities>
+  </GeneDef>
+
+  <AbilityDef>
+    <defName>BerserkerAbility</defName>
+    <label>Berserker Mode</label>
+    <description>Activate Berserker Mode, boosting movement speed and melee damage for 60 seconds. Afterward, the user experiences severe exhaustion.</description>
+    <iconPath>UI/Icons/Genes/BerserkerMode</iconPath>
+    <cooldownTicks>6000</cooldownTicks> 
+    <targetRequired>false</targetRequired>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>1</warmupTime>
+      <range>3.9</range>
+      <drawAimPie>false</drawAimPie>    
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>BerserkerBuff</hediffDef>
+        <replaceExisting>true</replaceExisting>
+        <sound>PreachHealth_Resolve</sound>
+      </li>
+    </comps>
+  </AbilityDef>
+
+   
+  <AbilityDef>
+    <defName>BerserkerAbility</defName>
+    <label>Berserker Mode</label>
+    <description>Activate Berserker Mode, boosting movement speed and melee damage for 60 seconds. Afterward, the user experiences severe exhaustion.</description>
+    <targetCategory>Self</targetCategory>
+    <warmupTicks>0</warmupTicks>
+    <cooldownTicks>6000</cooldownTicks> 
+    <durationTicks>3600</durationTicks> 
+    <effect>
+      <AbilityEffect_GiveHediff>
+        <hediffDef>BerserkerBuff</hediffDef>
+        <severity>1.0</severity>
+      </AbilityEffect_GiveHediff>
+    </effect>
+    <statBases>
+      <moveSpeed>2.0</moveSpeed> 
+      <meleeHitChance>0.25</meleeHitChance> 
+      <meleeDodgeChance>0.15</meleeDodgeChance>
+    </statBases>
+  </AbilityDef>
+
+
+  <HediffDef>
+    <defName>BerserkerBuff</defName>
+    <label>Berserker Fury</label>
+    <description>Boosted stats from the Berserker Mode ability.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffComp_Disappears">
+        <compClass>HediffComp_Disappears</compClass>
+        <severityPerDay>-24</severityPerDay>
+      </li>
+    </comps>
+    <statOffsets>
+      <moveSpeed>2.5</moveSpeed>
+      <meleeDPS>2.5</meleeDPS>
+    </statOffsets>
+    <endHediffOnExpiration>
+      <hediffDef>BerserkerCrash</hediffDef>
+    </endHediffOnExpiration>
+  </HediffDef>
+
+
+  <HediffDef>
+    <defName>BerserkerCrash</defName>
+    <label>Berserker Crash</label>
+    <description>Exhaustion and discomfort after Berserker Mode fades.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffComp_Disappears">
+        <compClass>HediffComp_Disappears</compClass>
+        <severityPerDay>-6</severityPerDay> 
+      </li>
+    </comps>
+    <statOffsets>
+      <moveSpeed>-3.0</moveSpeed> 
+      <comfort>-1.0</comfort> 
+      <restFallFactor>3.0</restFallFactor> 
+    </statOffsets>
+  </HediffDef>
+-->
+    <AbilityDef Name="GnollstromCureAll">
+    <defName>GnollstromCureAll</defName>
+    <label>cure disease</label>
+    <description>The Gnollstrom Ripper Glove contains regenerating disease-curing nanobots that automatically replenish over time. These microscopic machines are programmed to seek out infections, neutralize pathogens and parasites, and repair cellular damage caused by diseases.</description>
+    <iconPath>UI/Abilities/CureAll</iconPath>
+    <cooldownTicksRange>60000</cooldownTicksRange>
+    <hostile>false</hostile>
+    <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>False</drawAimPie>
+      <range>-1</range>
+      <warmupTime>3.0</warmupTime>
+      <targetParams>
+        <neverTargetHostileFaction>false</neverTargetHostileFaction>
+        <canTargetLocations>false</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <statBases>
+    <Ability_Duration>126</Ability_Duration>
+    </statBases>
+    <comps>
+        <li Class="AufenCode.CompProperties_AbilityRemoveHediffList">
+            <applyToTarget>true</applyToTarget>
+            <applyToSelf>true</applyToSelf>
+            <hediffDefs>
+            <li>SleepingSickness</li>
+            <li>AlcoholAddiction</li>
+            <li>Malaria</li>
+            <li>MuscleParasites</li>
+            <li>GutWorms</li>
+            <li>Flu</li>
+            <li>Plague</li>
+            <li>SmokeleafAddiction</li>
+            </hediffDefs>
+        </li>
+    </comps>
+    </AbilityDef>
+
+<!--
+
+
+-->
+
+    <AbilityDef Name="GnollMeleeLeap">
+    <defName>FuryCharge</defName>
+    <label>fury charge</label>
+    <description>Advanced combat stims enable a powerful leap and quick strikes.</description>
+    <iconPath>UI/Abilities/Longjump</iconPath>
+    <cooldownTicksRange>60</cooldownTicksRange>
+    <hostile>false</hostile>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>jump</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>0.5</warmupTime>
+      <range>19.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <jobDef>CastJump</jobDef>
+    <statBases>
+    <Ability_Duration>126</Ability_Duration>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>FuryCharge</hediffDef>
+        <onlyApplyToSelf>true</onlyApplyToSelf>
+      </li>
+        <li Class = "CompProperties_AbilityGiveMentalState">
+        <compClass>CompAbilityEffect_GiveMentalState</compClass>
+        <stateDef>BerserkTrance</stateDef>
+        <soundMale>BerserkTrance_Resolve_Male</soundMale>
+        <soundFemale>BerserkTrance_Resolve_Female</soundFemale>
+      </li>
+    </comps>
+    </AbilityDef>
+  
+  <HediffDef> <!--fix this-->
+    <defName>FuryCharge</defName>
+    <label>fury charge</label>
+    <description>Combat stims are raging hard, thanks to the Fistya.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeDodgeChance>70</MeleeDodgeChance>
+          <MeleeDPS>24</MeleeDPS>
+          <MeleeHitChance>120</MeleeHitChance>
+          <MeleeWeapon_CooldownMultiplier>-1.8</MeleeWeapon_CooldownMultiplier>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  
+  
+  
+    <!--AbilityDef ParentName="PsycastBase">
+    <defName>Fisticuffs</defName>
+    <label>fight club</label>
+    <description>Everyone peels their clothes off and fights.</description>
+    <level>6</level>
+    <iconPath>UI/Abilities/SkipChaosMass</iconPath>
+    <hotKey>Misc12</hotKey>
+    <statBases>
+      <Ability_EntropyGain>60</Ability_EntropyGain>
+      <Ability_Duration>10</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <warmupTime>1</warmupTime>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+        <canTargetAnimals>True</canTargetAnimals>
+        <canTargetLocations>False</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class = "AufenCodeRoyalty.CompProperties_AbilityStripfight">
+        <compClass>AufenCodeRoyalty.CompAbilityEffect_Stripfight</compClass>
+        <goodwillImpact>-5</goodwillImpact>
+        <clamorType>Ability</clamorType>
+        <clamorRadius>25</clamorRadius>
+      </li>
+      <li Class = "CompProperties_AbilityGiveMentalState">
+        <compClass>CompAbilityEffect_GiveMentalState</compClass>
+        <stateDef>PanicFlee</stateDef>
+        <psychic>True</psychic>
+        <durationMultiplier>PsychicSensitivity</durationMultiplier>
+        <goodwillImpact>-75</goodwillImpact>
+      </li>
+    </comps>
+  </AbilityDef-->
+  
+</Defs>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+    <BodyPartDef>
+   	 <defName>FrogLeftEye</defName>
+   	 <label>Frog left eye</label>
+   	 <hitPoints>12</hitPoints>
+   	 <frostbiteVulnerability>8</frostbiteVulnerability>
+   	 <spawnThingOnRemoved>FrogEye</spawnThingOnRemoved>
+   	 <skinCovered>true</skinCovered>
+         <beautyRelated>true</beautyRelated>
+	</BodyPartDef>
+    
+    <BodyPartDef>
+   	 <defName>FrogRightEye</defName>
+   	 <label>Frog right eye</label>
+   	 <hitPoints>12</hitPoints>
+   	 <frostbiteVulnerability>8</frostbiteVulnerability>
+   	 <spawnThingOnRemoved>FrogEye</spawnThingOnRemoved>
+   	 <skinCovered>true</skinCovered>
+         <beautyRelated>true</beautyRelated>
+	</BodyPartDef>
+
+</Defs>

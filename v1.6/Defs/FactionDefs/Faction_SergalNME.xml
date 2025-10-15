@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase">
+		<defName>SergalEmpireNME</defName>
+		<label>Stony Sergal Village</label>
+    <description>These sergals do not like you, unless they do, in which case congratulations on doing whatever it took to get on their good side. These sergals have been on this planet for many generations, and life has been tough. Barely scraping by, these sergals are more aggressive and tougher, but also much more pessimistic.</description>
+    <pawnsPlural>sergal</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<settlementGenerationWeight>1</settlementGenerationWeight>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Kerr</leaderTitle>
+	<factionNameMaker>NamerFactionSergal</factionNameMaker>
+	<settlementNameMaker>NamerFactionSergalBase</settlementNameMaker>
+	<techLevel>Spacer</techLevel>
+	<allowedCultures><li>Angrysergals</li></allowedCultures>
+	<requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+    </requiredMemes>
+	<disallowedMemes>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+    </disallowedMemes>
+  <backstoryCategories>
+			<li>SergalBackstoryNME</li>
+  	</backstoryCategories>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+   <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+      <li>Caravan_Sergal_Slaver</li>
+      <li>Caravan_Sergal_Dirt</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Gnoll_OrganTrader</li>
+      <li>Base_Sergal_SlaveTrader</li>
+      <li>Base_Sergal_DirtTrader</li>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>55</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <SergalColonistNME>50</SergalColonistNME>
+          <SergalSecurityGuardNME>90</SergalSecurityGuardNME>
+          <SergalPackLeaderNME>250</SergalPackLeaderNME>
+          <SergalRecruitNME>100</SergalRecruitNME>
+          <SergalHunterNME>130</SergalHunterNME>
+          <SergalCommandoNME>130</SergalCommandoNME>
+          <SergalCommandoEliteNME>170</SergalCommandoEliteNME>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <SergalColonistNME>50</SergalColonistNME>
+          <SergalSecurityGuardNME>90</SergalSecurityGuardNME>
+          <SergalPackLeaderNME>250</SergalPackLeaderNME>
+		  <SergalRecruitNME>100</SergalRecruitNME>
+          <SergalHunterNME>130</SergalHunterNME>
+        </options>
+    </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <SergalTraderNME>1</SergalTraderNME>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
+        </carriers>
+        <guards>
+          <SergalSecurityGuardNME>90</SergalSecurityGuardNME>
+          <SergalRecruitNME>100</SergalRecruitNME>
+          <SergalHunterNME>130</SergalHunterNME>
+          <SergalCommandoNME>130</SergalCommandoNME>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <SergalColonistNME>50</SergalColonistNME>
+          <SergalSecurityGuardNME>90</SergalSecurityGuardNME>
+          <SergalPackLeaderNME>250</SergalPackLeaderNME>
+          <SergalRecruitNME>100</SergalRecruitNME>
+          <SergalHunterNME>130</SergalHunterNME>
+          <SergalCommandoNME>130</SergalCommandoNME>
+          <SergalCommandoEliteNME>170</SergalCommandoEliteNME>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/SergalBaseIcon</settlementTexturePath>
+	<factionIconPath>World/SergalBaseIcon</factionIconPath>
+	<maxConfigurableAtWorldCreation>3</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>30</configurationListOrderPriority>
+  </FactionDef>
+
+</Defs>

@@ -354,12 +354,12 @@
                             <north>
                                 <layerOffset>-0.2720256</layerOffset>
                                 <bodyTypes>
-                                    <Male>(-12,-12)</Male>
-                                    <Female>(-12,-12)</Female>
-                                    <Thin>(-12,-12)</Thin>
-                                    <Hulk>(-12,-12)</Hulk>
-                                <Child MayRequire="ludeon.rimworld.biotech">(-12,-12)</Child>
-                                <Baby MayRequire="ludeon.rimworld.biotech">(-12,-12)</Baby>
+                                    <Male>(-120,-120)</Male>
+                                    <Female>(-120,-120)</Female>
+                                    <Thin>(-120,-120)</Thin>
+                                    <Hulk>(-120,-120)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-120,-120)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-120,-120)</Baby>
                                 </bodyTypes>
                                 <headTypes>
                                     <Male_AverageNormal>(0,0)</Male_AverageNormal>
@@ -384,12 +384,12 @@
                             <west>
                                 <layerOffset>-0.2720256</layerOffset>
                                 <bodyTypes>
-                                    <Male>(12,12)</Male>
-                                    <Female>(12,12)</Female>
-                                    <Thin>(12,12)</Thin>
-                                    <Hulk>(12,12)</Hulk>
-                                <Child MayRequire="ludeon.rimworld.biotech">(-12,-12)</Child>
-                                <Baby MayRequire="ludeon.rimworld.biotech">(-12,-12)</Baby>
+                                    <Male>(120,120)</Male>
+                                    <Female>(120,120)</Female>
+                                    <Thin>(120,120)</Thin>
+                                    <Hulk>(120,120)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-120,-120)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-120,-120)</Baby>
                                 </bodyTypes>
                                 <headTypes>
                                     <Male_AverageNormal>(0,0)</Male_AverageNormal>
@@ -447,12 +447,12 @@
                             <north>
                                 <layerOffset>-0.2720256</layerOffset>
                                 <bodyTypes>
-                                    <Male>(-12,-12)</Male>
-                                    <Female>(-12,-12)</Female>
-                                    <Thin>(-12,-12)</Thin>
-                                    <Hulk>(-12,-12)</Hulk>
-                                <Child MayRequire="ludeon.rimworld.biotech">(-12,-12)</Child>
-                                <Baby MayRequire="ludeon.rimworld.biotech">(-12,-12)</Baby>
+                                    <Male>(-120,-120)</Male>
+                                    <Female>(-120,-120)</Female>
+                                    <Thin>(-120,-120)</Thin>
+                                    <Hulk>(-120,-120)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-120,-120)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-120,-120)</Baby>
                                 </bodyTypes>
                                 <headTypes>
                                     <Male_AverageNormal>(0,0)</Male_AverageNormal>
@@ -462,12 +462,12 @@
                             <east>
                                 <layerOffset>-0.2720256</layerOffset>
                                 <bodyTypes>
-                                    <Male>(-12,-12)</Male>
-                                    <Female>(-12,-12)</Female>
-                                    <Thin>(-12,-12)</Thin>
-                                    <Hulk>(-12,-12)</Hulk>
-                                <Child MayRequire="ludeon.rimworld.biotech">(-12,-12)</Child>
-                                <Baby MayRequire="ludeon.rimworld.biotech">(-12,-12)</Baby>
+                                    <Male>(-120,-120)</Male>
+                                    <Female>(-120,-120)</Female>
+                                    <Thin>(-120,-120)</Thin>
+                                    <Hulk>(-120,-120)</Hulk>
+                                <Child MayRequire="ludeon.rimworld.biotech">(-120,-120)</Child>
+                                <Baby MayRequire="ludeon.rimworld.biotech">(-120,-120)</Baby>
                                 </bodyTypes>
                                 <headTypes>
                                     <Male_AverageNormal>(0,0)</Male_AverageNormal>

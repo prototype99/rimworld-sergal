@@ -8,33 +8,36 @@ using Verse;
 
 namespace AufenCode
 {
-public class CompAbilityEffect_RemoveHediffList : CompAbilityEffect
-{
-    public new CompProperties_AbilityRemoveHediffList Props => (CompProperties_AbilityRemoveHediffList)props;
-
-    public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
+    public class CompAbilityEffect_RemoveHediffList : CompAbilityEffect
     {
-        base.Apply(target, dest);
-        if (Props.applyToSelf)
-        {
-            RemoveHediffs(parent.pawn);
-        }
-        if (target.Pawn != null && Props.applyToTarget && target.Pawn != parent.pawn)
-        {
-            RemoveHediffs(target.Pawn);
-        }
-    }
+        public new CompProperties_AbilityRemoveHediffList Props => (CompProperties_AbilityRemoveHediffList)props;
 
-    private void RemoveHediffs(Pawn pawn)
-    {
-        foreach (var hediffDef in Props.hediffDefs)
+        public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
-            Hediff firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef(hediffDef);
-            if (firstHediffOfDef != null)
+            base.Apply(target, dest);
+            if (Props.applyToSelf)
             {
-                pawn.health.RemoveHediff(firstHediffOfDef);
+                RemoveHediffs(parent.pawn);
+            }
+            if (target.Pawn != null && Props.applyToTarget && target.Pawn != parent.pawn)
+            {
+                RemoveHediffs(target.Pawn);
+            }
+        }
+
+        private void RemoveHediffs(Pawn pawn)
+        {
+            Log.Message("RemoveHediffs called");
+            foreach (var hediffDef in Props.hediffDefs)
+            {
+                Log.Message("In for loop");
+                Hediff firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef(hediffDef);
+                if (firstHediffOfDef != null)
+                {
+                    Log.Message($"Removing {hediffDef.defName} from {pawn.Name}");
+                    pawn.health.RemoveHediff(firstHediffOfDef);
+                }
             }
         }
     }
-}
 }

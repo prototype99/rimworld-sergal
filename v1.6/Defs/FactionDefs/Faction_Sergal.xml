@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase">
+		<defName>SergalEmpire</defName>
+		<label>Sergal Empire</label>
+    <description>Slightly savage but more civilized than Gnolls, this is a faction filled with fuzzy little sergals that look like a cross between a shark and a dog. Known to sell slaves and wearable dirt. They're not particularly strong but they do move quickly. These sergals are relatively fresh from space, having arrived on this planet in the last few generations or so. They are more willing to be diplomatic with other factions.</description>
+    <pawnsPlural>sergals</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<settlementGenerationWeight>1</settlementGenerationWeight>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Kerr</leaderTitle>
+	<factionNameMaker>NamerFactionSergal</factionNameMaker>
+	<settlementNameMaker>NamerFactionSergalBase</settlementNameMaker>
+	<techLevel>Spacer</techLevel>
+  <backstoryCategories>
+        <li>SergalBackstory</li>
+  	</backstoryCategories>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+   <caravanTraderKinds>
+      <li>Caravan_Sergal_Slaver</li>
+      <li>Caravan_Sergal_Dirt</li>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Sergal_SlaveTrader</li>
+      <li>Base_Sergal_DirtTrader</li>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>55</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <SergalColonist>5</SergalColonist>
+          <SergalSecurityGuard>3</SergalSecurityGuard>
+          <SergalPackLeader>1</SergalPackLeader>
+          <SergalRecruit>4</SergalRecruit>
+          <SergalHunter>2</SergalHunter>
+          <SergalCommando>2</SergalCommando>
+          <SergalCommandoElite>2</SergalCommandoElite>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <SergalColonist>5</SergalColonist>
+          <SergalSecurityGuard>3</SergalSecurityGuard>
+          <SergalPackLeader>1</SergalPackLeader>
+		  <SergalRecruit>4</SergalRecruit>
+          <SergalHunter>2</SergalHunter>
+        </options>
+    </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <SergalTrader>1</SergalTrader>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
+        </carriers>
+        <guards>
+          <SergalSecurityGuard>5</SergalSecurityGuard>
+          <SergalRecruit>4</SergalRecruit>
+          <SergalHunter>3</SergalHunter>
+          <SergalCommando>2</SergalCommando>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <SergalColonist>5</SergalColonist>
+          <SergalSecurityGuard>5</SergalSecurityGuard>
+          <SergalPackLeader>1</SergalPackLeader>
+          <SergalRecruit>5</SergalRecruit>
+          <SergalHunter>5</SergalHunter>
+          <SergalCommando>4</SergalCommando>
+          <SergalCommandoElite>3</SergalCommandoElite>
+        </options>
+      </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Miner>1</Tribal_Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Hunter>1</Tribal_Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Logger>1</Tribal_Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Farmer>1</Tribal_Farmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/SergalBaseIcon</settlementTexturePath>
+	<factionIconPath>World/SergalBaseIcon</factionIconPath>
+	<maxConfigurableAtWorldCreation>3</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>30</configurationListOrderPriority>
+  </FactionDef>
+
+</Defs>

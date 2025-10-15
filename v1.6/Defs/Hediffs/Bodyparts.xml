@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>SergalTailBionic</defName>
+    <label>bionic sergal tail</label>
+    <description>bionic sergal tail</description>
+    <spawnThingOnRemoved>SergalTailBionic</spawnThingOnRemoved>
+    <addedPartProps>
+      <betterThanNatural>true</betterThanNatural>
+      <solid>true</solid>
+      <partEfficiency>1.2</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+          <capMods>
+            <li>
+              <capacity>Manipulation</capacity>
+              <offset>0.2</offset>
+            </li>
+			 <li>
+               <capacity>Moving</capacity>
+               <offset>0.2</offset>
+            </li>
+          </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+    <HediffDef ParentName="AddedBodyPartBase">
+    <defName>LionTailBionic</defName>
+    <label>bionic lion tail</label>
+    <description>bionic lion tail</description>
+    <spawnThingOnRemoved>LionTailBionic</spawnThingOnRemoved>
+    <addedPartProps>
+      <betterThanNatural>true</betterThanNatural>
+      <solid>true</solid>
+      <partEfficiency>1.2</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+          <capMods>
+            <li>
+              <capacity>Manipulation</capacity>
+              <offset>0.2</offset>
+            </li>
+			 <li>
+               <capacity>Moving</capacity>
+               <offset>0.2</offset>
+            </li>
+          </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>ClothTail</defName>
+    <label>cloth tail</label>
+    <description>a cloth tail</description>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>0.6</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>GnollTailBionic</defName>
+    <label>bionic gnoll tail</label>
+    <description>bionic gnoll tail</description>
+    <spawnThingOnRemoved>GnollTailBionic</spawnThingOnRemoved>
+    <addedPartProps>
+      <betterThanNatural>true</betterThanNatural>
+      <solid>true</solid>
+      <partEfficiency>1.2</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+          <capMods>
+            <li>
+              <capacity>Manipulation</capacity>
+              <offset>0.2</offset>
+            </li>
+			 <li>
+               <capacity>Moving</capacity>
+               <offset>0.2</offset>
+            </li>
+          </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+</Defs>

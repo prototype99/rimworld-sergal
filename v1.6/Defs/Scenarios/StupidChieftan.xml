@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<ScenarioDef ParentName="SGLFScenarioBase">
+	
+	<defName>TribalSergal_Scenario</defName>
+		<label>Somehow Indigenous</label>
+		<description>Descendant to a group of inbred sergals that got lost during the first migration, your people have spent the last 400 years surviving to procreate so they can survive and procreate longer. 
+		
+		Having been too busy continuing the family name to search for life outside the confines of your tribe, you were discovered by Outlanders with basic tech that made your tattered rags and pointy sticks look truly prehistoric. You then decided a life of technology was for you and left, possibly with friends.</description>
+		<scenario>
+		<summary>A stupid sergal embarks on a stupid quest.</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>SergalPlayerColonyTribal</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnCount>3</pawnCount>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+			</li>
+			<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text />
+				<textKey>GameStartDialog</textKey>
+				<closeSound>GameStartSting</closeSound>
+			</li>
+		</parts>
+	</scenario>
+</ScenarioDef>
+</Defs>

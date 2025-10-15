@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseFilth">
+    <defName>FilthBloodGnoll</defName>
+    <label>blood</label>
+    <statBases>
+      <Beauty>-14</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(131, 1, 52, 180)</color>
+    </graphicData>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>90</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+    </filth>
+  </ThingDef>  
+  
+  <DamageDef Name="PlasmaFlame">
+    <defName>PlasmaFlame</defName>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <label>plasma flame</label>
+    <hasForcefulImpact>false</hasForcefulImpact>
+    <makesBlood>false</makesBlood>
+    <canInterruptJobs>false</canInterruptJobs>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has burned to death.</deathMessage>
+    <hediff>Burn</hediff>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>10</defaultDamage>
+    <defaultArmorPenetration>0</defaultArmorPenetration>
+    <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastFlame</explosionCellFleck>
+    <explosionColorCenter>(1, 0.3, 0.7)</explosionColorCenter>
+    <explosionColorEdge>(1, 0.1, 0.7)</explosionColorEdge>
+    <soundExplosion>Explosion_Flame</soundExplosion>
+    <combatLogRules>Damage_Flame</combatLogRules>
+    <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+    <scaleDamageToBuildingsBasedOnFlammability>true</scaleDamageToBuildingsBasedOnFlammability>
+  </DamageDef>
+  
+    <ThingDef>
+    <defName>PlasmaFire</defName>
+    <label>plasma fire</label>
+    <thingClass>AufenCode.PlasmaFire</thingClass>
+    <category>Attachment</category>
+    <tickerType>Normal</tickerType>
+    <pathfinderDangerous>true</pathfinderDangerous>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <canInteractThroughCorners>true</canInteractThroughCorners>
+    <graphicData>
+      <texPath>Things/Special/PlasmaFire</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(255,30,190,255)</color>
+    </graphicData> 
+    <altitudeLayer>PawnState</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(255,30,190,255)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+      <heatPerSecond>120</heatPerSecond> <!-- Normal fire is ~21 -->
+      <heatPushMaxTemperature>2000</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_RadialPulse">
+        <ticksBetweenPulses>600</ticksBetweenPulses>
+        <color>(255,171,206,255)</color>
+        <ticksPerPulse>60</ticksPerPulse>
+        <radius>2</radius>
+      </li>
+    </comps>
+  </ThingDef>
+  
+<ThingDef ParentName="BaseFilth">
+  <defName>Filth_Plasma</defName>
+  <label>plasma fuel</label>
+    <useHitPoints>true</useHitPoints>
+  <graphicData>
+    <texPath>Things/Filth/plasma_fuel</texPath>
+    <graphicClass>Graphic_Multi</graphicClass>
+    <shaderType>Cutout</shaderType>
+    <drawSize>(1,1)</drawSize>
+  </graphicData>
+  <statBases>
+      <Beauty>-10</Beauty>
+      <Cleanliness>-15</Cleanliness>
+      <MaxHitPoints>550</MaxHitPoints>
+    <Flammability>12000.0</Flammability> <!-- 1.0 is normal, 2.0 is highly flammable -->
+  </statBases>
+  <filth>
+    <disappearsInDays>10~15</disappearsInDays>
+    <rainWashes>true</rainWashes>
+    <cleaningWorkToReduceThickness>50</cleaningWorkToReduceThickness>
+    <canFilthAttach>true</canFilthAttach>
+    <maxThickness>1</maxThickness>
+    <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+  </filth>
+</ThingDef>
+  <!-- so what shut up I can do whatever the fuck I want -->
+<ThingDef ParentName="BaseFilth">
+  <defName>ProtheneAcidFilth</defName>
+  <label>prothene fuel</label>
+  <graphicData>
+    <texPath>Things/Filth/prothene_acid</texPath>
+    <graphicClass>Graphic_Multi</graphicClass>
+    <shaderType>Cutout</shaderType>
+    <drawSize>(1,1)</drawSize>
+  </graphicData>
+  <filth>
+    <disappearsInDays>10~15</disappearsInDays>
+    <rainWashes>true</rainWashes>
+    <cleaningWorkToReduceThickness>50</cleaningWorkToReduceThickness>
+    <canFilthAttach>true</canFilthAttach>
+    <maxThickness>1</maxThickness>
+    <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+  </filth>
+</ThingDef>
+  
+</Defs>

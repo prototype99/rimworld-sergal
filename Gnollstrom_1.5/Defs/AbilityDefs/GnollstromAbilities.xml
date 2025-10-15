@@ -152,20 +152,26 @@
     </statBases>
     <comps>
         <li Class="AufenCode.CompProperties_AbilityRemoveHediffList">
-            <li>
-            <hediffDef>SleepingSickness</hediffDef>
-            <hediffDef>AlcoholAddiction</hediffDef>
-            <hediffDef>Malaria</hediffDef>
-            <hediffDef>MuscleParasites</hediffDef>
-            <hediffDef>GutWorms</hediffDef>
-            <hediffDef>Flu</hediffDef>
-            <hediffDef>Plague</hediffDef>
-            <hediffDef>SmokeleafAddiction</hediffDef>
-            </li>
+            <applyToTarget>true</applyToTarget>
+            <applyToSelf>true</applyToSelf>
+            <hediffDefs>
+            <li>SleepingSickness</li>
+            <li>AlcoholAddiction</li>
+            <li>Malaria</li>
+            <li>MuscleParasites</li>
+            <li>GutWorms</li>
+            <li>Flu</li>
+            <li>Plague</li>
+            <li>SmokeleafAddiction</li>
+            </hediffDefs>
         </li>
     </comps>
     </AbilityDef>
 
+<!--
+
+
+-->
 
     <AbilityDef Name="GnollMeleeLeap">
     <defName>FuryCharge</defName>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<SoundDef>
+		<defName>LionGauss</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>		
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Guns/LionGauss</clipPath>
+					</li>
+				</grains>
+				<volumeRange>50.58822~51.58823</volumeRange>
+				<pitchRange>0.6152174~1.042391</pitchRange>
+			</li>
+		</subSounds>
+  </SoundDef>
+	
+    	<SoundDef>
+		<defName>GnollWasp</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>5</maxSimultaneous>		
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Guns/GnollWasp</clipPath>
+					</li>
+				</grains>
+				<volumeRange>41.58822~42.58823</volumeRange>
+				<pitchRange>0.6152174~1.042391</pitchRange>
+			</li>
+		</subSounds>
+  </SoundDef>
+    	
+    	<SoundDef>
+		<defName>PhasedPlasma</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>5</maxSimultaneous>		
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Guns/PhasedPlasma</clipPath>
+					</li>
+				</grains>
+				<volumeRange>41.58822~42.58823</volumeRange>
+				<pitchRange>0.6152174~1.042391</pitchRange>
+			</li>
+		</subSounds>
+  </SoundDef>
+ 	<SoundDef>
+		<defName>LionPistol</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>		
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Guns/LionPistol</clipPath>
+					</li>
+				</grains>
+				<volumeRange>50.58822~51.58823</volumeRange>
+				<pitchRange>0.6152174~1.042391</pitchRange>
+			</li>
+		</subSounds>
+  </SoundDef>
+	
+</Defs>

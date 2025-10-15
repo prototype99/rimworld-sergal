@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_SnapFrog</defName>
+    <label>snapfrog</label>
+    <description>A flowering bush of several colours and a strong smell of honey. Kinda looks pretty almost.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>17</Beauty>
+      <BeautyOutdoors>17</BeautyOutdoors>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/SnapFrog</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <ingestible>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+    <plant>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <sowWork>750</sowWork> <!-- 100 ticks per live day -->
+      <sowTags>
+        <li>Ground</li>
+        <li>Decorative</li>
+      </sowTags>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>1.5</growDays>
+      <lifespanDaysPerGrowDays>8</lifespanDaysPerGrowDays>
+      <visualSizeRange>0.3~1.05</visualSizeRange>
+      <wildOrder>1</wildOrder>
+      <purpose>Beauty</purpose>
+    </plant>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+	    <xpath>*[self::Defs]</xpath>
+	    <value>
+  <RulePackDef>
+    <defName>NamerFactionRaorianBase</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[raorian_empire_first][raorian_empire_second]</li>
+        <li>r_name->[raorian_empire_first][raorian_empire_second]</li>
+        <li>r_name->[raorian_empire_first][raorian_empire_second]</li>
+        <li>r_name->[raorian_empire_first][raorian_empire_second]</li>
+        <li>r_name->[raorian_empire_first][raorian_empire_second]-[raorian_empire_third][raorian_empire_second]</li>
+	  </rulesStrings>
+      <rulesFiles>
+        <li>raorian_empire_first->Raorian_Words/RaorianFirstNamePart</li>
+		<li>raorian_empire_second->Raorian_Words/RaorianSecondNamePart</li>
+		<li>raorian_empire_third->Raorian_Words/RaorianThirdNamePart</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+   </value>
+	</Operation>
+		<Operation Class="PatchOperationAdd">
+	    <xpath>*[self::Defs]</xpath>
+	    <value>
+  <RulePackDef>
+    <defName>NamerFactionRaorian</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The [raorian_empire_first][raorian_empire_second] [raorian_empire_third]</li>
+        <li>r_name->Burned [raorian_empire_first][raorian_empire_second] [raorian_empire_third]</li>
+        <li>r_name->The [raorian_empire_first]-[raorian_empire_first] Union</li>
+        <li>r_name->The Elite [raorian_empire_first][raorian_empire_second]</li>
+		<li>r_name->The Distant [raorian_empire_first][raorian_empire_second]</li>
+	  </rulesStrings>
+      <rulesFiles>
+        <li>raorian_empire_first->Raorian_Words/RaorianFirstNamePart</li>
+		<li>raorian_empire_second->Raorian_Words/RaorianSecondNamePart</li>
+		<li>raorian_empire_third->Raorian_Words/RaorianThirdNamePart</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+   </value>
+	</Operation>
+</Patch>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="PlayerFactionBase" Abstract="True" Name="StripedGnollFactionBase">
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+  <FactionDef ParentName="PlayerFactionBase">
+    <defName>StripedGnollPlayerColony</defName>
+    <label>Striped Gnoll Enclave</label>
+    <description>Your own community.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>StripedGnoll</basicMemberKind>
+    <pawnsPlural>gnolls</pawnsPlural>
+    <settlementNameMaker>NamerFactionStripedGnollBase</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerFactionStripedGnollBase</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionStripedGnoll</factionNameMaker>
+    <techLevel>Ultra</techLevel>
+	<allowedCultures><li>Froggite</li><li>Sergalitarian</li><li>Angrysergals</li><li>Raorian</li><li>Gnollonese</li></allowedCultures>
+    <backstoryCategories>
+			<li>StripedGnollBackstory</li>
+  	</backstoryCategories>
+    <settlementTexturePath>World/StripedGnollBaseIcon</settlementTexturePath>
+    <factionIconPath>World/StripedGnollBaseIcon</factionIconPath>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+
+  </FactionDef>
+  
+    <FactionDef ParentName="PlayerFactionBase">
+    <defName>StripedGnollPlayerColonyTribal</defName>
+    <label>Striped Gnoll Enclave Tribal</label>
+    <description>Gnoll semi-tribal start.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>StripedGnoll</basicMemberKind>
+    <pawnsPlural>gnolls</pawnsPlural>
+    <settlementNameMaker>NamerFactionStripedGnollBase</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerFactionStripedGnollBase</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionStripedGnoll</factionNameMaker>
+		<allowedCultures><li>Froggite</li><li>Sergalitarian</li><li>Angrysergals</li><li>Raorian</li><li>Gnollonese</li></allowedCultures>
+    <techLevel>Neolithic</techLevel>
+    <backstoryCategories>
+        <li>StripedGnollTribalBackstory</li>
+  	</backstoryCategories>
+    <settlementTexturePath>World/StripedGnollBaseIcon</settlementTexturePath>
+    <factionIconPath>World/GnollBaseIcon</factionIconPath>
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>TribalStart</li>
+      <li>TribalStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <categoryTag>Tribal</categoryTag>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <recipePrerequisiteTags>
+      <li>Tribal</li>
+    </recipePrerequisiteTags>
+    <colorSpectrum>
+      <li>(0, 0.437, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+
+</Defs>
