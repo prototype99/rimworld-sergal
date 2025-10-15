@@ -134,6 +134,7 @@
     <Compile Include="IngestionOutcomeDoer_RemoveHediff.cs" />
     <Compile Include="CompAbilityEffect_RemoveHediffList.cs" />
     <Compile Include="CompPropertiesAbility_RemoveHediffList.cs" />
+    <Compile Include="RoyaltyCompat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
