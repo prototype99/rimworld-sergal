@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using RimWorld;
 using Verse;
 using UnityEngine;
+using Verse.Sound;
 
 namespace AufenCode
 {
@@ -26,7 +27,7 @@ namespace AufenCode
                 int delayTicks = 60;
                 map.GetComponent<TickManager>().DoLater(delayTicks, () =>
                 {
-                    RadialBurstUtility.FireRadialBurst(cell, map, ThingDef.Named("MiniExplosionProjectile"), 12, 12, parent.pawn);
+                    AufenBetty.RadialBurstUtility.FireRadialBurst(cell, map, ThingDef.Named("MiniExplosionProjectile"), 12, 12, parent.pawn);
                 });
             }
         }
