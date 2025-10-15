@@ -18,7 +18,7 @@ namespace AufenCode
                 SoundDefOf.PsycastPsychicPulse.PlayOneShot(new TargetInfo(cell, map));
 
                 // Delay for effect
-                int delayTicks = 60;
+                const int delayTicks = 60;
                 Find.TickManager.DoLater(delayTicks, () =>
                 {
                     AufenBetty.RadialBurstUtility.FireRadialBurst(cell, map, ThingDef.Named("MiniExplosionProjectile"), 12, 12, parent.pawn);
