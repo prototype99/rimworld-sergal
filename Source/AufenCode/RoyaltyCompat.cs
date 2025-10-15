@@ -16,23 +16,29 @@ namespace AufenCode
         static RoyaltyCompatBootstrap()
         {
             var harmony = new Harmony("AufenCode.RoyaltyCompat");
+            Log.Message("[AufenCode/RoyaltyCompat] Bootstrap initializing.");
             LogPawnStripPresence();
             TryPatchPawnchanger(harmony);
+            TryPatchSpidersOmg(harmony);
+            TryPatchBoomcast(harmony);
         }
 
         private static void TryPatchPawnchanger(Harmony harmony)
         {
-            // Target type is in a different assembly: AufenCodeRoyalty.CompAbilityEffect_Pawnchanger
             var targetType = AccessTools.TypeByName("AufenCodeRoyalty.CompAbilityEffect_Pawnchanger");
             if (targetType == null)
             {
-                return; // Royalty module not present; nothing to patch
+                Log.Message("[AufenCode/RoyaltyCompat] Pawnchanger type not found (AufenCodeRoyalty not loaded?). Skipping.");
+                return;
             }
 
-            var applyMethod = AccessTools.Method(targetType, "Apply", new[] { typeof(LocalTargetInfo), typeof(LocalTargetInfo) });
+            // Try exact signature first, then any Apply
+            var applyMethod = AccessTools.Method(targetType, "Apply", new[] { typeof(LocalTargetInfo), typeof(LocalTargetInfo) })
+                              ?? AccessTools.GetDeclaredMethods(targetType).FirstOrDefault(m => m.Name == "Apply");
             if (applyMethod == null)
             {
-                return; // Unexpected signature; avoid hard crash
+                Log.Warning("[AufenCode/RoyaltyCompat] Could not find CompAbilityEffect_Pawnchanger.Apply to patch.");
+                return;
             }
 
             harmony.Patch(
@@ -40,6 +46,51 @@ namespace AufenCode
                 transpiler: new HarmonyMethod(typeof(RoyaltyCompatBootstrap), nameof(PawnchangerApply_Transpiler)),
                 finalizer: new HarmonyMethod(typeof(RoyaltyCompatBootstrap), nameof(PawnchangerApply_Finalizer))
             );
+            Log.Message("[AufenCode/RoyaltyCompat] Patched Pawnchanger.Apply (Strip replacement).");
+        }
+
+        private static void TryPatchSpidersOmg(Harmony harmony)
+        {
+            var targetType = AccessTools.TypeByName("AufenCodeRoyalty.CompAbilityEffect_SpidersOmg");
+            if (targetType == null)
+            {
+                Log.Message("[AufenCode/RoyaltyCompat] SpidersOmg type not found. Skipping.");
+                return;
+            }
+            var applyMethod = AccessTools.GetDeclaredMethods(targetType).FirstOrDefault(m => m.Name == "Apply");
+            if (applyMethod == null)
+            {
+                Log.Warning("[AufenCode/RoyaltyCompat] Could not find CompAbilityEffect_SpidersOmg.Apply to patch.");
+                return;
+            }
+            harmony.Patch(
+                applyMethod,
+                transpiler: new HarmonyMethod(typeof(RoyaltyCompatBootstrap), nameof(SpidersOmgApply_Transpiler)),
+                finalizer: new HarmonyMethod(typeof(RoyaltyCompatBootstrap), nameof(SpidersOmgApply_Finalizer))
+            );
+            Log.Message("[AufenCode/RoyaltyCompat] Patched SpidersOmg.Apply (PawnGenerator.GeneratePawn replacement).");
+        }
+
+        private static void TryPatchBoomcast(Harmony harmony)
+        {
+            var targetType = AccessTools.TypeByName("AufenCodeRoyalty.CompAbilityEffect_Boomcast");
+            if (targetType == null)
+            {
+                Log.Message("[AufenCode/RoyaltyCompat] Boomcast type not found. Skipping.");
+                return;
+            }
+            var applyMethod = AccessTools.GetDeclaredMethods(targetType).FirstOrDefault(m => m.Name == "Apply");
+            if (applyMethod == null)
+            {
+                Log.Warning("[AufenCode/RoyaltyCompat] Could not find CompAbilityEffect_Boomcast.Apply to patch.");
+                return;
+            }
+            harmony.Patch(
+                applyMethod,
+                transpiler: new HarmonyMethod(typeof(RoyaltyCompatBootstrap), nameof(BoomcastApply_Transpiler)),
+                finalizer: new HarmonyMethod(typeof(RoyaltyCompatBootstrap), nameof(BoomcastApply_Finalizer))
+            );
+            Log.Message("[AufenCode/RoyaltyCompat] Patched Boomcast.Apply (GenExplosion.DoExplosion replacement).");
         }
 
         private static void LogPawnStripPresence()
@@ -65,28 +116,61 @@ namespace AufenCode
         // Transpiler: replace calls to the removed Pawn.Strip() with our compatibility implementation
         public static IEnumerable<CodeInstruction> PawnchangerApply_Transpiler(IEnumerable<CodeInstruction> instructions)
         {
-            var list = new List<CodeInstruction>(instructions);
             var stripCompat = AccessTools.Method(typeof(RoyaltyCompatBootstrap), nameof(StripPawn));
-
-            for (int i = 0; i < list.Count; i++)
+            foreach (var ci in instructions)
             {
-                var ci = list[i];
                 if ((ci.opcode == OpCodes.Callvirt || ci.opcode == OpCodes.Call) && ci.operand != null)
                 {
-                    // Harmony will usually resolve to a MethodBase when reading IL if possible. Match by string to survive version differences.
                     string operandStr = ci.operand.ToString();
                     if (!string.IsNullOrEmpty(operandStr) && operandStr.Contains("Verse.Pawn::Strip"))
                     {
-                        ci.opcode = OpCodes.Call; // Call our static helper with the pawn instance already on stack
-                        ci.operand = stripCompat;
+                        yield return new CodeInstruction(OpCodes.Call, stripCompat);
+                        continue;
                     }
                 }
-                
                 yield return ci;
             }
         }
 
-        // Finalizer: if something still throws due to missing Strip, recover and suppress the crash.
+        // Transpiler: replace old PawnGenerator.GeneratePawn(kind,faction) with GeneratePawnCompat(kind,faction)
+        public static IEnumerable<CodeInstruction> SpidersOmgApply_Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var compat = AccessTools.Method(typeof(RoyaltyCompatBootstrap), nameof(GeneratePawnCompat));
+            foreach (var ci in instructions)
+            {
+                if ((ci.opcode == OpCodes.Call || ci.opcode == OpCodes.Callvirt) && ci.operand != null)
+                {
+                    string operandStr = ci.operand.ToString();
+                    if (!string.IsNullOrEmpty(operandStr) && operandStr.Contains("Verse.PawnGenerator::GeneratePawn(Verse.PawnKindDef, RimWorld.Faction)"))
+                    {
+                        yield return new CodeInstruction(OpCodes.Call, compat);
+                        continue;
+                    }
+                }
+                yield return ci;
+            }
+        }
+
+        // Transpiler: replace old GenExplosion.DoExplosion(...) overload with DoExplosionCompat(...)
+        public static IEnumerable<CodeInstruction> BoomcastApply_Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var compat = AccessTools.Method(typeof(RoyaltyCompatBootstrap), nameof(DoExplosionCompat));
+            foreach (var ci in instructions)
+            {
+                if ((ci.opcode == OpCodes.Call || ci.opcode == OpCodes.Callvirt) && ci.operand != null)
+                {
+                    string s = ci.operand.ToString();
+                    if (!string.IsNullOrEmpty(s) && s.Contains("Verse.GenExplosion::DoExplosion"))
+                    {
+                        yield return new CodeInstruction(OpCodes.Call, compat);
+                        continue;
+                    }
+                }
+                yield return ci;
+            }
+        }
+
+        // Finalizers
         public static Exception PawnchangerApply_Finalizer(Exception __exception, LocalTargetInfo target)
         {
             if (__exception is MissingMethodException mme && (mme.Message?.Contains("Pawn.Strip") ?? false))
@@ -97,9 +181,113 @@ namespace AufenCode
                     try { StripPawn(pawn); } catch (Exception e) { Log.Warning($"[AufenCode/RoyaltyCompat] Fallback StripPawn failed: {e}"); }
                 }
                 Log.Warning("[AufenCode/RoyaltyCompat] Recovered from missing Pawn.Strip by applying StripPawn() and suppressing the exception.");
-                return null; // swallow exception
+                return null;
             }
             return __exception;
+        }
+
+        public static Exception SpidersOmgApply_Finalizer(Exception __exception)
+        {
+            if (__exception is MissingMethodException mme && (mme.Message?.Contains("PawnGenerator.GeneratePawn") ?? false))
+            {
+                Log.Warning("[AufenCode/RoyaltyCompat] Recovered from missing PawnGenerator.GeneratePawn by using GeneratePawnCompat.");
+                return null;
+            }
+            return __exception;
+        }
+
+        public static Exception BoomcastApply_Finalizer(Exception __exception)
+        {
+            if (__exception is MissingMethodException mme && (mme.Message?.Contains("GenExplosion.DoExplosion") ?? false))
+            {
+                Log.Warning("[AufenCode/RoyaltyCompat] Recovered from missing GenExplosion.DoExplosion by using DoExplosionCompat.");
+                return null;
+            }
+            return __exception;
+        }
+
+        // Compatibility helpers
+        public static Pawn GeneratePawnCompat(PawnKindDef kindDef, Faction faction)
+        {
+            try
+            {
+                // Prefer request-based API
+                var reqCtor = AccessTools.Constructor(typeof(PawnGenerationRequest), new[] { typeof(PawnKindDef), typeof(Faction), typeof(PawnGenerationContext), typeof(int), typeof(bool) });
+                if (reqCtor != null)
+                {
+                    var req = (PawnGenerationRequest)reqCtor.Invoke(new object[] { kindDef, faction, PawnGenerationContext.NonPlayer, -1, true });
+                    return PawnGenerator.GeneratePawn(req);
+                }
+            }
+            catch { /* fall back below */ }
+
+            try
+            {
+                // Try any available GeneratePawn overload via reflection
+                var method = AccessTools.GetDeclaredMethods(typeof(PawnGenerator)).FirstOrDefault(m => m.Name == "GeneratePawn");
+                if (method != null)
+                {
+                    var ps = method.GetParameters();
+                    var args = new object[ps.Length];
+                    for (int i = 0; i < ps.Length; i++)
+                    {
+                        var pt = ps[i].ParameterType;
+                        if (pt == typeof(PawnKindDef)) args[i] = kindDef;
+                        else if (pt == typeof(Faction)) args[i] = faction;
+                        else if (pt == typeof(PawnGenerationRequest)) args[i] = new PawnGenerationRequest(kindDef, faction);
+                        else if (pt == typeof(PawnGenerationContext)) args[i] = PawnGenerationContext.NonPlayer;
+                        else if (pt == typeof(int)) args[i] = -1;
+                        else if (pt == typeof(bool)) args[i] = true;
+                        else args[i] = null;
+                    }
+                    var pawn = method.Invoke(null, args) as Pawn;
+                    if (pawn != null) return pawn;
+                }
+            }
+            catch { }
+
+            // Last resort
+            return PawnGenerator.GeneratePawn(new PawnGenerationRequest(kindDef, faction));
+        }
+
+        public static void DoExplosionCompat(IntVec3 center, Map map, float radius, DamageDef damType, Thing instigator = null)
+        {
+            try
+            {
+                // Try to find a DoExplosion overload that we can call with basic parameters
+                var method = AccessTools.GetDeclaredMethods(typeof(GenExplosion)).FirstOrDefault(m => m.Name == "DoExplosion");
+                if (method != null)
+                {
+                    var ps = method.GetParameters();
+                    var args = new object[ps.Length];
+                    for (int i = 0; i < ps.Length; i++)
+                    {
+                        var pt = ps[i].ParameterType;
+                        if (pt == typeof(IntVec3)) args[i] = center;
+                        else if (pt == typeof(Map)) args[i] = map;
+                        else if (pt == typeof(float)) args[i] = radius;
+                        else if (pt == typeof(DamageDef)) args[i] = damType;
+                        else if (pt == typeof(Thing)) args[i] = instigator;
+                        else if (pt == typeof(int)) args[i] = -1;
+                        else if (pt == typeof(float)) args[i] = -1f; // armorPen or others
+                        else if (pt == typeof(SoundDef)) args[i] = null;
+                        else if (pt == typeof(ThingDef)) args[i] = null;
+                        else if (pt == typeof(bool)) args[i] = false;
+                        else if (pt == typeof(ThingPlaceMode)) args[i] = ThingPlaceMode.Near;
+                        else if (pt == typeof(List<Thing>)) args[i] = null;
+                        else args[i] = null;
+                    }
+                    method.Invoke(null, args);
+                    return;
+                }
+            }
+            catch (Exception e)
+            {
+                Log.Warning($"[AufenCode/RoyaltyCompat] DoExplosionCompat reflection call failed: {e}");
+            }
+
+            // Fallback to current signature subset if known
+            GenExplosion.DoExplosion(center, map, radius, damType, instigator);
         }
 
         // Compatibility implementation that drops apparel and equipment similar to the old Pawn.Strip().
@@ -123,7 +311,6 @@ namespace AufenCode
                             if (ap == null) continue;
                             if (!TryInvokeApparelTryDrop(apparelTracker, ap, pos, map))
                             {
-                                // Fallback: force remove and place near
                                 apparelTracker.Remove(ap);
                                 if (ap.Spawned) continue;
                                 GenPlace.TryPlaceThing(ap, pos, map, ThingPlaceMode.Near);
@@ -136,7 +323,6 @@ namespace AufenCode
                 var eq = pawn.equipment;
                 if (eq != null)
                 {
-                    // Prefer a single DropAllEquipment if available
                     if (!TryInvokeDropAllEquipment(eq, pos))
                     {
                         var all = eq.AllEquipmentListForReading?.ToList();
@@ -147,7 +333,6 @@ namespace AufenCode
                                 if (e == null) continue;
                                 if (!TryInvokeTryDropEquipment(eq, e, pos))
                                 {
-                                    // Fallback: remove and place near
                                     eq.Remove(e);
                                     if (!e.Spawned)
                                     {
@@ -167,7 +352,6 @@ namespace AufenCode
 
         private static bool TryInvokeApparelTryDrop(object apparelTracker, Apparel apparel, IntVec3 pos, Map map)
         {
-            // Try multiple signature variants via reflection for maximum compatibility
             var methods = AccessTools.GetDeclaredMethods(apparelTracker.GetType()).Where(m => m.Name == "TryDrop");
             foreach (var m in methods)
             {
@@ -181,7 +365,7 @@ namespace AufenCode
                     else if (pt == typeof(Map)) args[i] = map;
                     else if (pt == typeof(ThingPlaceMode)) args[i] = ThingPlaceMode.Near;
                     else if (pt == typeof(bool)) args[i] = false;
-                    else if (pt.IsByRef) args[i] = null; // out parameter (e.g., out Thing)
+                    else if (pt.IsByRef) args[i] = null;
                     else args[i] = null;
                 }
                 try
@@ -189,7 +373,7 @@ namespace AufenCode
                     var result = m.Invoke(apparelTracker, args);
                     if (result is bool b && b) return true;
                 }
-                catch { /* try next overload */ }
+                catch { }
             }
             return false;
         }
@@ -225,7 +409,7 @@ namespace AufenCode
                     if (pt == typeof(ThingWithComps)) args[i] = eq;
                     else if (pt == typeof(IntVec3)) args[i] = pos;
                     else if (pt == typeof(bool)) args[i] = false;
-                    else if (pt.IsByRef) args[i] = null; // out param
+                    else if (pt.IsByRef) args[i] = null;
                     else if (pt == typeof(Map)) args[i] = (equipmentTracker as Pawn_EquipmentTracker)?.pawn?.MapHeld ?? default(Map);
                     else args[i] = null;
                 }
@@ -234,7 +418,7 @@ namespace AufenCode
                     var result = m.Invoke(equipmentTracker, args);
                     if (result is bool b && b) return true;
                 }
-                catch { /* try next overload */ }
+                catch { }
             }
             return false;
         }
