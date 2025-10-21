@@ -343,10 +343,41 @@ namespace AufenCode
                         }
                     }
                 }
+
+                // Force graphics refresh to avoid invisible/missing textures after stripping
+                TryRefreshPawnGraphics(pawn);
             }
             catch (Exception ex)
             {
                 Log.Warning($"[AufenCode/RoyaltyCompat] StripPawn encountered an error: {ex}");
+            }
+        }
+
+        private static void TryRefreshPawnGraphics(Pawn pawn)
+        {
+            try
+            {
+                Pawn_DrawTracker drawer = pawn.Drawer;
+                PawnRenderer renderer = drawer?.renderer;
+                if (renderer == null) return;
+
+                // Prefer SetAllGraphicsDirty if available
+                MethodInfo setDirty = AccessTools.Method(renderer.GetType(), "SetAllGraphicsDirty");
+                if (setDirty != null)
+                {
+                    setDirty.Invoke(renderer, null);
+                    return;
+                }
+
+                // Fallback: ResolveAllGraphics on graphics object
+                FieldInfo graphicsField = AccessTools.Field(renderer.GetType(), "graphics");
+                object graphics = graphicsField?.GetValue(renderer);
+                MethodInfo resolve = graphics != null ? AccessTools.Method(graphics.GetType(), "ResolveAllGraphics") : null;
+                resolve?.Invoke(graphics, null);
+            }
+            catch (Exception e)
+            {
+                Log.Warning($"[AufenCode/RoyaltyCompat] TryRefreshPawnGraphics failed: {e}");
             }
         }
 
